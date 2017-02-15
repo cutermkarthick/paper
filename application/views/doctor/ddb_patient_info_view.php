@@ -8,13 +8,23 @@
 //==============================================
 ?>
 <script type='text/javascript'>
-function getpatient_info()
+function getpatient_info(app_recnum)
 {
-document.forms['form-horizontal120'].param.value='home1';
-document.forms['form-horizontal120'].submit();
-/*
-window.location="<?php echo base_url();?>doctor_ctrl/getpatient_info/"+document.getElementById('recnum').value+"/"+document.getElementById('health_iss').value+'/home1';
-*/
+    document.forms['form-horizontal120'].param.value='gp1';
+    document.forms['form-horizontal120'].app_recnum.value=app_recnum;
+// document.forms['form-horizontal120'].submit();
+    
+
+    $.ajax(
+     {
+       type: 'POST',
+        url: "<?php echo base_url();?>doctor_ctrl/getpatient_info/",
+        success:function(response)
+        {
+           $('#app_details').html(response);
+        }
+     });
+
 }
 function getnextpage()
 { 
@@ -67,6 +77,7 @@ $attr=array('class' => 'form-horizontal120','name' => 'form-horizontal120');
 echo form_open('doctor_ctrl/getpatient_info',$attr);
 ?>
 <input type='hidden' name='param' id='param' value=''>
+<input type='hidden' name='app_recnum' id='app_recnum' value=''>
 
 <div style="margin-top:9px;" class="row-fluid">
 <div class="span9 m-widget">
@@ -87,70 +98,75 @@ echo '<img id="img_switcher"  src="'.$query->img_location.'">';
 <p> <?= $query->city .' '.$query->state." ,". $query->zip ?></p>
 </div>
 
-<div class="patients_info span5">
+<!-- <div class="patients_info span5">
 <ul style=" text-align:right; margin:0px 10px 0px 0px;">
  <li>
 <button class="btn btn-large btn-info" type="button" onClick="javscript:getpatient_info()"> <i class="fa fa-file-text-o"></i> View Details</button>
 </li>
 </ul>
-</div>
+</div> -->
 
 </div>
 
 <div style="margin-top:30px;" class="row-fluid">
-<div class="span4 patients_info">
-<h1>PERSONAL INFO </h1>
-<?
-$dddob=explode('-', $query->dob );
-$dob=$dddob[1].'-'.$dddob[2].'-'.$dddob[0];
 
-if(empty($query))
-echo "NO DATA";
-else
-{?>
-<UL>
-<LI>Cell Phone:<?= $query->cell_phone ?></LI>
-<LI>Home Phone: <?= $query->home_phone ?>
-<LI>Work Phone: <?= $query->work_phone ?></LI>
-<LI>Date of Birth: <?= $dob ?></LI>
-<LI>Email: <?= $query->email ?></LI>
-</UL>
-<?}?>
+    <div class="row-fluid">
+<table class="table table-bordered patient_table" style="table-layout: fixed;width:100% !important;" id='csample'>
+<thead style="width:100%; background:#43B5CB; color:#FFF;">
+<tr>
+<th>Seq #</th>
+<th>Appt Date</th>
+<th>Appt Time </th>
+<th>Appt Duration</th>
+<th>Status</th>
+<th>Doctor</th>
+</tr>
+
+</thead>
+</table>
+
+
+<div width='100%' style="height:120px; overflow-x:hidden;overflow-y:scroll;border:;margin-top:-20px;width:100% !important;" id="dataList">
+<table  class="table table-bordered patoent_table"  style="table-layout: fixed;width:100%" >
+<tbody style="width:100%;">
+<input type='hidden' name='val' id='val' value=''>
+
+<?php
+    if (isset($app_lists))
+    {  
+        $i=1;                                             
+        foreach($app_lists as $k=>$app) 
+        {
+
+        ?>
+
+            <tr>     
+            <th><a href="#" onclick="javscript:getpatient_info('<?php echo $app["recnum"];?>')"><?php echo $i;?></a></th>
+            <th><?php echo $app['appt_date'];?></th>
+            <th><?php echo $app['appt_time'];?></th>
+            <th><?php echo $app['appt_duration'];?></th>
+            <th><?php echo $app['status'];?></th>
+            <th><?php echo $app['doctor'];?></th>
+            <input type='hidden' name="recnum<?= $i ?>" id="recnum<?= $i ?>"  
+            value="<?php echo $app['recnum']; ?>">
+            </tr>  
+
+        <? $i++;
+        }
+    }
+?>
+
+</tbody>
+</table>
 </div>
 
-<div class="span4 patients_info">
-<h1>PRIMARY INSURANCE INFO </h1>
-<?
-if(empty($insur))
-  echo "NO DATA";
-else
-{
-?>
-	<UL>
-	<LI>Employer: <?= $insur->name_of_insured ?></LI>
-	<LI>Company :<?= $insur->insurance_company ?></LI>
-	<LI>Group Id: <?= $insur->group_id ?></LI>
-	<LI>Member Id: <?= $insur->member_id  ?></LI>
-	</UL>
-<?}?>
-</div>                            
 
 
-<div class="span4 patients_info">
-<h1>EMERGENCY  </h1>   
-<?
-if(empty($emer))
-  echo "NO DATA";
-else
-{?>                             
-<UL>                                	 
-<LI>Emergency Contact: <?= $emer->home_phone ?> </LI>
-<LI> Emergency Cell phone:  <?= $emer->cell_phone ?></LI>
-<LI> Referred By: <?= $query->referred_by ?></LI>
-</UL>
-<?}?>
-</div>  
+</div>
+
 </div>                        
+
+
 </div>
 <div style="background:#eee;" class="span3 m-widget">
 		 
@@ -191,13 +207,11 @@ if($this->session->userdata('msg_leftnav') != '')
 </div>
 </div>
 
-
-
-
-
-
-
 </div>
+
+    <div id="app_details"> 
+        
+    </div>
 
 </section>
 </div>

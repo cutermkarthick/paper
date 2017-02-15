@@ -939,6 +939,14 @@ function getpatient_surgeryDetails($recnum)
 	return $this->db->update('patient_surgery', $data);
 	}
 
+	function get_appointment_lists($recnum)
+	{
+		$sql = $this->db->select('recnum, doctor, appt_date, appt_time, appt_duration, reason, location, status, link2patientinfo, 					   link2clinic, link2operatory, waitlistnumber, link2doctor')
+						->from('appointments')
+						->where('link2patientinfo', $recnum)
+						->get();
+		return $sql->result_array();
+	}
 
 
 }
