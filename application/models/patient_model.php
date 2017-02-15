@@ -918,5 +918,13 @@ function getpatient_surgeryDetails($recnum)
 	return $query->result_array();	
   }
 
+
+	public function update_surgerydetails($data,$id)
+	{
+	$this->db->where('patient_surgery.recnum',$id);
+	return $this->db->update('patient_surgery', $data);
+	}
+
+
 }
 ?>

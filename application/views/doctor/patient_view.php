@@ -405,6 +405,21 @@ url: "<?php echo base_url();?>doctor_ctrl/edit_health_history/"+recnum+"/"+docum
    });
 }
 
+
+function editsurgery_details(recnum)
+{
+   $.ajax(
+   {
+type: 'POST',
+url: "<?php echo base_url();?>doctor_ctrl/edit_surgery_details/"+recnum,
+        success:function(response)
+        {
+           $('#surgery_details').html(response);
+        }
+   });
+}
+
+
 function save_acceptedval()
 {
 document.getElementById('dental_history_accept').value='accept';
@@ -944,6 +959,13 @@ style="width:30px;height:20px" onkeypress="javascript:number_validation4workphon
 <div id="surgery" class="tab-pane fade">
 <div class="row-fluid patient_history">
 <h1 style="font-weight:bold">Patient's Surgery Details </h1>
+<div>
+<h1>
+<img style='float:right;margin-right:10px' src="<?php echo base_url();?>img/edit.png" width="34" height="34" onclick="editsurgery_details(<?echo $recnum ?>)">
+</h1>
+</div>
+<div class="row-fluid patient_history" id='surgery_details'>
+
 <div class="clearfix"></div>
 
 <div style="margin-bottom:10px;" class="m-widget">
@@ -968,14 +990,8 @@ else
   $surgeon_name = ''; 
   $location_contact_no = ''; 
   $surgery_name = ''; 
-  
-  
+
 }
-
-
-
-
-
 ?>
 
 
@@ -983,7 +999,7 @@ else
 <label class="control-label" for="inputPassword" style='float: left;
 width:350px;  padding-top: 5px;  text-align: left;'>Name of Surgery</label>
 <div class="controls">
-<input type="text"  name='surgery_name' id='surgery_name' placeholder="Name" value="<?= $surgery_name ?>" >
+<input type="text"  name='surgery_name' id='surgery_name' placeholder="Name" value="<?= $surgery_name ?>" style="background-color='#DFDFDF'" readonly="readonly">
 </div>
 </div>  
 
@@ -999,7 +1015,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <div class="control-group">
 <label class="control-label" for="inputPassword">Surgeon </label>
 <div class="controls">
-<input type="text" placeholder="Surgeron Name" value="<?= $surgeon_name ?>" name='surgeon_name' id='surgeon_name'>
+<input type="text" placeholder="Surgeron Name" value="<?= $surgeon_name ?>" name='surgeon_name' id='surgeon_name' style="background-color='#DFDFDF'" readonly="readonly">
 </div>
 </div>
 
@@ -1007,7 +1023,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <label class="control-label" for="inputPassword" 
 style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery Contact No.</label>
 <div class="controls">
-<input type="text" name="surgeon_contact_no" id="surgeon_contact_no" placeholder="Name" value='<?= $surgeon_contact_no ?>'  >
+<input type="text" name="surgeon_contact_no" id="surgeon_contact_no" placeholder="Name" value='<?= $surgeon_contact_no ?>'  style="background-color='#DFDFDF'" readonly="readonly">
 </div>
 </div> 
 
@@ -1016,7 +1032,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <div class="control-group">
 <label class="control-label" for="inputPassword">Location</label>
 <div class="controls">
-<input type="text" placeholder="Location of Surgery" name='surgery_location'  id='surgery_location' value="<?= $surgery_location ?>">
+<input type="text" placeholder="Location of Surgery" name='surgery_location'  id='surgery_location' value="<?= $surgery_location ?>" style="background-color='#DFDFDF'" readonly="readonly">
 </div>
 </div>
 
@@ -1024,7 +1040,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <div class="control-group">
 <label class="control-label" for="inputPassword">Location Contact No. </label>
 <div class="controls">
-<input type="text" placeholder="Location Contact No"  name='location_contact_no' id='location_contact_no' value="<?= $location_contact_no ?>">
+<input type="text" placeholder="Location Contact No"  name='location_contact_no' id='location_contact_no' value="<?= $location_contact_no ?>" style="background-color='#DFDFDF'" readonly="readonly">
 </div>
 </div>
 
@@ -1032,7 +1048,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <div class="control-group">
 <label class="control-label" for="inputPassword">Action Taken </label>
 <div class="controls">
-<textarea rows="5" cols=20 name='action_taken' id='action_taken'>
+<textarea rows="5" cols=20 name='action_taken' id='action_taken' style="background-color='#DFDFDF'" readonly="readonly">
   <?=$action_taken ?>
 </textarea>
 </div>
@@ -1044,6 +1060,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <div class="clearfix"></div>
 
 <div class="control-group">
+<label class="control-label" for="inputPassword">Please adher to the following precautions prior to Surgery </label>
 <div class="controls">
 <textarea rows="5" cols=20 name='surgery_notes1' id='surgery_notes1' style="background-color='#DFDFDF'" readonly="readonly">
   <?php 
@@ -1055,24 +1072,15 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 </div>
 </div>
 
-<div class="control-group">
-<label class="control-label" for="inputPassword">Please adher to the following precautions prior to Surgery </label>
-<div class="controls">
-<textarea rows="5" cols=20 name='surgery_notes' id='surgery_notes'>
-
-</textarea>
-</div>
-</div>
-
 
 </div>
 
+</div>
 
-
-<div class="btn-toolbar" style="position:relative;text-align:center">
+<!-- <div class="btn-toolbar" style="position:relative;text-align:center">
 <a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:submitpatient_view('profile2')"> 
 <i class="fa fa-arrow-right" ></i> SUBMIT</a>
-</div>
+</div> -->
 </li>
 </ul>
 </div>
