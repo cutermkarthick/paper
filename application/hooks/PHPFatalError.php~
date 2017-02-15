@@ -1,0 +1,39 @@
+<?php
+class PHPFatalError 
+{
+	
+	public function setHandler()
+	{
+		set_exception_handler(array($this, 'HandleExceptions'));
+		
+	}
+	
+	public function HandleExceptions($exception)
+	{
+	
+		$msg ='Exception type is: \''.get_class($exception)
+		.'\' Full Message: '.$exception->getMessage()
+		.' File Name : '.$exception->getFile()
+		.' at Line : '.$exception->getLine();
+		$msg .="\r\n Complete error details:  \r\n";
+		$msg .=$exception->getTraceAsString();
+		log_message('error', $msg, TRUE);
+
+		$headers = 'From: <admin@paperlessdentists.com>' . " \r\n";
+		$headers .= "MIME-Version: 1.0" . " \r\n";
+		$headers .= "Content-type:text/html" . " \r\n";
+		mail('admin@paperlessdentists.com', 'We have found some errors.', $msg,$headers);
+
+
+		ob_end_clean();
+		echo "<script>alert('Technical problem found. We will fix it as soon as possible');</script>";
+		
+		
+	}
+
+
+
+	
+}
+
+

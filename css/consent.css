@@ -1,0 +1,216 @@
+html {
+	/*position: relative;*/
+	min-height: 100%;
+}
+
+body {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.well-color {
+	color: #5a5a5a;
+}
+
+.topbuffer {
+	margin-top: 15px;
+}
+
+.topslimbuffer {
+	margin-top: 5px;
+}
+
+.topbottombuffer {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.toppaddedbuffer {
+	margin-top: 15px;
+	padding: 3px 3px 3px 3px;
+}
+
+.topslimpaddedbuffer {
+	margin-top: 5px;
+	padding: 3px 3px 3px 3px;
+}
+
+.bottomslimbuffer {
+	margin-bottom: 5px;
+}
+
+.topbottompaddedbuffer {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 3px 3px 3px 3px;
+}
+
+.error-block {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #ff0000;
+}
+
+.alert-block {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.spaced {
+	margin: 10px 0;
+}
+
+#calendar {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.icon-red {
+	color: #ff0000;
+}
+
+#message {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-collapse: separate;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.075) inset;
+	box-sizing: content-box;
+	height: 250px;
+	max-height: 250px;
+	outline: medium none;
+	overflow: scroll;
+	padding: 4px;
+}
+
+.ellipsis {
+	text-overflow: ellipsis !important;
+	overflow: hidden;
+	white-space: nowrap;
+	/*display: block;*/
+	max-width: 200px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.form-color {
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	padding-left: 2px;
+}
+
+.medicalAlert {
+	color: red !important;
+	font-weight: bold !important;
+}
+
+
+.cursor-pointer:hover {
+	cursor: pointer;
+    cursor: hand;
+}
+
+
+td.highlight {
+	font-weight: bold;
+	color: black;
+}
+
+td.unhighlight {
+	font-weight: normal;
+	color: black;
+}
+
+/** COLORFUL BADGES ***/
+
+.badge-error {
+  background-color: #b94a48;
+}
+.badge-error:hover {
+  background-color: #953b39;
+}
+.badge-warning {
+  background-color: #f89406;
+}
+.badge-warning:hover {
+  background-color: #c67605;
+}
+.badge-success {
+  background-color: #468847;
+}
+.badge-success:hover {
+  background-color: #356635;
+}
+.badge-info {
+  background-color: #3a87ad;
+}
+.badge-info:hover {
+  background-color: #2d6987;
+}
+.badge-inverse {
+  background-color: #333333;
+}
+.badge-inverse:hover {
+  background-color: #1a1a1a;
+}
+
+
+
+#dentistSignature {
+	color: darkblue;
+	background-color: #f5f5f5;
+	padding: 2px;
+	border: 2px dotted #000;
+}
+
+#patientSignature {
+	color: darkblue;
+	background-color: #f5f5f5;
+	padding: 2px;
+	border: 2px dotted #000;
+}
+
+#signature {
+	padding: 2px;
+	margin: 1 1 1 1;
+	border: 2px dotted #000;
+}
+.signature {
+	color: darkblue;
+	background-color: #f5f5f5;
+	padding: 2px;
+	border: 2px dotted #000;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html,body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by its height */
+	margin: 0 auto -50px;
+	/* Pad bottom by footer height */
+	padding: 0 0 50px;
+}
+
+#footer {
+	width: 100%;
+	height : 50px;
+}
+

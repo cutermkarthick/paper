@@ -1,0 +1,626 @@
+<?
+//==============================================
+// Author: FSI                                
+// Date-written = Jan 15, 2015                 
+// Filename: ddb_appointments_view.php       
+// Copyright of Fluent Technologies            
+// Displays list of Appointments ,new request. 
+// we can also book an appointment.              
+//==============================================
+?>
+<head>
+<script type='text/javascript'>
+var url=(window.location.href);
+var parameter =  url.split('/').pop();
+$(document).ready(function() 
+{	
+    if(parameter == 'profile')
+	{
+		$("#home").removeClass("active in");
+        $("#profile").addClass("active in");
+		$("#listappts").removeClass("active in");
+
+		$("#myTab li").removeClass("active");
+		$("#myTab li#profile1").addClass("active");
+	}
+});
+function getPatientDetails(obj)
+{
+var ind = document.getElementById('dct_name').selectedIndex;
+var name = document.forms[0].dct_name[ind].text;
+var id=document.forms[0].dct_name[ind].value;
+document.forms[0].doc_name.value=name;
+document.forms[0].doc_id.value=id;
+}
+
+function getduration(obj)
+{
+	var dur=obj.value;	
+	var txt=$("#select_time :selected").text();	
+	var element=document.getElementById('selected_time');
+    //alert(txt+'==='+	element.options[txt].text);
+	//alert($("#selected_time  option[value='" + txt +"']").text());
+
+	var duration=parseInt(document.getElementById('select_duration').value);
+	var cur=$("#selected_time  option[value='" + txt +"']").text();	
+	
+	/*if(cur<duration)
+	{
+		alert("Selected Time slot not available; Please select appropriate duration");
+		document.getElementById("select_duration").value='';
+		return false;
+	}
+	*/
+}
+function getLocation(obj)
+{ 
+      var values = [];
+      var loc=obj.value;
+	document.getElementById('location_name').value=$("#loc  option[value='" + loc +"']").text();
+	$.get("<?php echo base_url();?>doctor_ctrl/getoperatory/"+loc, function (msg)
+	{
+		op_slots = msg;
+		var $select = $("#operatory");
+		$select.removeAttr("disabled");
+		$select.find('option').remove();
+		$.each(op_slots, function (key, value) 
+		{
+			
+                    values[key] = value; 
+		})               
+		$.each(values, function(key, value) {
+		    if(value != undefined) {			
+$('<option>').val(key).text(value).appendTo($select);
+		    }
+		});
+	})
+}
+function getoperatory()
+{
+   document.getElementById('appt_date').value ='';
+}
+function getajaxdetails(recnum)
+{
+		$.ajax({
+        type: 'POST',
+        url: "<?php echo base_url();?>doctor_ctrl/getappointment/"+recnum,
+        success:function(response){
+           $('#ajax-content-container').html(response);
+        }
+});
+}
+function getsearch()
+{
+	var patientname=document.getElementById('patientname').value ;
+	var status=document.getElementById('status').value ;
+	var reason=document.getElementById('reason').value ;
+	$.get("<?php echo base_url();?>doctor_ctrl/listappts/"+patientname+"/"+status+'/'+reason, function (msg)
+	{
+           alert(msg+'_______');
+             
+
+	})
+}
+</script>
+</head>
+<div class="main-container" style="height:850px !important;">
+<div class="container-fluid">
+<section>
+<div style="margin-top:10px;" class="row-fluid">
+
+
+<div class="m-widget-header">
+<div class="span12  sub_title">
+<h1> <i class="fa fa-file-text-o"></i>&nbsp;Appointments </h1>
+<?php 
+
+$flash_message=$this->session->flashdata('flashMessage');
+if(isset($flash_message)){
+echo "<div style='color:red;'>$flash_message<div>";
+}
+?>
+</div>
+</div>
+</div>
+
+<div style="margin-top:9px;" class="row-fluid">
+<div class="span12 m-widget">
+<div style="margin-top:0px;" class="row-fluid">
+
+<div class="span7">
+<div style="margin-top:0px;" class="row-fluid">
+
+<div class="m-widget-body">
+<ul style="margin-bottom:-1px;" class="nav nav-tabs" id="myTab">
+<li class="active"><a data-toggle="tab" href="#listappts">Search Appointments  </a></li>  
+<li class=""><a data-toggle="tab" href="#home">  New Requests </a></li>
+<li class="" id='profile1'><a data-toggle="tab" href="#profile" >Book Appointment</a></li>  
+</ul>
+
+<div class="tab-content" id="myTabContent">
+<div  id="home" class="tab-pane fade">
+<div class=" row-fluid">
+<h1 style="float:left; margin:5px 0px 0px 10px;"><?php echo "List of New Patients Appt Requests"; ?></h1>
+
+</div>
+<div class="row-fluid">
+<table class="table table-bordered patient_table" style="table-layout: fixed" id='csample' width='98%'>
+<tr style=" background:#39F; color:#FFF;">
+<thead>
+<tr>
+<th style="color:white;width:10%">Date</th>
+<th style="color:white;width:10%">Time</th>
+<th style="color:white;width:10%">Dur<br/>(hrs)</th>
+<th style="color:white;width:25%">Patient</th>
+<th style="color:white;width:20%">Doctor</th>
+<th style="color:white;width:20%">Reason</th>
+<th style="color:white;width:15%">Status</th>
+</tr>
+</thead>
+<tbody style="width:100%;">
+<?php   
+date_default_timezone_set('America/Los_Angeles');
+foreach($query as $row)
+{
+		$doctor_name ='';
+		$format = '%d:%d';
+        $hours = floor($row->appt_duration / 60);
+        $minutes = ($row->appt_duration % 60);
+        $duration=sprintf($format, $hours, $minutes);
+        $datearr1 = explode(':', $row->appt_time);
+	    $appt_time=$datearr1[0].":".$datearr1[1];
+		
+		
+	 if($row->appt_date != '0000-00-00' && $row->appt_date != '' && $row->appt_date != 'NULL')
+      {
+              $datearr = explode('-', $row->appt_date);
+              $d=$datearr[2];
+              $m=$datearr[1];
+              $y=$datearr[0];
+              $x=mktime(0,0,0,$m,$d,$y);
+              $appt_date=date("M j, Y",$x);
+      }
+        echo "<tr><td width='10%' >$appt_date</td>";
+		echo "<td width='10%' > $appt_time</td>";
+		echo "<td width='10%' >$duration</td>";
+		echo "<td width='25%'>$row->fullname</td>";
+		echo "<td width='20%'>$row->doctor</td>";
+		echo "<td width='20%' >$row->reason</td>";
+		echo "<td width='15%' >$row->status</td>";
+}	
+?>
+</tbody>
+
+</table>
+</div>
+</div>
+
+<div id="profile" class="tab-pane fade">
+<div class="row-fluid patient_history">
+<h1 style="font-weight:bold">Book an Appointment </h1>
+<div class="clearfix">  </div>
+<div class="span11 m-widget">
+<?php
+$attributes = array('class' => 'form-horizontal', 'id' => 'myform', 'style' => 'padding-top:20px;');
+echo form_open('doctor_ctrl/temp', $attributes);
+?>
+<input type='hidden' name='base_url' id='base_url' value="<?echo base_url() ?>" >
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label("Clinic Loc<span class='asterisk'>*</span>:", 'inputPassword', $attributes);
+?><?php echo form_error('location'); ?>
+<div class="controls">
+<?
+$attributes1 = 'id="loc" class="input-xlarge" onChange="getLocation(this)" ';
+$locnames  = $this->doctor_model->fillLoclist($this->session->userdata('clinicid'),'doctor');
+echo form_dropdown('location', $locnames,'',$attributes1);
+?>
+</div>
+</div>
+
+<div class="control-group">
+<?php
+   $attributes = array('class' => 'control-label');
+   echo form_label("Dentist<span class='asterisk'>*</span>:", 'inputEmail', $attributes);
+?>
+<div class="controls">
+<?php
+$attributes = 'id="dct_name" class="input-xlarge" onChange="getPatientDetails(this)"';
+$doctornames  = $this->doctor_model->fillDoctorlist($this->session->userdata('doctor_id'));
+echo form_dropdown('dct_name', $doctornames,'',$attributes);
+?>
+</div> 
+</div>
+
+<input type='hidden' name='doc_id' id='doc_id' value=''>
+<input type='hidden' name='doc_name' id='doc_name' value=''>
+
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label("Patient<span class='asterisk'>*</span>:", 'inputEmail', $attributes);
+?>                                                    
+
+<div class="controls">
+<?php
+$attributes='id="select01" class="input-xlarge"';
+$patientnames=$this->doctor_model->fillPatientlist($this->session->userdata('doctor_id'));
+if($patientnames !='')
+{
+echo form_dropdown('patient_name', $patientnames);
+}
+else
+{
+}	
+
+
+?>
+</div> 
+
+</div>
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label("Operatory<span class='asterisk'>*</span>:", 'inputPassword', $attributes);
+?>  
+<div class="controls">
+<?php
+$options = array(
+	   'sel_op' => 'Select'
+	);
+$attributes = 'id="operatory"  disabled="disabled" style="display:hidden;width:85px" onChange="getoperatory()" ';
+echo form_dropdown('operatory', $options,'operatory', $attributes);
+?>
+</div>
+</div>
+
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label("Appt. Date<span class='asterisk'>*</span>:", 'inputPassword', $attributes);
+?>  
+<div class="controls">
+<div class="date" id="dp3" data-date="<?= date('Y-m-d') ?>" data-date-format="yyyy-mm-dd">
+	<?php
+	$data = array(
+		'class' => 'input-xlarge',
+		'type' => "text",
+		'name' => "appt_date",
+		'id'  => "appt_date",
+		'size' => '16',	
+		'readonly'=>'readonly',
+	);
+	echo form_input($data);
+	?>
+	<span style="position:relative; left:-30px; z-index:1;" class="add-on">
+		<i class="icon-th"></i>
+	</span>
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label("Time<span class='asterisk'>*</span>:", 'inputPassword', $attributes);
+?>  
+<div class="controls">
+<?php
+$options = array(
+	   'sel_date' => 'Choose a Date ...'
+	);
+$attributes = 'id="select_time" class="input-xlarge" disabled="disabled" style="display:hidden"  onChange="getdateval(this)" ';
+echo form_dropdown('appt_time', $options,'sel_date', $attributes);
+?>
+</div>
+</div>
+
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label("Duration<span class='asterisk'>*</span>:", 'inputPassword', $attributes);
+?>  
+<div class="controls">
+<?php
+$options = array(
+''=>'Select',
+	'30' => '1/2 hr',
+	'60' => '1 hr',
+	'90' => '1 1/2 hr',
+	'120' => '2 hrs',
+);
+$attributes1 = 'id="select_duration" onChange="getduration(this)" ';
+echo form_dropdown('appt_duration', $options,'',$attributes1);
+?>
+</div>
+</div>
+
+<div class="control-group">
+<?php
+$attributes = array(
+'class' => 'control-label'
+);
+echo form_label('Purpose:', 'inputPassword', $attributes);
+?>                                                    
+
+<div class="controls">
+<?php
+$options = array(
+	'Consultation' => 'Consultation',
+	'Preventive' => 'Preventive',
+	'Deep Cleaning' => 'Deep Cleaning',
+	'Filling' => 'Filling',
+	'Root Canal' => 'Root Canal',
+	'Extraction' => 'Extraction',
+	'Implant' => 'Implant',
+	'Reason' => 'Reason',
+	'Other' => 'Other',
+);
+$attributes = 'id="select01" class="input-xlarge"';
+echo form_dropdown('purpose', $options, 'small', $attributes);
+?>
+</div> 
+</div>
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label('Remarks:', 'inputPassword', $attributes);
+?><?php echo form_error('remarks'); ?>
+<div class="controls">
+<?php
+$data = array(
+	'class' => 'input-xlarge',
+	'type' => "text",
+	'placeholder' => 'Remarks',
+	'name' => 'remarks'
+);
+echo form_input($data);
+?>	
+</div>
+</div>
+
+<div class="control-group">
+<?php
+$attributes = array(
+'class' => 'control-label'
+);
+echo form_label('Status:', 'inputPassword', $attributes);
+?>                                                    
+
+<div class="controls">
+<?php
+$options = array(
+	'Pending' => 'Pending',
+	'Confirmed' => 'Confirmed',
+	'Closed' => 'Closed',
+	'Cancelled' => 'Cancelled',
+	'Waitlist' => 'Waitlist',
+);
+$attributes = 'id="selectstatus" class="input-xlarge"';
+echo form_dropdown('status', $options, 'small', $attributes);
+?>
+</div> 
+</div>
+
+<div class="control-group">
+<?php
+$attributes = array('class' => 'control-label');
+echo form_label('Confirmation:', 'inputPassword', $attributes);
+?>
+<div class="controls">
+<label class="checkbox inline">
+	<?php
+	$data = array(
+		'class' => 'input-xlarge',
+		'type' => "checkbox",
+		'name' => 'sms_email',
+		'id' => "optionsRadios1",
+		'value' => '1',
+		'checked' => TRUE,
+	);
+	echo form_input($data);
+	?>
+	SMS
+</label>
+<label class="checkbox inline">
+	<?php
+	$data = array(
+		'class' => 'input-xlarge',
+		'type' => "checkbox",
+		'name' => 'email',
+		'id' => "optionsRadios2",
+		'value' => '1',
+	);
+	echo form_input($data);
+	?>
+	Email
+</label>
+</div>
+</div>
+
+<div class="controls">
+<?php
+$options = array(
+);
+$attributes = 'id="selected_time" class="input-xlarge" style="display:none" ';
+echo form_dropdown('selected_time', $options, 'small', $attributes);
+?>
+</div> 
+<input type='hidden' name='location_name' id='location_name' value=''>
+<input type='hidden' name='waittime[]' id='waittime' value=''>
+
+<div style="margin-top:25px;" class="control-group">
+<div class="controls">
+<button id='next_r_prev'  style="float:left;position:relative;margin-left:5%;text-align:center" onclick="javascript:check_req_fields4newappt()" 
+class="btn btn-large  btn-info" type="button"> 
+<i ></i>Book Appointment</button>
+</div>             
+</div>      
+<?php echo form_close(); ?>            
+</div>
+</div>
+</div>
+
+<div id="listappts" class="tab-pane fade active in">
+
+<div class="row-fluid patient_history">
+<h1 style="font-weight:bold">Search Appointments </h1>
+
+<?php
+$attributes = array('class' => 'form-horizontal_4', 'name'=>'form-horizontal_4','id' => 'listappts', 'style' => 'padding-top:0px;');
+echo form_open('doctor_ctrl/listappts', $attributes);
+?>
+<div style="margin-top:0px;" class="control-group">
+<div class="controls" style='margin-left:0px'>
+
+<?php
+$attributes = array('class' => 'control-label');
+$data = array(
+	'class' => 'input-xlarge',
+	'type' => "text",
+	'id' => "patientname",
+	'name' => "patientname",
+        'value' =>"$patientname",
+	'placeholder' => 'Patient Name',
+	'maxlength'   => '100',
+    'size'        => '20',
+ 'style'       => 'width:20%',
+);
+echo form_input($data);
+
+$options = array(                  
+                  'Pending'  => 'Pending',
+                  'Confirmed'    => 'Confirmed',
+                  'Closed'    => 'Closed',
+                  'Cancelled'    => 'Cancelled',
+                  'Waitlist'    => 'Waitlist',
+                   'all'  => 'All',
+                );
+$js = 'id="status"';
+echo form_dropdown('status', $options, $status,$js);
+
+$options1 = array(
+             'all'  => 'All',
+	'Consultation' => 'Consultation',
+	'Preventive' => 'Preventive',
+	'Deep Cleaning' => 'Deep Cleaning',
+	'Filling' => 'Filling',
+	'Root Canal' => 'Root Canal',
+	'Extraction' => 'Extraction',
+	'Implant' => 'Implant',
+	'Reason' => 'Reason',
+	'Other' => 'Other',
+);
+$attributes = 'id="reason"  style="height:20px;padding:0px" ';
+$js = 'id="reason"';
+echo form_dropdown('reason', $options1, $reason,$js);
+?>
+<span class="date" id="dp4"  data-date="<?= date('Y-m-d') ?>" data-date-format="yyyy-mm-dd">
+<?
+$data = array(
+	'type' => "text",
+	'name' => "appt_date",
+	'id'  => "appt_date",
+	'size' => '6',	
+	'placeholder' => 'Appt Date',
+	'value' =>"$apptdate",
+	'style'=>'width:100px;',
+);
+echo form_input($data);
+?>
+<span style="position:relative; left:-30px; z-index:1;margin-top:-10px " class="add-on">
+		<i class="icon-th"></i>
+	</span>
+</span>
+
+<button id='search' style="width:15%;float:right;" onclick="document.forms['form-horizontal_4'].submit()" class="btn btn-info" type="button"> 
+
+<i></i>Search</button>	
+</div>             
+</div>      
+<?php echo form_close(); ?>   
+<table class="table table-bordered patient_table" style="table-layout: fixed" id='csample'>
+<tr>
+<td>
+
+<table class="table table-bordered patient_table" style="table-layout: fixed" id='csample' width='98%'>
+<tr style=" background:#39F; color:#FFF;">
+<th width='10%'>Date</th>
+<th width='10%'>Time</th>
+<th width='10%'>Dur<br/>(hrs)</th>
+<th width='15%'>Patient</th>
+<th width='15%'>Doctor</th>
+<th width='25%'>Purpose</th>
+<th width='15%'>Status</th>
+</thead>
+</tr>
+</table>
+<div width='100%' style="height:300px; overflow-x:hidden;overflow-y:scroll;border:;margin-top:-20px;" id="dataList">
+<table  class="table table-bordered patoent_table"  style="table-layout: fixed;width:100%" >
+<tbody>
+<?php   
+
+
+foreach($query_search as $row)
+ { 
+       // $docname ='';
+	    $format  = '%d:%02d';
+        $hours   = floor($row->appt_duration / 60);
+        $minutes = ($row->appt_duration % 60);
+        $duration=sprintf($format, $hours, $minutes);
+	    $fullname=$row->fname.' '.$row->lname;
+		
+		//added by udaya on July 20th
+		//$docname=$row->dfname.' '.$row->dlname;
+
+if($row->appt_date != '0000-00-00' && $row->appt_date != '' && $row->appt_date != 'NULL')
+      {
+              $datearr = explode('-', $row->appt_date);
+              $d=$datearr[2];
+              $m=$datearr[1];
+              $y=$datearr[0];
+              $x=mktime(0,0,0,$m,$d,$y);
+              $appt_date=date("M j, Y",$x);
+      }
+      $datearr1 = explode(':', $row->appt_time);
+      $appt_time=$datearr1[0].":".$datearr1[1];
+      echo "<tr><td width='10%' >$appt_date</td>";
+      echo "<td width='10%'>$appt_time</td>";
+      echo "<td width='10%'>$duration</td>";
+      echo "<td width='15%'><a href='#' onclick='getajaxdetails($row->recnum)'>$fullname</td>";
+      echo "<td width='15%'>$row->doctor</td>";
+      echo "<td width='25%'>$row->reason</td>";
+      echo "<td width='15%'>$row->status</td>";
+    }	
+?>
+</tbody>
+</table>
+</div>
+</td></tr>
+</table>
+
+<div id='ajax-content-container'>
+</div>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div id="appointment4dateloader"></div>
+<div class="span5">
+<div class="row-fluid patient_history" >
+<h1>My Calendar </h1>
+
+<div id='calendar'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>

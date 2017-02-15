@@ -1,0 +1,287 @@
+/* 
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
+
+
+$(document).ready(function()
+{ 
+    document.getElementById('patients_social').style.visibility='hidden';
+
+    var message="Sorry, right-click has been disabled!";
+
+    function clickIE4()
+    {
+        if (event.button==2){
+        alert(message);
+        return false;
+        }
+    }
+
+    function clickNS4(e){
+        if (document.layers||document.getElementById&&!document.all){
+            if (e.which==2||e.which==3){
+                alert(message);
+                return false;
+                }
+            }
+        }
+        if (document.layers){
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown=clickNS4;
+            }
+        else if (document.all&&!document.getElementById){
+            document.onmousedown=clickIE4;
+        }
+        document.oncontextmenu=new Function("alert(message);return false");
+});
+
+
+function getPaging(str)
+{
+	$("#home").css({"display": "none"});
+	$("#profile").css({"display":  "none"});
+	$("#dropdown1").css({"display":  "none"});
+	$("#dropdown2").css({"display": "none"});
+	$("#dropdown3").css({"display": "none"});
+	$("#surgery").css({"display": "none"});
+	$("#postsurgery").css({"display": "none"});
+	 
+	$("#home").removeClass("active in");
+	$("#dropdown3").css({"display": "none"});
+	$("#profile").removeClass("active in");
+	$("#dropdown1").removeClass("active in");
+	$("#dropdown2").removeClass("active in");
+	$("#dropdown3").removeClass("active in");
+	$("#surgery").removeClass("active in");
+	$("#postsurgery").removeClass("active in");
+
+	var health_his=document.getElementById('med_history_rec').value;
+	var dental_his=document.getElementById('dental_history_rec').value;
+	var consent_his=document.getElementById('consent_rec').value;
+
+	var health_rec="hel_0";
+	var dental_his="his_"+dental_his;
+	var consent_his="con_"+consent_his;
+
+	$('.clickableRow').removeClass("highlight");
+	$('#'+health_rec).addClass("highlight");
+	$('#'+dental_his).addClass("highlight");
+	$('#'+consent_his).addClass("highlight");
+
+	if(str == '#home')
+	{
+	$("#home").css({"display": "block"});
+	}
+	else if(str == '#profile')
+	{
+	$("#profile").css({"display": "inline"});		
+	}
+	else if(str == '#dropdown1')
+	{
+	$("#dropdown1").css({"display": "inline"});
+	}
+	else if(str == '#dropdown2')
+	{
+	$("#dropdown2").css({"display": "inline"});
+	}
+	else if(str == '#dropdown3')
+	{
+	$("#dropdown3").css({"display": "inline"});
+	}
+	else if(str == '#dental_history')
+	{
+	$("#dental_history").css({"display": "inline"});
+	}
+	else if(str == '#surgery')
+	{
+		$("#surgery").css({"display": "inline"});
+	}
+	else if(str == '#postsurgery')
+	{
+		$("#postsurgery").css({"display": "inline"});
+	}	
+}
+$(document).ready(function() 
+{ 
+document.getElementById('patients_social').style.visibility='hidden';
+var health_iss = document.getElementById('health_iss').value;
+$('#myTab_send').on('click','li ',function() 
+{ 
+	if($('a',this).attr('href') == 'medical_alert')	 
+	{
+		  if($(".m-widget-body ul#myTab li.active a").attr("href") == '#home' || 
+		  $(".m-widget-body ul#myTab li.active a").attr("href") == '#profile' ||
+		  $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown2' ||
+ $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown3' ||
+$(".m-widget-body ul#myTab li.active a").attr("href") == '#dental_history' || 
+$(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown11' ||
+ $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown1'||
+ $(".m-widget-body ul#myTab li.active a").attr("href") == '#surgery'||
+ $(".m-widget-body ul#myTab li.active a").attr("href") == '#postsurgery')
+		  {
+			$('#myTab li').removeClass('active');
+			$("#home").css({"display": "none"});
+			$("#profile").css({"display":  "none"});
+			$("#dropdown2").css({"display": "none"});
+            $("#dropdown3").css({"display": "none"});
+            $("#dental_history").css({"display": "none"});
+            $("#surgery").css({"display": "none"});
+            $("#postsurgery").css({"display": "none"});
+	 	    
+			$("[id=myTab_profile]").addClass("active");	
+			$("#dropdown11").addClass("active");		
+			$("#dropdown1").css({"display": "block"});	
+			$("#dropdown1").addClass("active in");
+
+var new_val=health_iss.replace(/\s/g, '');
+var new_match=$('#'+new_val).attr("value");
+var index=document.getElementById('index').value;
+
+for(var i=0;i<index;i++)
+{
+var doc_name="name_"+i;
+var chk=$("input[name="+doc_name+"]:checked").length;
+
+  if(chk != 0)
+  {
+     $("input[name="+doc_name+"]").parent().css("color", "#FF0000");
+  }
+}
+
+if(new_val == new_match.replace(/\s/g, ''))
+{
+var offset=($("#"+new_match.replace(/\s/g, '')).offset().top-150);
+$("#"+new_match.replace(/\s/g, '')).next().css("color", "#FF0000");
+$('html,body').animate({scrollTop: offset},'slow');
+}
+} 
+
+}
+});
+})
+
+ 
+
+
+function check_req_fieds4consent()
+{
+	var errmsg = ''; 
+	
+
+if(document.forms['form-horizontal120'].login.value == 'patient')
+{
+	if(document.forms['form-horizontal120'].output4treatment.value == '' &&
+	document.forms['form-horizontal120'].output4drug_med.value == '' &&
+	document.forms['form-horizontal120'].output4treat_plan.value == '' &&
+	document.forms['form-horizontal120'].output4extraction.value == '' &&
+	document.forms['form-horizontal120'].output4crown.value == '' &&
+	document.forms['form-horizontal120'].output4denture.value == '' &&
+	document.forms['form-horizontal120'].output4endodontic.value == '' &&
+	document.forms['form-horizontal120'].output4peridontal.value == '' &&
+	document.forms['form-horizontal120'].output4filling.value == '' &&
+	document.forms['form-horizontal120'].output4pedodontic.value == '')
+	{
+	errmsg += "Please Enter the Consent \n";
+	}
+	if(document.forms['form-horizontal120'].output4treatment.value == '' &&
+	document.forms['form-horizontal120'].output4drug_med.value == '' &&
+	document.forms['form-horizontal120'].output4treat_plan.value == '' &&
+	document.forms['form-horizontal120'].output4extraction.value == '' &&
+	document.forms['form-horizontal120'].output4crown.value == '' &&
+	document.forms['form-horizontal120'].output4denture.value == '' &&
+	document.forms['form-horizontal120'].output4endodontic.value == '' &&
+	document.forms['form-horizontal120'].output4peridontal.value == '' &&
+	document.forms['form-horizontal120'].output4filling.value == '' &&
+	document.forms['form-horizontal120'].output4pedodontic.value == '' &&
+	document.forms['form-horizontal120'].output4patientsign.value !=  '')
+	{
+	errmsg += "Please Enter the Consent before draw the patient Signature\n";
+	}
+	if(document.forms['form-horizontal120'].output4treatment.value == '' &&
+	document.forms['form-horizontal120'].output4drug_med.value == '' &&
+	document.forms['form-horizontal120'].output4treat_plan.value == '' &&
+	document.forms['form-horizontal120'].output4extraction.value == '' &&
+	document.forms['form-horizontal120'].output4crown.value == '' &&
+	document.forms['form-horizontal120'].output4denture.value == '' &&
+	document.forms['form-horizontal120'].output4endodontic.value == '' &&
+	document.forms['form-horizontal120'].output4peridontal.value == '' &&
+	document.forms['form-horizontal120'].output4filling.value == '' &&
+	document.forms['form-horizontal120'].output4pedodontic.value == '' &&
+	document.forms['form-horizontal120'].output4dentistsign.value !=  '')
+	{
+	errmsg += "Please Enter the Consent before draw the Doctor Signature\n";
+	}
+	if(document.forms['form-horizontal120'].output4treatment.value == '' &&
+	document.forms['form-horizontal120'].output4drug_med.value == '' &&
+	document.forms['form-horizontal120'].output4treat_plan.value == '' &&
+	document.forms['form-horizontal120'].output4extraction.value == '' &&
+	document.forms['form-horizontal120'].output4crown.value == '' &&
+	document.forms['form-horizontal120'].output4denture.value == '' &&
+	document.forms['form-horizontal120'].output4endodontic.value == '' &&
+	document.forms['form-horizontal120'].output4peridontal.value == '' &&
+	document.forms['form-horizontal120'].output4filling.value == '' &&
+	document.forms['form-horizontal120'].output4pedodontic.value == '' &&
+	document.forms['form-horizontal120'].output4witnesssign.value !=  '')
+	{
+	errmsg += "Please Enter the Consent before draw the Witness Signature\n";
+	}
+
+	if(document.forms['form-horizontal120'].output4patientsign.value == '')
+	{
+	errmsg += "Please draw the Patient Signature\n";
+	}
+}
+
+if(document.forms['form-horizontal120'].login.value != 'patient')
+{
+	
+	if(document.forms['form-horizontal120'].output4dentistsign.value == '')
+	{
+	errmsg += "Please draw the Doctor Signature\n";
+	}
+	if(document.forms['form-horizontal120'].output4witnesssign.value == '')
+	{
+	errmsg += "Please draw the Witness Signature\n";
+	}
+
+    if(document.forms['form-horizontal120'].output4dentistsign.value != '' &&
+document.forms['form-horizontal120'].consent_doctor_name.value == 'select')
+	{
+	errmsg += "Please select the Dentist\n";
+	}
+if(document.forms['form-horizontal120'].output4witnesssign.value != '' &&
+document.forms['form-horizontal120'].witness.value == '')
+	{
+	errmsg += "Please enter the Witness name\n";
+	}
+}
+
+    if(errmsg == '') 
+    {
+document.forms['form-horizontal120'].param.value='dropdown3';
+	document.forms['form-horizontal120'].submit();
+    }
+    else
+    {
+       alert (errmsg);
+       return false;
+    }
+}
+function submitpatient_view(param)
+{
+	document.forms['form-horizontal2'].param.value=param;
+	document.forms['form-horizontal2'].submit();
+}
+function submithealth_view()
+{
+    document.forms['formhealth_history'].param.value='dropdown11';
+    document.forms['formhealth_history'].submit();
+}
+function submitdental_view()
+{
+	document.forms['formdental_history'].param.value='dropdown41';
+	document.forms['formdental_history'].submit();
+}
+
