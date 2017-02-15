@@ -816,7 +816,7 @@ function getpatient_surgeryDetails($recnum)
                 where
                 sn.link2patient=$patientid
                 order by sn.create_date desc");
-	return $query->first_row();	
+	return $query->result_array();	
   }
 
 
@@ -876,6 +876,7 @@ function getpatient_surgeryDetails($recnum)
 
 	function insert_postsurgery_to_db($data)
 	{
+
 	$this->db->insert('patient_postop', $data);
 	return $this->db->insert_id();
 	}
@@ -902,7 +903,7 @@ function getpatient_surgeryDetails($recnum)
                 where
                 p.link2patient=$patientid
                 order by p.create_date desc");
-	return $query->first_row();	
+	return $query->result_array();	
   }
 
 
@@ -914,7 +915,7 @@ function getpatient_surgeryDetails($recnum)
                 where
                 p.link2patient=$patientid
                 order by p.create_date desc");
-	return $query->first_row();	
+	return $query->result_array();	
   }
 
 }

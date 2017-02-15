@@ -972,26 +972,8 @@ else
   
 }
 
-if(!empty($surgery_notes))
-{
-    $surgery_notes1 = $surgery_notes->surgery_notes;
-
-  }
-  else
-  {
-$surgery_notes1 ='';    
-  }
 
 
-if(!empty($surgerynotes))
-{
-    $surgery_notes2 = $surgerynotes->surgery_notes;
-
-  }
-  else
-  {
-$surgery_notes2 ='';    
-  }
 
 
 ?>
@@ -1064,7 +1046,11 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <div class="control-group">
 <div class="controls">
 <textarea rows="5" cols=20 name='surgery_notes1' id='surgery_notes1' style="background-color='#DFDFDF'" readonly="readonly">
-  <?=$surgery_notes2 ?>
+  <?php 
+   foreach ($surgery_notes as $key => $value) {
+    echo $value['surgery_notes']."\n";
+  }
+   ?>
 </textarea>
 </div>
 </div>
@@ -1073,7 +1059,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery 
 <label class="control-label" for="inputPassword">Please adher to the following precautions prior to Surgery </label>
 <div class="controls">
 <textarea rows="5" cols=20 name='surgery_notes' id='surgery_notes'>
-  <?=$surgery_notes1 ?>
+
 </textarea>
 </div>
 </div>
@@ -1116,26 +1102,26 @@ else
   
 }
 
-if(!empty($postopnotes))
-{
+// if(!empty($postopnotes))
+// {
 
-    $postopnotes1 = $postopnotes->postop_notes;
-  }
-else
-{
-  $postopnotes1 = '';  
-}
+//     $postopnotes1 = $postopnotes->postop_notes;
+//   }
+// else
+// {
+//   $postopnotes1 = '';  
+// }
 
 
-if(!empty($postop_commnotes))
-{
+// if(!empty($postop_commnotes))
+// {
 
-    $postopcommnotes1 = $postop_commnotes->postopcommnotes;
-  }
-else
-{
-  $postopcommnotes1 = '';  
-}
+//     $postopcommnotes1 = $postop_commnotes->postopcommnotes;
+//   }
+// else
+// {
+//   $postopcommnotes1 = '';  
+// }
 
 
 
@@ -1167,7 +1153,13 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Sur
 <textarea rows="5" cols=20 name='postop_day1' id='postop_day1'>
   </textarea>
   <textarea rows="5" cols=20 name='postop_day1a' id='postop_day1a' style="background-color='#DFDFDF'" readonly="readonly" >
-  <?=$postopnotes1 ?></textarea>
+  <?php 
+    foreach ($postopnotes as $key => $po_notes) {
+     echo $po_notes['postop_notes']."\n";
+      // echo "<pre>";
+      // print_r($po_notes);
+    }
+ ?></textarea>
 </div>
 </div>
 
@@ -1178,7 +1170,13 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Sur
 <textarea rows="5" cols=20 name='postop_day2' id='postop_day2' >
   </textarea>
 <textarea rows="5" cols=20 name='postop_day2a' id='postop_day2a'  style="background-color='#DFDFDF'" readonly="readonly" >
-<?=$postopcommnotes1 ?></textarea>
+<?php
+
+   foreach ($postop_commnotes as $key => $pocomm_notes) {
+     echo $pocomm_notes['postop_comm_notes']."\n";
+    }
+
+?></textarea>
 
 </div>
 </div> 

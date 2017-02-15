@@ -686,7 +686,7 @@ text-align:center">
 	<div class="control-group">
 		<label class="control-label" for="inputEmail"> Action Taken</label>
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'action_taken', 'name' => 'action_taken','placeholder' => 'Action Taken','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'action_taken', 'name' => 'action_taken','placeholder' => 'Action Taken','cols'=>'30','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 	
@@ -696,7 +696,7 @@ text-align:center">
 	<div class="control-group">
 		<label class="control-label" for="inputEmail"> Surgeory Notes</label>
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Surgeory Notes','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Surgeory Notes','cols'=>'30','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 	
@@ -727,7 +727,7 @@ text-align:center">
   	<h1>Post Surgery Communication(Day of Surgery) for Family</h1><br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'action_taken', 'name' => 'action_taken','placeholder' => '','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'action_taken', 'name' => 'action_taken','placeholder' => '','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 	
@@ -735,7 +735,7 @@ text-align:center">
 	<br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => '','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => '','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 	
@@ -743,7 +743,7 @@ text-align:center">
 	<br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Post op Communication','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Post op Communication','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 
@@ -751,7 +751,7 @@ text-align:center">
 	<br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Post Surgery cmmunication','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Post Surgery cmmunication','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 
