@@ -2439,7 +2439,10 @@ $email=$this->input->post('email');
 	{
 
 		 date_default_timezone_set('America/Los_Angeles');
-	     $udata['email'] = $this->input->post('email');		 
+
+     
+
+	   $udata['email'] = $this->input->post('email');		 
 		 $udata['fname'] = $this->input->post('fname');
 		 $udata['middle_initial'] = $this->input->post('middle_initial');
 		 $udata['lname'] = $this->input->post('lname');
@@ -2483,15 +2486,16 @@ $email=$this->input->post('email');
 			$count=$this->admin_model->getpassworddetails($this->input->post('email'));
 			if(count($count) >0)
 			{
-				$this->session->set_flashdata('flashMessage', "Registration Failed, Duplicate Email found!!..");
-				redirect('login');
+				// $this->session->set_flashdata('flashMessage', "Registration Failed, Duplicate Email found!!..");
+				// redirect('login');
 			}
 			$clinicid=$this->session->userdata('clinicid');
 			$udata['link2clinic'] = $this->session->userdata('clinicid');
 			$udata['link2doctor'] = $this->session->userdata('doctor_id');
 
-			$patient_id=$this->patient_model->insert_patient_to_db($udata);
-
+      $patient_id=$this->patient_model->insert_patient_to_db($udata);
+			// $patient_id= 19 ;
+      
 			$udata1=array();
 			$udata1['userid'] = $this->input->post('email');
 			$new_password=$this->getRandomString(10);
@@ -2506,16 +2510,18 @@ $email=$this->input->post('email');
 
 			$this->patient_model->insert_newuser($udata1);
 
-			$this->session->set_flashdata('flashMessage', "Thanks for your registration !! Please check the email for login Credentials");	  
-			$this->load->view('smtpfns');
-			$clinic_name=$this->admin_model->getclinicdetails($this->session->userdata('clinicid'));
+      
 
-			$this->smtp_model->setclinicid($clinic_name->name);
-			$this->smtp_model->setsite_id($clinic_name->site_id);
-			$this->smtp_model->setemail($this->input->post('email'));
-			$this->smtp_model->setpassword($new_password);
-			$this->smtp_model->setname($name);
-			$this->smtp_model->getregisted_details();
+			// $this->session->set_flashdata('flashMessage', "Thanks for your registration !! Please check the email for login Credentials");	  
+			// $this->load->view('smtpfns');
+			// $clinic_name=$this->admin_model->getclinicdetails($this->session->userdata('clinicid'));
+
+			// $this->smtp_model->setclinicid($clinic_name->name);
+			// $this->smtp_model->setsite_id($clinic_name->site_id);
+			// $this->smtp_model->setemail($this->input->post('email'));
+			// $this->smtp_model->setpassword($new_password);
+			// $this->smtp_model->setname($name);
+			// $this->smtp_model->getregisted_details();
 
 			$recnum=$patient_id;
 			$udata=array();
@@ -2534,7 +2540,10 @@ $email=$this->input->post('email');
 		    $udata['link2patientinfo'] = $patient_id;
 
 			$this->patient_model->insert_emerg_to_db($udata);
-            $udata=array();
+
+
+
+      $udata=array();
 			 $udata['height_feet'] =0;	
 			 $udata['height_inches'] = $this->input->post('height_inches');	
 			 $udata['weight_lbs'] = $this->input->post('weight_lbs');	
@@ -2572,40 +2581,7 @@ $email=$this->input->post('email');
 
 			  $this->patient_model->insert_patientmeta($udata1);
 			} 
-/*
-$udata['high_bp'] = $this->input->post('high_bp') ? "yes" : "no";
 
-$udata['low_bp'] = $this->input->post('low_bp')  ? "yes" : "no";
-$udata['angina_chest_pain'] = $this->input->post('angina_chest_pain') ? "yes" : "no";
-$udata['fainiting'] =  $this->input->post('fainiting')  ? "yes" : "no";
-$udata['irregular_heartbeat'] = $this->input->post('irregular_heartbeat')  ? "yes" : "no";
-$udata['heart_attack'] = $this->input->post('heart_attack')  ? "yes" : "no";
- $udata['heart_bypass'] =  $this->input->post('heart_bypass')  ? "yes" : "no";
-$udata['pacemaker'] =  $this->input->post('pacemaker')  ? "yes" : "no";
-$udata['anemia'] =$this->input->post('anemia')  ? "yes" : "no";
-$udata['hepatitis_a'] = $this->input->post('hepatitis_a')  ? "yes" : "no";
-$udata['hepatitis_b'] = $this->input->post('hepatitis_b')  ? "yes" : "no";
-$udata['hepatitis_c'] =  $this->input->post('hepatitis_c')  ? "yes" : "no";
- $udata['hiv'] =   $this->input->post('hiv')  ? "yes" : "no";
-$udata['aids'] =  $this->input->post('aids')  ? "yes" : "no";
-$udata['std'] =  $this->input->post('std')  ? "yes" : "no";
- $udata['delay_in_healing'] =   $this->input->post('delay_in_healing')  ? "yes" : "no";
-$udata['pancreas_diabetes'] =   $this->input->post('pancreas_diabetes')  ? "yes" : "no";
-$udata['kidney_dialysis'] =  $this->input->post('kidney_dialysis')  ? "yes" : "no";
-$udata['eyes_glaucoma'] =  $this->input->post('eyes_glaucoma')  ? "yes" : "no";			  
-$udata['thyroid'] =  $this->input->post('thyroid')  ? "yes" : "no";
- $udata['neurology_epilepsy'] =   $this->input->post('neurology_epilepsy')  ? "yes" : "no";
- $udata['cancer_location'] =  $this->input->post('cancer_location')  ? "yes" : "no";
-$udata['surgery'] = $this->input->post('surgery')  ? "yes" : "no";
-$udata['radiation'] =  $this->input->post('radiation')  ? "yes" : "no";
- $udata['chemotherapy'] =   $this->input->post('chemotherapy')  ? "yes" : "no";
-$udata['jaw_joints_pain'] =  $this->input->post('jaw_joints_pain')  ? "yes" : "no";
- $udata['arthritis'] =   $this->input->post('arthritis')  ? "yes" : "no";
-$udata['arthritis_knee_replacement'] =  $this->input->post('arthritis_knee_replacement')  ? "yes" : "no";
- $udata['arthritis_hip_replacement'] =  $this->input->post('arthritis_hip_replacement')  ? "yes" : "no";
- $udata['swollen_ankles'] =  $this->input->post('swollen_ankles')  ? "yes" : "no";
-*/
-			 
 			  
 
              // $this->patient_model->insert_history_to_db($udata);
@@ -2691,6 +2667,43 @@ $udata['arthritis_knee_replacement'] =  $this->input->post('arthritis_knee_repla
 			$data['link2patient'] = $patient_id;
 
 			$this->patient_model->insert_dental_history($data);
+
+      /*--------------- insert surgery -------------------- */
+      $surgery = array();
+      $surgery['surgery_name'] = $this->input->post('surgery_name');
+      $surgery['surgery_date'] = $this->input->post('surgery_date');
+      $surgery['surgeon_name'] = $this->input->post('doctor_name');
+      $surgery['surgeon_contact_no'] = $this->input->post('surgeon_contact');
+      $surgery['surgery_location'] = $this->input->post('surgery_location');
+      $surgery['location_contact_no'] = $this->input->post('surloc_ctno');
+      $surgery['action_taken'] = $this->input->post('action_taken');
+      $surgery['link2patient'] = $patient_id;
+      $this->patient_model->insert_patient_surgery($surgery);
+
+      /*--------------- insert surgery notes-------------------- */
+      $surgery_notes = array();
+      $surgery_notes['surgery_notes'] = $this->input->post('surgery_notes');
+      $surgery_notes['link2patient'] = $patient_id;
+      $this->patient_model->insert_surgerynotes($surgery_notes);
+
+      /*--------------- insert post surgery -------------------- */
+      $po_surgery = array();
+      $po_surgery['notes'] = $this->input->post('post_notes');
+      $po_surgery['to_do'] = $this->input->post('to_do');
+      $po_surgery['link2patient'] = $patient_id;
+      $this->patient_model->insert_post_surgery($po_surgery);
+
+      /*--------------- insert postop notes -------------------- */
+      $po_notes = array();
+      $po_notes['postop_notes'] = $this->input->post('postop_day1');
+      $po_notes['link2patient'] = $patient_id;
+      $this->patient_model->insert_postsurgerynotes($po_notes);
+
+      /*--------------- insert postop comm notes -------------------- */
+      $po_commnotes = array();
+      $po_commnotes['postop_comm_notes'] = $this->input->post('postop_day2');
+      $po_commnotes['link2patient'] = $patient_id;
+      $this->patient_model->insert_postsurgery_commnotes($po_commnotes);
 
 			redirect('doctor_ctrl/patients');
 				

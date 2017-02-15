@@ -727,7 +727,7 @@ text-align:center">
   	<h1>Post Surgery Communication(Day of Surgery) for Family</h1><br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'action_taken', 'name' => 'action_taken','placeholder' => '','cols'=>'40','rows'=>'5','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'post_notes', 'name' => 'post_notes','placeholder' => '','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 	
@@ -735,7 +735,7 @@ text-align:center">
 	<br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => '','cols'=>'40','rows'=>'5','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'to_do', 'name' => 'to_do','placeholder' => '','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 	
@@ -743,7 +743,7 @@ text-align:center">
 	<br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Post op Communication','cols'=>'40','rows'=>'5','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'postop_day1', 'name' => 'postop_day1','placeholder' => 'Post op Communication','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 
@@ -751,7 +751,7 @@ text-align:center">
 	<br>
 	<div class="control-group">
 		<div class="controls">
-			<?php echo form_textarea(array('id' => 'surgeory_notes', 'name' => 'surgeory_notes','placeholder' => 'Post Surgery cmmunication','cols'=>'40','rows'=>'5','style'=>$style)); ?>
+			<?php echo form_textarea(array('id' => 'postop_day2', 'name' => 'postop_day2','placeholder' => 'Post Surgery cmmunication','cols'=>'40','rows'=>'5','style'=>$style)); ?>
 		</div>
 	</div>
 
@@ -1390,8 +1390,8 @@ text-align:center">
 text-align:center">
 <a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:getnextpage('dropdown11')"> 
 <i class="fa fa-arrow-left"></i>PREV</a>
-<a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:getnextpage('dental_history')"> 
-<i class="fa fa-arrow-right" ></i> NEXT</a>
+<a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:getnextpage('')"> 
+<i class="fa fa-arrow-right" ></i> SAVE</a>
 </div>
 </li>
 </ul>	

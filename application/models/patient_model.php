@@ -918,5 +918,17 @@ function getpatient_surgeryDetails($recnum)
 	return $query->result_array();	
   }
 
+  	function insert_patient_surgery($data)
+	{
+		$this->db->insert('patient_surgery', $data);
+		return $this->db->insert_id();
+	}
+
+	function insert_post_surgery($data)
+	{
+		$this->db->insert('patient_postop', $data);
+		return $this->db->insert_id();
+	}
+
 }
 ?>
