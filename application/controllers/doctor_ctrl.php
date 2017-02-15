@@ -2724,4 +2724,34 @@ function newpage()
 {
   $this->load->view("doctor/new");
 }
+
+
+function edit_surgery_details()
+{  
+$recnum = $this->uri->segment(3);
+
+$data['query_surgery']=$this->patient_model->getpatient_surgeryDetails($recnum);
+$data['query_surgerynotes']=$this->patient_model->getpatient_surgeryNotes($recnum);
+
+
+$data['recnum']=$this->uri->segment(3);
+$this->load->view('doctor/edit_surgery_details',$data);
+}
+
+
+function insert_surgerydetails()
+{    
+$udata=array();
+$udata['surgeon_name'] = $this->input->post('surgeon_name');  
+$udata['surgery_location'] = $this->input->post('surgery_location');  
+$udata['surgery_name'] = $this->input->post('surgery_name');        
+$udata['surgeon_contact_no'] = $this->input->post('surgeon_contact_no');
+$udata['location_contact_no'] = $this->input->post('location_contact_no');
+$udata['action_taken'] = $this->input->post('action_taken');
+$link2patient=$this->input->post('link2patient');
+
+$this->patient_model->update_surgerydetails($udata,$link2patient) ;
+$this->load->view('doctor/edit_surgery_details',$data);
+}
+
 }
