@@ -47,6 +47,7 @@ function getPaging(str)
 	$("#dropdown3").css({"display": "none"});
 	$("#surgery").css({"display": "none"});
 	$("#postsurgery").css({"display": "none"});
+
 	 
 	$("#home").removeClass("active in");
 	$("#dropdown3").css({"display": "none"});
@@ -56,18 +57,18 @@ function getPaging(str)
 	$("#dropdown3").removeClass("active in");
 	$("#surgery").removeClass("active in");
 	$("#postsurgery").removeClass("active in");
+	
+
 
 	var health_his=document.getElementById('med_history_rec').value;
-	var dental_his=document.getElementById('dental_history_rec').value;
+	
 	var consent_his=document.getElementById('consent_rec').value;
 
 	var health_rec="hel_0";
-	var dental_his="his_"+dental_his;
 	var consent_his="con_"+consent_his;
 
 	$('.clickableRow').removeClass("highlight");
 	$('#'+health_rec).addClass("highlight");
-	$('#'+dental_his).addClass("highlight");
 	$('#'+consent_his).addClass("highlight");
 
 	if(str == '#home')
@@ -90,18 +91,15 @@ function getPaging(str)
 	{
 	$("#dropdown3").css({"display": "inline"});
 	}
-	else if(str == '#dental_history')
-	{
-	$("#dental_history").css({"display": "inline"});
-	}
 	else if(str == '#surgery')
 	{
-		$("#surgery").css({"display": "inline"});
+	$("#surgery").css({"display": "block"});
 	}
-	else if(str == '#postsurgery')
+ 	else if(str == '#postsurgery')
 	{
-		$("#postsurgery").css({"display": "inline"});
-	}	
+	$("#postsurgery").css({"display": "inline"});
+	}
+
 }
 $(document).ready(function() 
 { 
@@ -115,25 +113,30 @@ $('#myTab_send').on('click','li ',function()
 		  $(".m-widget-body ul#myTab li.active a").attr("href") == '#profile' ||
 		  $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown2' ||
  $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown3' ||
-$(".m-widget-body ul#myTab li.active a").attr("href") == '#dental_history' || 
 $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown11' ||
- $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown1'||
- $(".m-widget-body ul#myTab li.active a").attr("href") == '#surgery'||
- $(".m-widget-body ul#myTab li.active a").attr("href") == '#postsurgery')
+ $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown1' || 
+  $(".m-widget-body ul#myTab li.active a").attr("href") == '#surgery' ||
+  $(".m-widget-body ul#myTab li.active a").attr("href") == '#postsurgery')
 		  {
 			$('#myTab li').removeClass('active');
 			$("#home").css({"display": "none"});
 			$("#profile").css({"display":  "none"});
 			$("#dropdown2").css({"display": "none"});
-            $("#dropdown3").css({"display": "none"});
-            $("#dental_history").css({"display": "none"});
-            $("#surgery").css({"display": "none"});
-            $("#postsurgery").css({"display": "none"});
+                        $("#dropdown3").css({"display": "none"});
+                        
+                        $("#surgery").css({"display": "none"});
+                        $("#postsurgery").css({"display": "none"});
 	 	    
-			$("[id=myTab_profile]").addClass("active");	
-			$("#dropdown11").addClass("active");		
+		$("[id=myTab_profile]").addClass("active");	
+$("#dropdown11").addClass("active");		
 			$("#dropdown1").css({"display": "block"});	
+			$("#dropdown1").css({"display": "block"});	
+			$("#dropdown1").css({"display": "block"});	
+			$("#dropdown1").css({"display": "block"});	
+
 			$("#dropdown1").addClass("active in");
+			$("#surgery1").addClass("active in");
+			$("#postsurgery1").addClass("active in");
 
 var new_val=health_iss.replace(/\s/g, '');
 var new_match=$('#'+new_val).attr("value");
