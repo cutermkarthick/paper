@@ -1563,6 +1563,12 @@ $data['surgery_notes']=$this->patient_model->getpatient_surgeryNotes($patient_id
 
 $data['post_surgery_notes']=$this->patient_model->postsurgeryNotes($patient_id);
 
+
+$data['postopnotes']=$this->patient_model->getpatient_postopNotes($patient_id);
+
+$data['postop_commnotes']=$this->patient_model->getpatient_postop_commNotes($patient_id);
+
+
 $data['health']=$this->patient_model->health_infoDetails4patient($patient_id);
 $data['den_his'] = $this->doctor_model->getdental_historydetails($patient_id);
 $data['consent'] = $this->doctor_model->getconsentdetails($patient_id);
@@ -1859,9 +1865,6 @@ $this->patient_model->insert_surgery_to_db($udata);
 }
 
 
-
-
-
 $udata=array();
 $udata['surgery_notes'] = $this->input->post('surgery_notes');
 if($this->input->post('surgery_notes') !='')
@@ -1872,11 +1875,8 @@ $this->patient_model->insert_surgerynotes($udata);
 
 
 $udata=array();
-$udata['postop_day1'] = $this->input->post('postop_day1');  
-$udata['postop_day2'] = $this->input->post('postop_day2');
 $udata['notes'] = $this->input->post('notes');
 $udata['to_do'] = $this->input->post('to_do');
-
 
 $res = $this->patient_model->postsurgery_infoRecnum($recnum) ;
 $recnum_postsurgery1 = $res->recnum_postsurgery;
@@ -1889,6 +1889,28 @@ else
 {
 $udata['link2patient'] = $recnum; 
 $this->patient_model->insert_postsurgery_to_db($udata); 
+}
+
+
+
+$udata=array();
+$udata['postop_day1'] = $this->input->post('postop_day1');
+if($this->input->post('postop_day1') != '')
+{  
+
+$udata['link2patient'] = $recnum; 
+print_r($udata) ;
+$this->patient_model->insert_postsurgerynotes($udata); 
+}
+
+
+
+$udata=array();
+$udata['postop_day2'] = $this->input->post('postop_day2');
+if($this->input->post('postop_day2') != '')
+{  
+$udata['link2patient'] = $recnum;   
+$this->patient_model->insert_postsurgery_commnotes($udata); 
 }
 
 
