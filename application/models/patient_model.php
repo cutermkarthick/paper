@@ -792,7 +792,6 @@ function health_infoRecnum($recnum)
 
 function getpatient_surgeryDetails($recnum)
 {
-
 	$query = $this->db->query("select 
 	surgeon_name,
 	surgeon_contact_no,
@@ -880,6 +879,43 @@ function getpatient_surgeryDetails($recnum)
 	$this->db->insert('patient_postop', $data);
 	return $this->db->insert_id();
 	}
+
+	function insert_postsurgerynotes($data)
+	{
+
+	$this->db->insert('patient_postop_notes', $data);
+	return $this->db->insert_id();
+	}
+
+	function insert_postsurgery_commnotes($data)
+	{
+	$this->db->insert('patient_postop_comm_notes', $data);
+	return $this->db->insert_id();
+	}
+
+
+
+   function getpatient_postopNotes($patientid)
+  {
+       $query = $this->db->query("select p.postop_notes, DATE_ADD(				 p.create_date, INTERVAL '13:00' HOUR_MINUTE) as time
+                from patient_postop_notes p
+                where
+                p.link2patient=$patientid
+                order by p.create_date desc");
+	return $query->first_row();	
+  }
+
+
+
+   function getpatient_postop_commNotes($patientid)
+  {
+       $query = $this->db->query("select p.postop_comm_notes, DATE_ADD(				 p.create_date, INTERVAL '13:00' HOUR_MINUTE) as time
+                from patient_postop_comm_notes p
+                where
+                p.link2patient=$patientid
+                order by p.create_date desc");
+	return $query->first_row();	
+  }
 
 }
 ?>

@@ -1107,20 +1107,37 @@ if(!empty($post_surgery_notes))
 
     $notes = $post_surgery_notes->notes;
     $to_do = $post_surgery_notes->to_do;
-    $postop_day1 = $post_surgery_notes->postop_day1;
-    $postop_day2 = $post_surgery_notes->postop_day2;
 
   }
 else
 {
   $notes = '';  
   $to_do = '';  
-  $postop_day1= '';  
-  $postop_day1 = ''; 
-
-  
   
 }
+
+if(!empty($postopnotes))
+{
+
+    $postopnotes1 = $postopnotes->postop_notes;
+  }
+else
+{
+  $postopnotes1 = '';  
+}
+
+
+if(!empty($postop_commnotes))
+{
+
+    $postopcommnotes1 = $postop_commnotes->postopcommnotes;
+  }
+else
+{
+  $postopcommnotes1 = '';  
+}
+
+
 
 ?>
 
@@ -1148,7 +1165,9 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Sur
 <label class="control-label" for="inputPassword">Post Op Communication </label>
 <div class="controls">
 <textarea rows="5" cols=20 name='postop_day1' id='postop_day1'>
-  <?=$postop_day1 ?></textarea>
+  </textarea>
+  <textarea rows="5" cols=20 name='postop_day1a' id='postop_day1a' style="background-color='#DFDFDF'" readonly="readonly" >
+  <?=$postopnotes1 ?></textarea>
 </div>
 </div>
 
@@ -1156,8 +1175,11 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Sur
 <label class="control-label" for="inputPassword" 
 style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication</label>
 <div class="controls">
-<textarea rows="5" cols=20 name='postop_day2' id='postop_day2'>
-  <?=$postop_day2 ?></textarea>
+<textarea rows="5" cols=20 name='postop_day2' id='postop_day2' >
+  </textarea>
+<textarea rows="5" cols=20 name='postop_day2a' id='postop_day2a'  style="background-color='#DFDFDF'" readonly="readonly" >
+<?=$postopcommnotes1 ?></textarea>
+
 </div>
 </div> 
 </div>

@@ -1,0 +1,12 @@
+ CREATE TABLE `patient_surgery` (
+  `recnum` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `create_date` date DEFAULT NULL,
+  `action_taken` blob,
+  `modified_date` date DEFAULT NULL,
+  `surgery_date` blob,
+  `surgeon_contact_no` blob,
+  `surgeory_location` blob,
+  `surgeory` blob,
+  `location_contact_no` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`recnum`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 
