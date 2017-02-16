@@ -1145,10 +1145,10 @@ Have you used any recreation drug in the last 6 months ?</label>
 <div class="clearfix"> </div>
 <div class="patients_social">
 
-<a href="http://facebook.com/paperlessdentists" target="_blank"> <i class="fa fa-facebook"></i> </a> 
+<a href="http://facebook.com/fluentsoftinc" target="_blank"> <i class="fa fa-facebook"></i> </a> 
 
 
-<a href="http://twitter.com/PaperlessD" target="_blank"><i class="fa fa-twitter"></i></a> 
+<a href="http://twitter.com/fluentsoftinc" target="_blank"><i class="fa fa-twitter"></i></a> 
 
 </div>
 

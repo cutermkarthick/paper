@@ -1222,10 +1222,10 @@ onClick='location.href="<?php echo base_url();?>patient_ctrl/appointments"' > <i
 <div class="clearfix"> </div>
 <div class="patients_social">
 
-<a href="http://facebook.com/paperlessdentists" target="_blank"> <i class="fa fa-facebook"></i> </a> 
+<a href="http://facebook.com/fluentsoftinc" target="_blank"> <i class="fa fa-facebook"></i> </a> 
 
 
-<a href="http://twitter.com/PaperlessD" target="_blank"><i class="fa fa-twitter"></i></a> 
+<a href="http://twitter.com/fluentsoftinc" target="_blank"><i class="fa fa-twitter"></i></a> 
 
 </div>
 

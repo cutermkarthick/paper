@@ -66,7 +66,7 @@ function index()
 function profile() 
 {
 
-	date_default_timezone_set('America/Los_Angeles');
+	// date_default_timezone_set('America/Los_Angeles');
 	$header['js_files'] = array();	
 
 	$clinic_id=$this->session->userdata('clinicid');
