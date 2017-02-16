@@ -9,7 +9,7 @@
 //==============================================
 class Login extends CI_Controller 
 {
-        function __construct()
+    function __construct()
 	{
         parent::__construct();
         $this->load->helper('url');
@@ -200,12 +200,13 @@ function fetch_updatedpassword()
        $this->admin_model->updatepassword($email,$password);
        $this->session->set_flashdata('flashMessage', 'New Password has been sent to your mail, Please check your mail and SignIn.');	  
        $this->load->view('smtpfns');
-$record=$this->admin_model->patientDetails4patient($data->link2patient);
-$name=$record->fname." ".$record->lname;
-$clinic=$record->name." ".$record->site_id;
-$clinic_name=$record->name;
+		$record=$this->admin_model->patientDetails4patient($data->link2patient);
+		$name=$record->fname." ".$record->lname;
+		$clinic=$record->name." ".$record->site_id;
+		$clinic_name=$record->name;
 
 	$this->smtp_model->setemail($this->input->post('email'));
+	// $this->smtp_model->setemail('cute.rmkarthick@gmail.com');
 	$this->smtp_model->setpassword($new_password);
 $this->smtp_model->setname($name);
 $this->smtp_model->setclinicid($clinic);

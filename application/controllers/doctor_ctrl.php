@@ -1326,7 +1326,8 @@ $this->appointments();
 }
 function update_status()
 {
-$udata['status'] = $this->input->post('status');	
+$udata['status'] = $this->input->post('status');  
+$udata['remarks'] = $this->input->post('remarks');	
 $this->doctor_model->update_Appt($udata,$this->input->post('recnum'));
 $this->index();
 }
@@ -1578,17 +1579,11 @@ function getpatient_info()
 
   $data['surgery']=$this->patient_model->getpatient_surgeryDetails($patient_id);
 
-
   $data['surgery_notes']=$this->patient_model->getpatient_surgeryNotes($patient_id);
-
 
   $data['post_surgery_notes']=$this->patient_model->postsurgeryNotes($patient_id);
 
-
   $data['postopnotes']=$this->patient_model->getpatient_postopNotes($patient_id);
-
-  // echo "<pre>";
-  // print_r($data['postopnotes']);exit;
 
   $data['postop_commnotes']=$this->patient_model->getpatient_postop_commNotes($patient_id);
 

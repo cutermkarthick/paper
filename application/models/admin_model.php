@@ -252,6 +252,7 @@ class admin_model extends CI_Model
 		{
 		   $this->db->insert('menu_items', $data);	   
 		}
+		
         function getclinicdetails4doc($recnum)
         {
             $query=$this->db->query("select d.*, c.name,c.site_id
@@ -265,7 +266,7 @@ class admin_model extends CI_Model
 			 left join user u on d.recnum = u.link2doctor
 			 where d.recnum = $recnum and
 				   u.link2doctor is null");
-//echo $query;
+			//echo $query;
             $result = $query->result();
 	    return $result;
         }

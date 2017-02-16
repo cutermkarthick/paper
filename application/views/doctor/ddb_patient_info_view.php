@@ -141,6 +141,7 @@ echo '<img id="img_switcher"  src="'.$query->img_location.'">';
         ?>
 
             <tr>     
+
             <th><a href="javascript:" onclick="javscript:getpatient_info('<?php echo $app["recnum"];?>')"><?php echo $i;?></a></th>
             <th><?php echo $app['appt_date'];?></th>
             <th><?php echo $app['appt_time'];?></th>
