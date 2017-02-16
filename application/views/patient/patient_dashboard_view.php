@@ -297,7 +297,7 @@ if($this->session->userdata('msg_leftnav') != '')
 <ul class="patients_rightnav">
 
 <li>
-<button onclick="javascript:getparam_value('home1')"   class="btn btn-large btn-info" type="button"> <i class="fa fa-refresh"></i>Personal Info</button>
+<button onclick="javascript:getparam_value('gp1')"   class="btn btn-large btn-info" type="button"> <i class="fa fa-refresh"></i>General Practise</button>
 </li>
 
 <li>
@@ -306,6 +306,10 @@ if($this->session->userdata('msg_leftnav') != '')
 
 <li>
 <button onclick="javascript:getparam_value('postsurgery1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Post Surgery</button>
+</li>
+
+<li>
+<button onclick="javascript:getparam_value('home1')"   class="btn btn-large btn-info" type="button"> <i class="fa fa-refresh"></i>Personal Info</button>
 </li>
 
 <li>

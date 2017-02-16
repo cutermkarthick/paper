@@ -85,7 +85,7 @@ $attributes = 'id="reason"  style="height:20px;padding:0px;width:150px" ';
 <td  style="color:#333333;"><?= $row->reason ?></td>
 
 <th width='15%'>Remarks</th>
-<td width='20%'  style="color:#333333;"><?= $row->remarks ?></td>
+<td width='20%'  style="color:#333333;"><textarea name="remarks" id="remarks"><?= $row->remarks ?></textarea></td>
 </tr>
 
 <?
@@ -93,6 +93,8 @@ $options = array(
                   'Pending'  => 'Pending',
                   'Confirmed'    => 'Confirmed',
                   'Closed'    => 'Closed',
+                  'Cancelled'    => 'Cancelled',
+                  'Waitlist'    => 'Waitlist'
                 );
 ?>
 <tr>

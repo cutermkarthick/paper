@@ -451,127 +451,140 @@ $param='familymember';
 $this->update_profile();
 }
 }
-function update_profile()
-{ 
-date_default_timezone_set('America/Los_Angeles');
-$header['js_files'] = array();
-$header['js_files'] = array('js/ddb_patients_view.js');
-$recnum=$this->session->userdata('recnum');
-$data['pagename']='patient_details'; 
-$data['param']=$this->input->post('param');
 
-array_push($header['js_files'], 'js/ddb_appointments_view.js');
-array_push($header['js_files'], 'js/ddb_message4date.js');
-array_push($header['js_files'], 'fullcalendar/lib/moment.min.js');
-array_push($header['js_files'], 'fullcalendar/fullcalendar.min.js');
-array_push($header['js_files'], 'datepicker/js/bootstrap-datepicker.js');
-$clinic_id=$this->session->userdata('clinicid');
-$header['menu']=$this->admin_model->getmenudetails($clinic_id);
-$data['search_patients']='';
-$data['search_patients_lname']='';
-$data['query']=$this->patient_model->patients_infoDetails($recnum);	
-$data['query_emer']=$this->patient_model->emer_infoDetails($recnum);	
-$data['query_health']=$this->patient_model->health_infoDetails($recnum);	
-$data['query_insur']=$this->patient_model->insur_infoDetails($recnum,$data['pagename']);	
+	function update_profile()
+	{
 
-$treat_type = 'treatment_to_be_done';
-$drugs_type = 'drugs_and_medication';
-$changes_type = 'changes_to_treatment_plan';
-$extract_type= 'extraction';
-$crown_type = 'crowns';
-$denture_type = 'dentures';
-$endendodontic_type= 'endodontic_treatment';
-$perio_type = 'periodontal_loss';
-$filling_type= 'fillings';
-$pedodon_type = 'pedodontics';
+		date_default_timezone_set('America/Los_Angeles');
+		$header['js_files'] = array();
+		$header['js_files'] = array('js/ddb_patients_view.js');
+		$recnum=$this->session->userdata('recnum');
+		$data['pagename']='patient_details'; 
+		$data['param']=$this->input->post('param');
 
-$data['treatment_to_be']=$this->patient_model->cansent_Details($recnum,$treat_type);
-$data['drugs_med']=$this->patient_model->cansent_Details($recnum,$drugs_type);
-$data['changes_treat']=$this->patient_model->cansent_Details
-($recnum,$changes_type);
+		array_push($header['js_files'], 'js/ddb_appointments_view.js');
+		array_push($header['js_files'], 'js/ddb_message4date.js');
+		array_push($header['js_files'], 'fullcalendar/lib/moment.min.js');
+		array_push($header['js_files'], 'fullcalendar/fullcalendar.min.js');
+		array_push($header['js_files'], 'datepicker/js/bootstrap-datepicker.js');
 
-$data['extact']=$this->patient_model->cansent_Details($recnum,$extract_type);
-$data['crown']=$this->patient_model->cansent_Details($recnum,$crown_type);
-$data['denture']=$this->patient_model->cansent_Details($recnum,$denture_type);
-$data['endendontic']=$this->patient_model->cansent_Details($recnum,$endendodontic_type);
-$data['perio']=$this->patient_model->cansent_Details($recnum,$perio_type);
-$data['filling']=$this->patient_model->cansent_Details($recnum,$filling_type);
-$data['pedodontic']=$this->patient_model->cansent_Details($recnum,$pedodon_type);
+		$clinic_id=$this->session->userdata('clinicid');
+		$header['menu']=$this->admin_model->getmenudetails($clinic_id);
+		$data['search_patients']='';
+		$data['search_patients_lname']='';
+		$data['query']=$this->patient_model->patients_infoDetails($recnum);	
+		$data['query_emer']=$this->patient_model->emer_infoDetails($recnum);	
+		$data['query_health']=$this->patient_model->health_infoDetails($recnum);	
+		$data['query_insur']=$this->patient_model->insur_infoDetails($recnum,$data['pagename']);	
 
-$clinic_id=$this->session->userdata('clinicid');
-$header['menu']=$this->admin_model->getmenudetails($clinic_id);
-$this->load->view("includes/pdbheader4profile", $header);
-if($this->session->userdata('profile_leftnav') == '')
-{
-    $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
-    redirect('login');
-}
+		$treat_type = 'treatment_to_be_done';
+		$drugs_type = 'drugs_and_medication';
+		$changes_type = 'changes_to_treatment_plan';
+		$extract_type= 'extraction';
+		$crown_type = 'crowns';
+		$denture_type = 'dentures';
+		$endendodontic_type= 'endodontic_treatment';
+		$perio_type = 'periodontal_loss';
+		$filling_type= 'fillings';
+		$pedodon_type = 'pedodontics';
 
-if($this->session->userdata('profile_leftnav') == '')
-{
-    $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
-    redirect('login');
-}
+		$data['treatment_to_be']=$this->patient_model->cansent_Details($recnum,$treat_type);
+		$data['drugs_med']=$this->patient_model->cansent_Details($recnum,$drugs_type);
+		$data['changes_treat']=$this->patient_model->cansent_Details
+		($recnum,$changes_type);
 
-if ($this->input->post('patient_name') != '' &&  $this->input->post('check_search') == 1 )
-{
-$senderarr=array('patient_name'=>$this->input->post('patient_name'));  
-$this->session->set_userdata($senderarr);
-$data['search_patients']=$this->session->userdata('patient_name');
-}
-else if (($this->session->userdata('patient_name') != '') && 
-$this->input->post('check_search') == 1 )
-{  
-$senderarr=array('patient_name'=>$this->input->post('patient_name'));  
-$this->session->set_userdata($senderarr);
-$data['search_patients']=$this->session->userdata('patient_name');
-}
-else if (($this->session->userdata('patient_name') != '') && 
-$this->input->post('check_search') == '' )
-{ 
-$data['search_patients']=$this->session->userdata('patient_name');
-}
-else if ($this->input->post('patient_name') == '' )
-{ 
-$senderarr=array('patient_name'=>$this->input->post('patient_name'));  
-$this->session->set_userdata($senderarr);
-$data['search_patients']=$this->session->userdata('patient_name');
-}
+		$data['extact']=$this->patient_model->cansent_Details($recnum,$extract_type);
+		$data['crown']=$this->patient_model->cansent_Details($recnum,$crown_type);
+		$data['denture']=$this->patient_model->cansent_Details($recnum,$denture_type);
+		$data['endendontic']=$this->patient_model->cansent_Details($recnum,$endendodontic_type);
+		$data['perio']=$this->patient_model->cansent_Details($recnum,$perio_type);
+		$data['filling']=$this->patient_model->cansent_Details($recnum,$filling_type);
+		$data['pedodontic']=$this->patient_model->cansent_Details($recnum,$pedodon_type);
 
-if ($this->input->post('patient_lname') != '' &&  $this->input->post('check_search') == 1 )
-{
-$senderarr=array('patient_lname'=>$this->input->post('patient_lname'));  
-$this->session->set_userdata($senderarr);
-$data['search_patients_lname']=$this->session->userdata('patient_lname');
-}
-else if (($this->session->userdata('patient_lname') != '') && 
-$this->input->post('check_search') == 1 )
-{  
-$senderarr=array('patient_lname'=>$this->input->post('patient_lname'));  
-$this->session->set_userdata($senderarr);
-$data['search_patients_lname']=$this->session->userdata('patient_lname');
-}
-else if (($this->session->userdata('patient_lname') != '') && 
-$this->input->post('check_search') == '' )
-{ 
-$data['search_patients_lname']=$this->session->userdata('patient_lname');
-}
-else if ($this->input->post('patient_lname') == '' )
-{ 
-$senderarr=array('patient_lname'=>$this->input->post('patient_lname'));  
-$this->session->set_userdata($senderarr);
-$data['search_patients_lname']=$this->session->userdata('patient_lname');
-}
-$data['family_mem']=$this->patient_model->family_infoDetails($recnum);
+		$clinic_id=$this->session->userdata('clinicid');
+		$header['menu']=$this->admin_model->getmenudetails($clinic_id);
 
-$data['med_his'] = $this->admin_model->getmed_his4patient($recnum);
-$data['health_info'] = $this->admin_model->gethealth_info($recnum);
+		$this->load->view("includes/pdbheader4profile", $header);
 
-//print_r($data) ;
+		if($this->session->userdata('profile_leftnav') == '')
+		{
+		    $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
+		    redirect('login');
+		}
 
-$this->load->view('patient/patient_profile_view',$data);
+		if($this->session->userdata('profile_leftnav') == '')
+		{
+		    $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
+		    redirect('login');
+		}
 
-}	
+		if ($this->input->post('patient_name') != '' &&  $this->input->post('check_search') == 1 )
+		{
+			$senderarr=array('patient_name'=>$this->input->post('patient_name'));  
+			$this->session->set_userdata($senderarr);
+			$data['search_patients']=$this->session->userdata('patient_name');
+		}
+		else if (($this->session->userdata('patient_name') != '') && $this->input->post('check_search') == 1 )
+		{  
+			$senderarr=array('patient_name'=>$this->input->post('patient_name'));  
+			$this->session->set_userdata($senderarr);
+			$data['search_patients']=$this->session->userdata('patient_name');
+		}
+		else if (($this->session->userdata('patient_name') != '') && $this->input->post('check_search') == '' )
+		{ 
+			$data['search_patients']=$this->session->userdata('patient_name');
+		}
+		else if ($this->input->post('patient_name') == '' )
+		{ 
+			$senderarr=array('patient_name'=>$this->input->post('patient_name'));  
+			$this->session->set_userdata($senderarr);
+			$data['search_patients']=$this->session->userdata('patient_name');
+		}
+
+		if ($this->input->post('patient_lname') != '' &&  $this->input->post('check_search') == 1 )
+		{
+			$senderarr=array('patient_lname'=>$this->input->post('patient_lname'));  
+			$this->session->set_userdata($senderarr);
+			$data['search_patients_lname']=$this->session->userdata('patient_lname');
+		}
+		else if (($this->session->userdata('patient_lname') != '') && $this->input->post('check_search') == 1 )
+		{  
+			$senderarr=array('patient_lname'=>$this->input->post('patient_lname'));  
+			$this->session->set_userdata($senderarr);
+			$data['search_patients_lname']=$this->session->userdata('patient_lname');
+		}
+		else if (($this->session->userdata('patient_lname') != '') && $this->input->post('check_search') == '' )
+		{ 
+			$data['search_patients_lname']=$this->session->userdata('patient_lname');
+		}
+		else if ($this->input->post('patient_lname') == '' )
+		{ 
+			$senderarr=array('patient_lname'=>$this->input->post('patient_lname'));  
+			$this->session->set_userdata($senderarr);
+			$data['search_patients_lname']=$this->session->userdata('patient_lname');
+		}
+
+		$data['family_mem']=$this->patient_model->family_infoDetails($recnum);
+		$data['med_his'] = $this->admin_model->getmed_his4patient($recnum);
+		$data['health_info'] = $this->admin_model->gethealth_info($recnum);
+
+		$data['surgery']=$this->patient_model->getpatient_surgeryDetails($recnum);
+
+	  	$data['surgery_notes']=$this->patient_model->getpatient_surgeryNotes($recnum);
+
+	  	$data['post_surgery_notes']=$this->patient_model->postsurgeryNotes($recnum);
+
+	  	$data['postopnotes']=$this->patient_model->getpatient_postopNotes($recnum);
+
+	  	$data['postop_commnotes']=$this->patient_model->getpatient_postop_commNotes($recnum);
+
+
+		//print_r($data) ;
+
+		$this->load->view('patient/patient_profile_view',$data);
+
+	}
+
 function insert_new_patient() 
 {
 date_default_timezone_set('America/Los_Angeles');

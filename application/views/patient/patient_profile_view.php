@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css" />
 <link rel="stylesheet" type="text/css" href="<?echo base_url()?>css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/meda.css" />
-<link href="https://www.paperlessdentists.com/portal/libs/custom/css/centered-cols.css" rel="stylesheet">
+<!-- <link href="https://www.paperlessdentists.com/portal/libs/custom/css/centered-cols.css" rel="stylesheet"> -->
 <link rel="stylesheet" href="<?echo base_url()?>signature-pad/build/jquery.signaturepad.css">
 <script src="<?echo base_url()?>signature-pad/build/flashcanvas.js"></script>
 <script src="<?echo base_url()?>signature-pad/build/json2.min.js"></script>
@@ -383,144 +383,171 @@ var divid =  url.split('#').pop();
 $(document).ready(function() 
 { 
 
-$('#myTab li').click(function()  
-{
-$("#home").css({"display": "none"});
-$("#profile").css({"display": "none"});
-$("#dropdown1").css({"display":  "none"});
-$("#dropdown2").css({"display": "none"});
-$("#dropdown3").css({"display": "none"});
-$("#consent").css({"display": "none"});
-$("#dental_history").css({"display": "none"});
+	$('#myTab li').click(function()  
+	{
+		$("#gp").css({"display": "none"});
+		$("#surgery").css({"display": "none"});
+		$("#postsurgery").css({"display": "none"});
+		$("#home").css({"display": "none"});
+		$("#profile").css({"display": "none"});
+		$("#dropdown1").css({"display":  "none"});
+		$("#dropdown2").css({"display": "none"});
+		$("#dropdown3").css({"display": "none"});
+		$("#consent").css({"display": "none"});
+		$("#dental_history").css({"display": "none"});
 
-param=this.id;
+		param=this.id;
 
-if(param == 'home1')
-{
-$("#home").css({"display": "block"});
-$('#home').addClass('active in');
-}
-else if(param == 'profile1')
-{
-$("#profile").css({"display": "block"});
-$('#profile').addClass('active in');
-}
-else if(param == 'dropdown11')
-{
-$("#dropdown1").css({"display": "block"});
-$('#dropdown1').addClass('active in');
-}
-else if(param == 'dropdown21')
-{
-$("#dropdown2").css({"display": "block"});
-$('#dropdown2').addClass('active in');
-}
-else if(param == 'familymember')
-{
-$("#dropdown3").css({"display": "block"});
-$('#dropdown3').addClass('active in');
-}   
-else if(param == 'consent')
-{
-$("#consent").css({"display": "block"});
-$('#consent').addClass('active in');
-}  
-else if(param == 'dental_history')
-{
-$("#dental_history").css({"display": "block"});
-$('#dental_history').addClass('active in');
-}   
-});
+		if(param == 'home1')
+		{
+			$("#home").css({"display": "block"});
+			$('#home').addClass('active in');
+		}
+		else if(param == 'profile1')
+		{
+			$("#profile").css({"display": "block"});
+			$('#profile').addClass('active in');
+		}
+		else if(param == 'dropdown11')
+		{
+			$("#dropdown1").css({"display": "block"});
+			$('#dropdown1').addClass('active in');
+		}
+		else if(param == 'dropdown21')
+		{
+			$("#dropdown2").css({"display": "block"});
+			$('#dropdown2').addClass('active in');
+		}
+		else if(param == 'familymember')
+		{
+			$("#dropdown3").css({"display": "block"});
+			$('#dropdown3').addClass('active in');
+			}   
+		else if(param == 'consent')
+		{
+			$("#consent").css({"display": "block"});
+			$('#consent').addClass('active in');
+			}  
+		else if(param == 'dental_history')
+		{
+			$("#dental_history").css({"display": "block"});
+			$('#dental_history').addClass('active in');
+		}   
+	});
 
-$("#myTab li#home1").removeClass("active");
-$("#home").css({"display": "none"});
-$("#profile").css({"display": "none"});
-$("#dropdown1").css({"display":  "none"});
-$("#dropdown2").css({"display": "none"});
-$("#dropdown3").css({"display": "none"});	
-$("#consent").css({"display": "none"});
-$("#dental_history").css({"display": "none"});
 
-if(parameter == 'home1'  || parameter == 'profile' || parameter == ''  )
-{
-$("#myTab li#home1").addClass("active");
-$("#home").css({"display": "inline"});
-$("#home").addClass("active in");
-}
-else if(parameter == 'profile1' )
-{
-$("#myTab li#profile1").addClass("active");
-$("#profile").css({"display":"inline"});
-$("#profile").addClass("active in"); 
-}
-else if(parameter == 'dropdown11' )
-{
-$("#myTab li#dropdown11").addClass("active");
-$("#dropdown1").css({"display" : "inline"});	
-$("#dropdown1").addClass("active in");
-} 
-else if(parameter == 'dropdown21' )
-{
-$("#myTab li#dropdown21").addClass("active");
-$("#dropdown2").css({"display" : "inline"});
-$("#dropdown2").addClass("active in");
-}
-else if(parameter == 'familymember' )
-{
-$("#myTab li#familymember").addClass("active");
-$("#dropdown3").css({"display" :"inline" });
-$("#dropdown3").addClass("active in");
-} 
-else if(parameter == 'consent' )
-{
-$("#myTab li#consent").addClass("active");
-$("#consent").css({"display" :"inline" });
-$("#consent").addClass("active in");
-} 
-else if(parameter == 'dental_history' )
-{
-$("#myTab li#dental_history").addClass("active");
-$("#dental_history").css({"display" :"inline" });
-$("#dental_history").addClass("active in");
-}
-$('html, body').animate({ scrollTop: 0 }, 20);	
+	$("#myTab li#home1").removeClass("active");
+	$("#gp").css({"display": "none"});
+	$("#surgery").css({"display": "none"});
+	$("#postsurgery").css({"display": "none"});
+	$("#home").css({"display": "none"});
+	$("#profile").css({"display": "none"});
+	$("#dropdown1").css({"display":  "none"});
+	$("#dropdown2").css({"display": "none"});
+	$("#dropdown3").css({"display": "none"});	
+	$("#consent").css({"display": "none"});
+	$("#dental_history").css({"display": "none"});
+
+	if(parameter == 'home1'  || parameter == 'profile' || parameter == ''  )
+	{
+		$("#myTab li#home1").addClass("active");
+		$("#home").css({"display": "inline"});
+		$("#home").addClass("active in");
+	}
+	else if(parameter == 'profile1' )
+	{
+		$("#myTab li#profile1").addClass("active");
+		$("#profile").css({"display":"inline"});
+		$("#profile").addClass("active in"); 
+	}
+	else if(parameter == 'dropdown11' )
+	{
+		$("#myTab li#dropdown11").addClass("active");
+		$("#dropdown1").css({"display" : "inline"});	
+		$("#dropdown1").addClass("active in");
+	} 
+	else if(parameter == 'dropdown21' )
+	{
+		$("#myTab li#dropdown21").addClass("active");
+		$("#dropdown2").css({"display" : "inline"});
+		$("#dropdown2").addClass("active in");
+	}
+	else if(parameter == 'familymember' )
+	{
+		$("#myTab li#familymember").addClass("active");
+		$("#dropdown3").css({"display" :"inline" });
+		$("#dropdown3").addClass("active in");
+	} 
+	else if(parameter == 'consent' )
+	{
+		$("#myTab li#consent").addClass("active");
+		$("#consent").css({"display" :"inline" });
+		$("#consent").addClass("active in");
+	} 
+	else if(parameter == 'dental_history' )
+	{
+		$("#myTab li#dental_history").addClass("active");
+		$("#dental_history").css({"display" :"inline" });
+		$("#dental_history").addClass("active in");
+	}
+	else if(parameter == 'gp1' )
+	{
+		$("#myTab li#gp1").addClass("active");
+		$("#gp").css({"display":"inline"});
+		$("#gp").addClass("active in"); 
+	}
+	else if(parameter == 'surgery1' )
+	{
+		$("#myTab li#surgery1").addClass("active");
+		$("#surgery").css({"display":"inline"});
+		$("#surgery").addClass("active in"); 
+	}
+	else if(parameter == 'postsurgery1' )
+	{
+		$("#myTab li#postsurgery1").addClass("active");
+		$("#postsurgery").css({"display":"inline"});
+		$("#postsurgery").addClass("active in"); 
+	}
+
+	$('html, body').animate({ scrollTop: 0 }, 20);	
 });
 
 function getaccordian(divid)
 {
 	if($('#'+divid).css("display") == "inline")
 	{
-	$('#'+divid).css({"display" :"none" });
-	 $('#'+divid).removeClass("in");
+		$('#'+divid).css({"display" :"none" });
+	 	$('#'+divid).removeClass("in");
 	}
 	else
 	{
-	 $('#'+divid).css({"display" :"inline" });
-	 $('#'+divid).addClass("in");
+		$('#'+divid).css({"display" :"inline" });
+		$('#'+divid).addClass("in");
 	}
 }
 
 function getparam_value(param)
 {
-  document.forms['form-horizontal130'].param.value=param;
-  document.forms['form-horizontal130'].submit();
+  	document.forms['form-horizontal130'].param.value=param;
+  	document.forms['form-horizontal130'].submit();
 }
 function getupdate_profile(param)
 {
-document.forms['form-horizontal140'].param.value=param;
-  document.forms['form-horizontal140'].submit();
+	document.forms['form-horizontal140'].param.value=param;
+  	document.forms['form-horizontal140'].submit();
 }
 function getfamily_id(value)
 {
-  document.forms['form-hor150'].value.value=value;
-  document.forms['form-hor150'].submit();
+  	document.forms['form-hor150'].value.value=value;
+  	document.forms['form-hor150'].submit();
 }
 </script>
 <?
-$attr=array('class' => 'form-horizontal2','id'=>'form-horizontal100','name'=>'form-horizontal140');
-echo form_open_multipart('patient_ctrl/update_patient',$attr);
+
+	$attr=array('class' => 'form-horizontal2','id'=>'form-horizontal100','name'=>'form-horizontal140');
+	echo form_open_multipart('patient_ctrl/update_patient',$attr);
 ?>
-<input type='hidden' name='param' id='param' value="<?echo $param ?>">
+	<input type='hidden' name='param' id='param' value="<?echo $param ?>">
 </form>
 
 <?
@@ -531,7 +558,7 @@ echo form_open_multipart('patient_ctrl/family_info', $attr1);
 </form>
 
 
-<!---------------------changed on march 27 2015------------------------------------->
+<!-- ============ changed on march 27 2015 =============== -->
 
 
  <?
@@ -563,7 +590,7 @@ echo form_open_multipart('patient_ctrl/update_profile',$attr);
 <div class="row-fluid">
 </div>
 <?
-//$str =array_pop( explode('/', $url) );
+
 $str=$param;
 ?>
 <div>
@@ -596,10 +623,22 @@ elseif($str == 'dental_history')
 {?>
 <h1>Dental History
 <?}
+elseif($str == 'gp1')
+{?>
+<h1>General Practise Info
+<?}
+elseif($str == 'surgery1')
+{?>
+<h1>Surgery Info
+<?}
+elseif($str == 'postsurgery1')
+{?>
+<h1>Post Surgery Info
+<?}
 if($str != 'familymember' && $str != 'consent' && $str != 'dental_history')
 {?>
-<img style='float:right' src="<?php echo base_url();?>img/edit.png" width="34" height="34" onclick="javascript:getupdate_profile('<?= $str ?>')">
-<?}
+<!-- <img style='float:right' src="<?php echo base_url();?>img/edit.png" width="34" height="34" onclick="javascript:getupdate_profile('<?= $str ?>')">
+ --><?}
 ?>
 </h1></div>
 
@@ -607,6 +646,319 @@ if($str != 'familymember' && $str != 'consent' && $str != 'dental_history')
 
 <div class="m-widget-body">
 <div class="tab-content" id="myTabContent">
+
+<div id="gp" class="tab-pane fade active in">
+<div class="row-fluid patient_history">
+<h1 style="font-weight:bold">General Practise </h1>
+<div class="clearfix"></div>
+
+<div style="margin-bottom:10px;" class="m-widget">
+
+<?php
+if(!empty($post_surgery_notes))
+{
+
+    $notes = $post_surgery_notes->notes;
+    $to_do = $post_surgery_notes->to_do;
+
+  }
+else
+{
+  $notes = '';  
+  $to_do = '';  
+  
+}
+
+
+
+
+?>
+
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" style='float: left;
+width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication (Day of Surgery) for family  </label>
+<div class="controls">
+<textarea rows="5" cols=20 name='notes' id='notes' readonly="readonly"><?=$notes ?></textarea>
+</div> 
+</div>  
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication To Do List(day of Surgery) for Patient </label>
+<div class="controls">
+<textarea rows="5" cols=20 name='to_do' id='to_do' readonly="readonly">
+  <?=$to_do ?></textarea>
+</div>
+</div>
+
+<div class="clearfix"></div> 
+<div class="control-group">
+<label class="control-label" for="inputPassword">Post Op Communication </label>
+<div class="controls">
+<!-- <textarea rows="5" cols=20 name='postop_day1' id='postop_day1'></textarea> -->
+  <textarea rows="5" cols=20 name='postop_day1a' id='postop_day1a' style="background-color='#DFDFDF'" readonly="readonly" >
+  <?php 
+    foreach ($postopnotes as $key => $po_notes) {
+     echo $po_notes['postop_notes']."\n";
+    }
+ ?></textarea>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" 
+style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication</label>
+<div class="controls">
+<!-- <textarea rows="5" cols=20 name='postop_day2' id='postop_day2' ></textarea> -->
+<textarea rows="5" cols=20 name='postop_day2a' id='postop_day2a'  style="background-color='#DFDFDF'" readonly="readonly" >
+<?php
+
+   foreach ($postop_commnotes as $key => $pocomm_notes) {
+     echo $pocomm_notes['postop_comm_notes']."\n";
+    }
+
+?></textarea>
+
+</div>
+</div> 
+</div>
+
+
+<ul class="patients_rightnav">
+<li>
+<!-- <div class="btn-toolbar" style="position:relative;text-align:center">
+<a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:submitpatient_view('profile3')"> 
+<i class="fa fa-arrow-right" ></i> SUBMIT</a>
+</div> -->
+</li>
+</ul>
+
+</div>
+</div>
+
+
+<div id="surgery" class="tab-pane fade">
+<div class="row-fluid patient_history">
+<h1 style="font-weight:bold">Patient's Surgery Details </h1>
+<div>
+<h1>
+<!-- <img style='float:right;margin-right:10px' src="<?php echo base_url();?>img/edit.png" width="34" height="34" onclick="editsurgery_details(<?echo $recnum ?>)"> -->
+</h1>
+</div>
+<div class="row-fluid patient_history" id='surgery_details'>
+
+<div class="clearfix"></div>
+
+<div style="margin-bottom:10px;" class="m-widget">
+<?php
+if(!empty($surgery))
+{
+  $surgeon_name = $surgery->surgeon_name;
+  $surgery_date = $surgery->surgery_date;
+  $surgery_location = $surgery->surgery_location;
+  $surgeon_contact_no = $surgery->surgeon_contact_no ;
+  $location_contact_no = $surgery->location_contact_no;
+  $action_taken = $surgery->action_taken;
+  $surgery_name = $surgery->surgery_name;
+}
+else
+{
+  $surgeon_name = '';  
+  $surgery_date = '';  
+  $surgery_location= '';  
+  $surgeon_contact_no = ''; 
+  $action_taken = ''; 
+  $surgeon_name = ''; 
+  $location_contact_no = ''; 
+  $surgery_name = ''; 
+
+}
+?>
+
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" style='float: left;
+width:350px;  padding-top: 5px;  text-align: left;'>Name of Surgery</label>
+<div class="controls">
+<input type="text"  name='surgery_name' id='surgery_name' placeholder="Name" value="<?= $surgery_name ?>" style="background-color='#DFDFDF'" readonly="readonly">
+</div>
+</div>  
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" 
+style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery Date</label>
+<div class="controls">
+<input type="text" placeholder="Name" name ='surgery_date' id='surgery_date' style="background-color='#DFDFDF'" readonly="readonly" value='<?= $surgery_date ?>'  >
+</div>
+</div>
+
+<div class="clearfix"></div> 
+<div class="control-group">
+<label class="control-label" for="inputPassword">Surgeon </label>
+<div class="controls">
+<input type="text" placeholder="Surgeron Name" value="<?= $surgeon_name ?>" name='surgeon_name' id='surgeon_name' style="background-color='#DFDFDF'" readonly="readonly">
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" 
+style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Surgery Contact No.</label>
+<div class="controls">
+<input type="text" name="surgeon_contact_no" id="surgeon_contact_no" placeholder="Name" value='<?= $surgeon_contact_no ?>'  style="background-color='#DFDFDF'" readonly="readonly">
+</div>
+</div> 
+
+
+
+<div class="control-group">
+<label class="control-label" for="inputPassword">Location</label>
+<div class="controls">
+<input type="text" placeholder="Location of Surgery" name='surgery_location'  id='surgery_location' value="<?= $surgery_location ?>" style="background-color='#DFDFDF'" readonly="readonly">
+</div>
+</div>
+
+
+<div class="control-group">
+<label class="control-label" for="inputPassword">Location Contact No. </label>
+<div class="controls">
+<input type="text" placeholder="Location Contact No"  name='location_contact_no' id='location_contact_no' value="<?= $location_contact_no ?>" style="background-color='#DFDFDF'" readonly="readonly">
+</div>
+</div>
+
+
+<div class="control-group">
+<label class="control-label" for="inputPassword">Action Taken </label>
+<div class="controls">
+<textarea rows="5" cols=20 name='action_taken' id='action_taken' style="background-color='#DFDFDF'" readonly="readonly">
+  <?=$action_taken ?>
+</textarea>
+</div>
+</div>
+
+
+<div class="row-fluid patient_history">
+<h1 style="font-weight:bold">Preparation for Surgery</h1>
+<div class="clearfix"></div>
+
+<div class="control-group">
+<label class="control-label" for="inputPassword">Please adher to the following precautions prior to Surgery </label>
+<div class="controls">
+<textarea rows="5" cols=20 name='surgery_notes1' id='surgery_notes1' style="background-color='#DFDFDF'" readonly="readonly">
+  <?php 
+   foreach ($surgery_notes as $key => $value) {
+    echo $value['surgery_notes']."\n";
+  }
+   ?>
+</textarea>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+<!-- <div class="btn-toolbar" style="position:relative;text-align:center">
+<a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:submitpatient_view('profile2')"> 
+<i class="fa fa-arrow-right" ></i> SUBMIT</a>
+</div> -->
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="postsurgery" class="tab-pane fade">
+<div class="row-fluid patient_history">
+<h1 style="font-weight:bold">Patient's Post Surgery Details </h1>
+<div class="clearfix"></div>
+
+<div style="margin-bottom:10px;" class="m-widget">
+
+<?php
+if(!empty($post_surgery_notes))
+{
+
+    $notes = $post_surgery_notes->notes;
+    $to_do = $post_surgery_notes->to_do;
+
+  }
+else
+{
+  $notes = '';  
+  $to_do = '';  
+  
+}
+
+
+
+
+?>
+
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" style='float: left;
+width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication (Day of Surgery) for family  </label>
+<div class="controls">
+<textarea rows="5" cols=20 name='notes' id='notes' readonly="readonly"><?=$notes ?></textarea>
+</div> 
+</div>  
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication To Do List(day of Surgery) for Patient </label>
+<div class="controls">
+<textarea rows="5" cols=20 name='to_do' id='to_do' readonly="readonly">
+  <?=$to_do ?></textarea>
+</div>
+</div>
+
+<div class="clearfix"></div> 
+<div class="control-group">
+<label class="control-label" for="inputPassword">Post Op Communication </label>
+<div class="controls">
+<!-- <textarea rows="5" cols=20 name='postop_day1' id='postop_day1'></textarea> -->
+  <textarea rows="5" cols=20 name='postop_day1a' id='postop_day1a' style="background-color='#DFDFDF'" readonly="readonly" >
+  <?php 
+    foreach ($postopnotes as $key => $po_notes) {
+     echo $po_notes['postop_notes']."\n";
+    }
+ ?></textarea>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label" for="inputPassword" 
+style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Surgery Communication</label>
+<div class="controls">
+<!-- <textarea rows="5" cols=20 name='postop_day2' id='postop_day2' ></textarea> -->
+<textarea rows="5" cols=20 name='postop_day2a' id='postop_day2a'  style="background-color='#DFDFDF'" readonly="readonly" >
+<?php
+
+   foreach ($postop_commnotes as $key => $pocomm_notes) {
+     echo $pocomm_notes['postop_comm_notes']."\n";
+    }
+
+?></textarea>
+
+</div>
+</div> 
+</div>
+
+
+<ul class="patients_rightnav">
+<li>
+<!-- <div class="btn-toolbar" style="position:relative;text-align:center">
+<a class="btn btn-success btn-lg" style="padding:8px 16px" id="btnNextContact" onclick="javascript:submitpatient_view('profile3')"> 
+<i class="fa fa-arrow-right" ></i> SUBMIT</a>
+</div> -->
+</li>
+</ul>
+
+</div>
+</div>
+
+
 <div  id="home" class="tab-pane fade active in">
 <div class="row-fluid patient_history">
 <h1>Personal Details </h1>
@@ -809,6 +1161,9 @@ echo form_submit(array('id' => 'submit', 'class' => 'btn btn-large btn-success',
 ?>	
 </div></div>
 
+
+
+
 <div id="profile" class="tab-pane fade">
 <div class="row-fluid patient_history">
 
@@ -978,6 +1333,7 @@ echo form_input(array('id' => 'emer_relation', 'name' => 'emer_relation','placeh
 
 </div>
 </div>
+
 <div id="dropdown1" class="tab-pane fade">
 <div class="row-fluid patient_history">
 
@@ -2001,6 +2357,8 @@ foreach($family_mem as $p)
 
 
 
+
+
 <div id="dropdown2" class="tab-pane fade">
 <div class="row-fluid patient_history">
 <div class="m-widget-body">
@@ -2119,6 +2477,7 @@ echo '<img src="'.$img2_location.'">';
 </div>
 </div>
 </div>
+
 </div>
 </div>
 </div>

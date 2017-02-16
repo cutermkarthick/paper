@@ -56,7 +56,7 @@ $style='';
 						
 						<div style="margin:0px;" class="span12">
 			            <button type="submit" style="margin-top: 15px" class="btn btn-primary" onclick="javascript: return check_req_fields()">Login</button>  
-			            <!-- <a style="margin-top:10px; position:relative; top:+10px;" href="<?php echo base_url();?>login/forgot_password">Forgot your password?</a> -->
+			            <a style="margin-top:10px; position:relative; top:+10px;" href="<?php echo base_url();?>login/forgot_password">Forgot your password?</a>
                         </div>
 <br>
 <br>

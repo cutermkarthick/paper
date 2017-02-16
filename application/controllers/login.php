@@ -9,7 +9,7 @@
 //==============================================
 class Login extends CI_Controller 
 {
-        function __construct()
+    function __construct()
 	{
         parent::__construct();
         $this->load->helper('url');
@@ -62,10 +62,7 @@ class Login extends CI_Controller
 		else
 		  $num_rows=$this->admin_model->checkuser_exist($userid,$password);
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d76de39612d4bb9457d44d833305f6491bb4187b
 		//for admin login
 		if($siteid =='' && count($num_rows) != '0')
 		{
@@ -202,12 +199,13 @@ function fetch_updatedpassword()
        $this->admin_model->updatepassword($email,$password);
        $this->session->set_flashdata('flashMessage', 'New Password has been sent to your mail, Please check your mail and SignIn.');	  
        $this->load->view('smtpfns');
-$record=$this->admin_model->patientDetails4patient($data->link2patient);
-$name=$record->fname." ".$record->lname;
-$clinic=$record->name." ".$record->site_id;
-$clinic_name=$record->name;
+		$record=$this->admin_model->patientDetails4patient($data->link2patient);
+		$name=$record->fname." ".$record->lname;
+		$clinic=$record->name." ".$record->site_id;
+		$clinic_name=$record->name;
 
 	$this->smtp_model->setemail($this->input->post('email'));
+	// $this->smtp_model->setemail('cute.rmkarthick@gmail.com');
 	$this->smtp_model->setpassword($new_password);
 $this->smtp_model->setname($name);
 $this->smtp_model->setclinicid($clinic);

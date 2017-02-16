@@ -99,8 +99,7 @@ $next_visit_due=date_format(date_create($p['next_visit_due']), 'M j, Y h:i a');
 	$next_visit_due='';
 ?>
 
-	<tr onclick=
-"javascript:getpatiet_id(<?= $i ?>);">     
+	<tr style="cursor: pointer;" onclick="javascript:getpatiet_id(<?= $i ?>);">     
 	<th><?php echo $p['first_name'];?></th>
 	<th><?php echo $p['last_name'];?></th>
 	<th><?php echo $p['gender'];?></th>

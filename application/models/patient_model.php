@@ -13,11 +13,11 @@
 */
 class patient_model extends CI_Model
 {
-function __construct()
-{
-parent::__construct();
-$this->load->database("paperless");
-}
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->database("paperless");
+	}
 function patients_info($patientlink) 
 {
 	$sql ="SELECT 
@@ -221,10 +221,8 @@ return $query->first_row();
 }
 function cansent_Details($recnum,$type)
 {
-$query = $this->db->query("select 	*
-from consent  
-where link2patient=$recnum and type='$type' ");
-return $query->first_row();	
+	$query = $this->db->query("select * from consent where link2patient=$recnum and type='$type' ");
+	return $query->first_row();	
 }
 public function update_health_info($data,$id)
 {
