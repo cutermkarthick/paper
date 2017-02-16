@@ -222,7 +222,7 @@ echo form_dropdown('location', $locnames,'',$attributes1);
 <div class="control-group">
 <?php
    $attributes = array('class' => 'control-label');
-   echo form_label("Dentist<span class='asterisk'>*</span>:", 'inputEmail', $attributes);
+   echo form_label("Doctor<span class='asterisk'>*</span>:", 'inputEmail', $attributes);
 ?>
 <div class="controls">
 <?php
@@ -348,13 +348,13 @@ echo form_label('Purpose:', 'inputPassword', $attributes);
 <?php
 $options = array(
 	'Consultation' => 'Consultation',
-	'Preventive' => 'Preventive',
-	'Deep Cleaning' => 'Deep Cleaning',
-	'Filling' => 'Filling',
-	'Root Canal' => 'Root Canal',
-	'Extraction' => 'Extraction',
-	'Implant' => 'Implant',
-	'Reason' => 'Reason',
+	// 'Preventive' => 'Preventive',
+	// 'Deep Cleaning' => 'Deep Cleaning',
+	// 'Filling' => 'Filling',
+	// 'Root Canal' => 'Root Canal',
+	// 'Extraction' => 'Extraction',
+	// 'Implant' => 'Implant',
+	// 'Reason' => 'Reason',
 	'Other' => 'Other',
 );
 $attributes = 'id="select01" class="input-xlarge"';

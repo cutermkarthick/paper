@@ -16,6 +16,8 @@ foreach($menu as $m)
 	if($m->item_name == 'report')
 	   $report=$m->item_name;
 }
+$type =  $this->session->userdata('type');
+
 $session_arr=array('home_leftnav'=>$home);
 $this->session->set_userdata($session_arr);
 $session_arr1=array('profile_leftnav'=>$profile);
@@ -167,7 +169,7 @@ if($appts != '')
 				</a>
 			</li>
 <?}
-if($msg != '')
+if($msg != '' && $type !='operator')
 {?>
 
 			<li class="">
@@ -187,7 +189,7 @@ if($msg != '')
 				</a>
 			</li>
 <?}
-if($report != '')
+if($report != '' && $type !='operator') 
 {?>
 
 			<li class="">

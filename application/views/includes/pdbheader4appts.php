@@ -16,6 +16,7 @@ foreach($menu as $m)
 	if($m->item_name == 'report')
 	   $report=$m->item_name;
 }
+
 $session_arr=array('home_leftnav'=>$home);
 $this->session->set_userdata($session_arr);
 $session_arr1=array('profile_leftnav'=>$profile);
@@ -92,9 +93,9 @@ $this->session->set_userdata($session_arr4);
                      </div>
                      <div class="pull-right span3 header_links" style="margin-top: -48px; margin-right: 18px;">
                          <ul>
-                         	<li> <h1>Mr <?= $this->session->userdata('userid') ?></h1></li>
+                         	<li> <h1 style="margin-right:70px">Mr <?= $this->session->userdata('userid') ?></h1></li>
                             <li> <h2><?= $this->session->userdata('clinic') ?></h2></li>                            
-                            <li class="imgrect">  <img src="<?php echo base_url(). "img/profile.jpg" ?>"> </li>
+                           
                          </ul>
                      </div>
                      

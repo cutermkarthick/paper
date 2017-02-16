@@ -16,6 +16,8 @@ foreach($menu as $m)
 	if($m->item_name == 'report')
 	   $report=$m->item_name;
 }
+$type =  $this->session->userdata('type');
+
 $session_arr=array('home_leftnav'=>$home);
 $this->session->set_userdata($session_arr);
 $session_arr1=array('profile_leftnav'=>$profile);
@@ -164,7 +166,7 @@ Appointments
 </a>
 </li>
 <?}
-if($msg != '')
+if($msg != '' && $type !='operator')
 {?>
 
 <li class="active">
@@ -184,7 +186,7 @@ Message
 </a>
 </li>
 <?}
-if($report != '')
+if($report != '' && $type !='operator')
 {?>
 <li class="">
 <a href="<?php echo base_url("doctor_ctrl")."/reports" ?>" >

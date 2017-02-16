@@ -16,6 +16,7 @@ foreach($menu as $m)
 	if($m->item_name == 'report')
 	   $report=$m->item_name;
 }
+$type =  $this->session->userdata('type');
 $session_arr=array('home_leftnav'=>$home);
 $this->session->set_userdata($session_arr);
 $session_arr1=array('profile_leftnav'=>$profile);
@@ -64,7 +65,7 @@ $this->session->set_userdata($session_arr4);
 		<div class="navbar-inner m-inner">
 			<div class="container-fluid">
 				<a class="brand m-brand" href="<?php echo base_url("").'/doctor_ctrl' ?>" style="width:100%; " > 
-				<img src="<?php echo base_url()."img/logo.png" ?>" style="height: 56px; width: 80%;"> </a>
+				<img src="<?php echo base_url()."img/logo.png" ?>" style="height: 60px; width: 80%;"> </a>
 				
 				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 		            <span class="icon-bar"></span>
@@ -169,7 +170,7 @@ if($appts != '')
 				</a>
 			</li>
 <?}
-if($msg != '')
+if($msg != '' && $type !='operator')
 {?>
 
 			<li class="">
@@ -189,7 +190,7 @@ if($msg != '')
 				</a>
 			</li>
 <?}
-if($report != '')
+if($report != '' && $type !='operator')
 {?>
 
 			<li class="">
