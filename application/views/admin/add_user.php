@@ -60,7 +60,7 @@ function GetAllEmps()
 	document.getElementById('doctor_seg1').style.display ='none';
 	document.getElementById('patient_seg').style.display ='none';
 	document.getElementById('patient_seg1').style.display ='none';
-	if(document.forms[0].type.value == 'doctor')
+	if(document.forms[0].type.value == 'doctor' || document.forms[0].type.value == 'operator')
 	{
 	  document.getElementById('clinic_seg').style.display='';
 	  document.getElementById('clinic_seg1').style.display='';
@@ -89,8 +89,9 @@ function GetAllEmps()
 	   return false;
 	}	
 
-	if(ind == 'doctor')
+	if(ind == 'doctor' || ind=='patient' || ind=='operator')
 		{
+			// alert("REached") ;
 			$.get("<?php echo base_url();?>admin_ctrl/getdocdetails/"+document.getElementById('clinicid').value,function(msg) 
 			{
 		   if(msg !="")
