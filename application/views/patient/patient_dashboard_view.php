@@ -301,6 +301,14 @@ if($this->session->userdata('msg_leftnav') != '')
 </li>
 
 <li>
+<button onclick="javascript:getparam_value('surgery1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Surgery</button>
+</li>
+
+<li>
+<button onclick="javascript:getparam_value('postsurgery1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Post Surgery</button>
+</li>
+
+<li>
 <button onclick="javascript:getparam_value('profile1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Emergency Info</button>
 </li>
 
@@ -315,20 +323,16 @@ if($this->session->userdata('msg_leftnav') != '')
 <button onclick="javascript:getparam_value('familymember')"  class="btn btn-large btn-info" onclick=" location.href='profile.html#familymember'" type="button" ><i class="fa fa-refresh"></i> Family Member</button>
 </li>
 
-<li>
-<button onclick="javascript:getparam_value('dental_history')" class="btn btn-large btn-info" onclick=" location.href='profile.html#dental_history'" type="button" ><i class="fa fa-refresh"></i> Dental History</button>
-</li>
-
 </ul>
 
 
 <div class="clearfix"> </div>
 <div class="patients_social">
 
-<a href="http://facebook.com/paperlessdentists" target="_blank"> <i class="fa fa-facebook"></i> </a> 
+<a href="http://facebook.com/fluentsoftinc" target="_blank"> <i class="fa fa-facebook"></i> </a> 
 
 
-<a href="http://twitter.com/PaperlessD" target="_blank"><i class="fa fa-twitter"></i></a> 
+<a href="http://twitter.com/fluentsoftinc" target="_blank"><i class="fa fa-twitter"></i></a> 
 
 </div>
 

@@ -609,7 +609,7 @@ if($str != 'familymember' && $str != 'consent' && $str != 'dental_history')
 <div class="tab-content" id="myTabContent">
 <div  id="home" class="tab-pane fade active in">
 <div class="row-fluid patient_history">
-<h1>Personal Details dsfg</h1>
+<h1>Personal Details </h1>
 <div class="clearfix"></div>
 <div style="margin-bottom:10px;" class="m-widget">
 
@@ -3329,10 +3329,27 @@ onClick='location.href="<?php echo base_url();?>patient_ctrl/messages"'> <i clas
 <ul class="patients_rightnav">
 
 
+
+<li>
+<button onclick="javascript:getparam_value('gp1')"  
+  class="btn btn-large btn-info" type="button"> <i class="fa fa-refresh"></i>General Practice</button>
+</li>
+
+
+<li>
+<button onclick="javascript:getparam_value('surgery1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Surgery</button>
+</li>
+
+<li>
+<button onclick="javascript:getparam_value('postsurgery1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Post Surgery</button>
+</li>
+
+
 <li>
 <button onclick="javascript:getparam_value('home1')"  
   class="btn btn-large btn-info" type="button"> <i class="fa fa-refresh"></i>Personal Info</button>
 </li>
+
 
 <li>
 <button onclick="javascript:getparam_value('profile1')"  type="button" class="btn btn-large btn-info"> <i class="fa fa-refresh"></i>Emergency Info</button>
@@ -3354,19 +3371,15 @@ onClick='location.href="<?php echo base_url();?>patient_ctrl/messages"'> <i clas
 Family Member</button>
 </li>
 
-<li>
-<button onclick="javascript:getparam_value('dental_history')"  class="btn btn-large btn-info" onclick="location.href='profile.html#dental_history'" type="button" ><i class="fa fa-refresh"></i> Dental History</button>
-</li>
-
 
 </ul>
 <div class="clearfix"> </div>
 <div class="patients_social">
 
-<a href="http://facebook.com/paperlessdentists" target="_blank"> <i class="fa fa-facebook"></i> </a> 
+<a href="http://facebook.com/fluentsoftinc" target="_blank"> <i class="fa fa-facebook"></i> </a> 
 
 
-<a href="http://twitter.com/PaperlessD" target="_blank"><i class="fa fa-twitter"></i></a> 
+<a href="http://twitter.com/fluentsoftinc" target="_blank"><i class="fa fa-twitter"></i></a> 
 
 </div>
 
