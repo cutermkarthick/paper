@@ -1,5 +1,5 @@
 <form name="formhealth_history" id="formConsent"
-  class="form-horizontal2 sigPad4health" action="<?echo base_url()?>doctor_ctrl/insert_healthhistory" method="post" novalidate="novalidate">
+  class="form-horizontal2 sigPad4health" action="<?echo base_url()?>doctor_ctrl/insert_surgerydetails" method="post" novalidate="novalidate">
 
 
 <?php

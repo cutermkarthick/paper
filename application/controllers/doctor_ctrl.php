@@ -2728,6 +2728,7 @@ $this->load->view('doctor/edit_surgery_details',$data);
 
 function insert_surgerydetails()
 {    
+
 $udata=array();
 $udata['surgeon_name'] = $this->input->post('surgeon_name');  
 $udata['surgery_location'] = $this->input->post('surgery_location');  

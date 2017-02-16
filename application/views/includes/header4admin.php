@@ -55,7 +55,7 @@ var parameter =  url.split('/').pop();
 
 					 
                      
-                     <div style="margin-top:10px;" class="pull-right span2" style="margin-top: -53px; margin-right: 18px;">
+                     <div  class="pull-right span2" style="margin-top: -53px; margin-right: 18px;">
                          <div class="btn-group pull-right">
                             <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
                                 <i class="icon-user"></i> Profile
