@@ -28,6 +28,13 @@ function check_req_fields()
     {
        errmsg += "Please Select the Patient\n";
     }
+
+    if(document.forms[0].type.value == 'operator' && document.forms[0].link2patient.value == '')
+    {
+       errmsg += "Please Select the Operator\n";
+    }
+
+
       if((document.forms[0].type.value == 'doctor' && document.forms[0].clinicname.value == '') ||
 	(document.forms[0].type.value == 'patient' && document.forms[0].link2clinic.value == ''))
 	{
@@ -168,7 +175,8 @@ if(isset($flash_message))
 $options=array(
 "select"=>"Select",
 "doctor"=>'Doctor',
-"patient"=>'Patient');
+"patient"=>'Patient',
+"operator"=>'Operator');
 $attributes = 'id="type" onchange="GetAllEmps()"';
 echo form_dropdown('type', $options,"select", $attributes);
 ?>
