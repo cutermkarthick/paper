@@ -52,9 +52,15 @@ if(isset($flash_message))
 <div class="control-group" style="margin-right:10px">
 <ul class="patients_rightnav">
 <li>
+<?php
+$type = $this->session->userdata('type') ; 
+if($type =='doctor')
+{
+?>
 <button id='search' style="width:7%;float:right;text-align:center" onclick='location.href="<?php echo base_url();?>doctor_ctrl/getnew_patient"'
  class="btn  btn-info" type="button"> 
 <i ></i>ADD</button>
+<?php } ?>
 </li>
 </ul>
 </div>

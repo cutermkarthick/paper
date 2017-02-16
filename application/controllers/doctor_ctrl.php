@@ -2431,6 +2431,8 @@ $email=$this->input->post('email');
 		$clinic=$this->admin_model->getclinic_details($clinic_id);
 		$data['clinic_name']=$clinic->name.' '.$clinic->site_id;
 		$doctor_id=$this->session->userdata('doctor_id');
+
+    // echo $doctor_id ;
 		$doctor=$this->admin_model->emailDetails($doctor_id);
 		$data['doctor_name']=$doctor->fname.' '.$doctor->lname;
 
