@@ -220,8 +220,8 @@ As a reminder, we are here for you and you can always send Secure Messages to us
 	
 		$msg="
 Please click on the URL below or copy and paste the URL into the address bar of your browser to change your password :
-<a href='http://$host_name/paperless/login/forgotpassword/$new_email'>http://$host_name/paperless/login/forgotpassword/$new_email</a>
-If you have not requested a password reset, please let us know at info@paperlessdentists.com";
+<a href='http://$host_name/fluentpmr/login/forgotpassword/$new_email'>http://$host_name/fluentpmr/login/forgotpassword/$new_email</a>
+If you have not requested a password reset, please let us know at info@fluentpmr.com";
 	
 	$tt = file_get_contents('template.template',true);
 	//echo $contactStr = ob_get_clean();
@@ -234,7 +234,7 @@ If you have not requested a password reset, please let us know at info@paperless
 	$tt= str_replace("{{Hospitaldentist}}",$Hospitaldentist,$tt);
 	$tt=str_replace("{{basePath}}",$host_name,$tt);
 
-        $headers = 'From: <admin@paperlessdentists.com>' . " \r\n";
+        $headers = 'From: <admin@fluentpmr.com>' . " \r\n";
         $headers .= "MIME-Version: 1.0" . " \r\n";
         $headers .= "Content-type:text/html" . " \r\n";
 	//if(smtp_mail($this->email, 'Your New Password...', $tt))

@@ -186,7 +186,7 @@ $next_appt = '';
 
 <div style="margin-top:30px;" class="row-fluid">
 <div class="span4 patients_info">
-<h1>My Dentist :   </h1>
+<h1>My Doctor :   </h1>
 <UL>
 <?php
     if (count($query) > 0)

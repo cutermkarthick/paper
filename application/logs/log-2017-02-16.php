@@ -5470,3 +5470,148 @@ ERROR - 2017-02-16 13:52:13 --> Severity: 8192  --> mysql_pconnect(): The mysql 
 ERROR - 2017-02-16 13:52:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
 ERROR - 2017-02-16 13:53:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
 ERROR - 2017-02-16 13:53:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 13:59:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 13:59:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 13:59:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 13:59:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:24 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:55 --> You did not select a file to upload.
+ERROR - 2017-02-16 14:15:55 --> Severity: Notice  --> Undefined index: upload_data C:\xampp\htdocs\paperless\application\controllers\doctor_ctrl.php 1410
+ERROR - 2017-02-16 05:15:56 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\paperless\application\models\smtp_model.php 524
+ERROR - 2017-02-16 14:15:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:15:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:44 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\controllers\login.php 76
+ERROR - 2017-02-16 14:16:49 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:16:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\controllers\login.php 76
+ERROR - 2017-02-16 14:16:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:17:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:17:06 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\controllers\login.php 76
+ERROR - 2017-02-16 14:17:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: surgery_notes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2282
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2283
+ERROR - 2017-02-16 05:18:20 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 05:18:20 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:20 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:18:21 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:21 --> 404 Page Not Found --> patient_ctrl/css
+ERROR - 2017-02-16 14:18:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:19:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:22:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:22:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:40:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:40:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:40:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:40:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:40:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 14:46:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91

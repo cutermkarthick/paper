@@ -7,10 +7,10 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                       // Specify main and backup server
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'fluentech@gmail.com';                   // SMTP username
-$mail->Password = 'bm1547';               // SMTP password
+$mail->Password = 'B0361man%1547';               // SMTP password
 //$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 //$mail->Port = 587;                                    //Set the SMTP port number - 587 for authenticated TLS
-$mail->setFrom('amit@gmail.com', 'Amit Agarwal');     //Set who the message is to be sent from
+$mail->setFrom('fluentech@gmail.com', 'Amit Agarwal');     //Set who the message is to be sent from
 //$mail->addReplyTo('labnol@gmail.com', 'First Last');  //Set an alternative reply-to address
 //$mail->addAddress('josh@example.net', 'Josh Adams');  // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
