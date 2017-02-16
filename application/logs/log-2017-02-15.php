@@ -2296,3 +2296,549 @@ ERROR - 2017-02-15 22:21:01 --> Severity: Notice  --> Undefined property: stdCla
 ERROR - 2017-02-15 22:21:01 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
 ERROR - 2017-02-15 22:21:01 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
 ERROR - 2017-02-15 22:21:01 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:00:45 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:00:45 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:00:45 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:28:17 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:28:17 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:28:17 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:31:30 --> Severity: Notice  --> Undefined variable: query C:\xampp\htdocs\paperless\application\views\patient\pdb_appointments_view.php 189
+ERROR - 2017-02-15 23:31:30 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\pdb_appointments_view.php 189
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:31:31 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:31:31 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:31:31 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:32:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:32:13 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:32:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:32:46 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:32:46 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:32:46 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:33:17 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:33:17 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:33:17 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:46:51 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:46:51 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:46:51 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1338
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1353
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1372
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1387
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1406
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1421
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1439
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1454
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1471
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1490
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1505
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1519
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1536
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1551
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1570
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1585
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1604
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1619
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1636
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1651
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1670
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1688
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1703
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:47:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1710
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1725
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1744
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1764
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1778
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1798
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1812
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1829
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:47:55 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1845
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1927
+ERROR - 2017-02-15 23:47:55 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974
+ERROR - 2017-02-15 23:47:55 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1974

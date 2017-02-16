@@ -63,6 +63,14 @@ var message="Sorry, right-click has been disabled!";
 <div class="main-container">
 <div class="container-fluid">
 <section>
+
+<?php 
+
+// 	echo "<pre>";
+// print_r($query); exit;
+
+?>
+
 <div style=" border:0px; margin:10px 0px;"class="sub_title row-fluid">
 <div class="span6"> <h1>Welcome to <?php echo $query->fullname ?> </h1></div> 
 
@@ -75,11 +83,19 @@ var message="Sorry, right-click has been disabled!";
 <div class="patients_pic">
 <?
 
-
-echo '<img id="img_switcher"  src="'.$query->img_location.'">';
-?>
+if (!empty($query->img_location)) 
+{
+	echo '<img id="img_switcher"  src="'.$query->img_location.'">';
+}
+else
+{ ?>
+	
+	<img src="<?php echo base_url();?>img/profile_pic.png" id="img_switcher">
+<?php
+}?>
 </div>
 </div>
+<!-- http://localhost/paperless/img/profile.jpg -->
 <!---------------------changed on march 27 2015 ------------------------------------->
 
 <?
