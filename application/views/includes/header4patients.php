@@ -63,7 +63,8 @@ $this->session->set_userdata($session_arr4);
 	<div class="navbar navbar-fixed-top m-header" id='med_condition'>
 		<div class="navbar-inner m-inner">
 			<div class="container-fluid">
-				<a class="brand m-brand" href="<?php echo base_url("").'/doctor_ctrl' ?>" style="width:100%"> <img src="<?php echo base_url()."img/logo.png" ?>" > </a>
+				<a class="brand m-brand" href="<?php echo base_url("").'/doctor_ctrl' ?>" style="width:100%; " > 
+				<img src="<?php echo base_url()."img/logo.png" ?>" style="height: 56px; width: 80%;"> </a>
 				
 				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 		            <span class="icon-bar"></span>

@@ -62,7 +62,10 @@ class Login extends CI_Controller
 		else
 		  $num_rows=$this->admin_model->checkuser_exist($userid,$password);
 
-
+		echo "siteid $siteid"."<br>";
+		echo "num rows ";
+		echo"<pre>";
+		print_r($num_rows); exit;
 		//for admin login
 		if($siteid =='' && count($num_rows) != '0')
 		{
