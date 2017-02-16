@@ -142,6 +142,7 @@ select{
 	background-color: white;
 	margin-top: 20px;
 	padding-bottom: 20px;
+	padding-right: 20px;
 	border: 1px solid #999;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	*border: 1px solid #999;
