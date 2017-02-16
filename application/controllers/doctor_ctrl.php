@@ -33,12 +33,13 @@ function __construct()
 }
 function index() 
 {
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $header['js_files'] = array();
 
 $clinic_id=$this->session->userdata('clinicid');
 $userid=$this->session->userdata('userid');
 $doctor_id=$this->session->userdata('doctor_id');
+$operator_id=$this->session->userdata('operator_id');
 
 $header['menu']=$this->admin_model->getmenudetails($clinic_id);
 $header['count_read']=$this->doctor_model->totunread_patientcount();
@@ -69,12 +70,21 @@ $data['no_insurance']=$no_insur->numrows;
 $data['pend_appt']=$this->doctor_model->getpatientDetails();
 
 
+$type =  $this->session->userdata('type');
+if($type =='doctor')
+{
 $this->load->view('doctor/doctor_dashboard_view',$data);
+}
+else
+{
+$this->load->view('doctor/operator_dashboard_view',$data);
+}
 $this->load->view("includes/footer");
 }
+
 function getappts4date()
 {
-	date_default_timezone_set('America/Los_Angeles');
+	date_default_timezone_set('Asia/Kolkata');
 	$inpdate = $this->uri->segment(3);
 	$data['query']=$this->doctor_model->getappointment_info($inpdate);
 	$data['date']=$inpdate;
@@ -341,14 +351,14 @@ function pt()
 {
 $data1['patients'] = $this->doctor_model->patients_t();
 
-echo "<br><br>";
+
 $data['patients'] = $this->doctor_model->patients_info();
-echo "<br><br>";
+
 }
 
 function patients_info() 
 {
-  date_default_timezone_set('America/Los_Angeles');
+  date_default_timezone_set('Asia/Kolkata');
   $header['js_files'] = array('js/ddb_patient_info.js');
   $clinic_id=$this->session->userdata('clinicid');
   $header['menu']=$this->admin_model->getmenudetails($clinic_id);
@@ -395,7 +405,7 @@ function patients_info()
 
 function appointments() 
 {
-  date_default_timezone_set('America/Los_Angeles');
+  date_default_timezone_set('Asia/Kolkata');
   $this->load->helper(array('form'));
   $this->load->library('form_validation');
   $header['js_files'] = array('js/ddb_appointments_view.js');
@@ -428,7 +438,7 @@ function appointments()
 }
 function messages()
 {
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $this->load->helper(array('form'));  
 $header['js_files'] = array('js/ddb_message4date.js'); 
 array_push($header['js_files'], 'js/ddb_patients_view.js');
@@ -821,7 +831,7 @@ function temp()
 
 function getlocdetails()
 {
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $options = array(
 "08:00:00" ,
 "08:30:00",
@@ -977,7 +987,7 @@ echo json_encode($chkdb1);
 
 function listappts()
 {
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $patientname = $this->input->post('patientname');
 $status =$this->input->post('status');
 $reason= $this->input->post('reason');
@@ -1541,7 +1551,7 @@ function getpatient_info()
   $health_iss=$val;
   $header['js_files'] = array();
   $data['health_info'] = $this->admin_model->gethealth_info($patient_id);
-  date_default_timezone_set('America/Los_Angeles');
+  date_default_timezone_set('Asia/Kolkata');
   // $header['js_files'] = array('js/ddb_patient_info.js');
 
   // array_push($header['js_files'], 'js/ddb_appointments_view.js');
@@ -1616,7 +1626,7 @@ function getpatient_info()
 
 function update_patient()
 {
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $header['js_files'] = array('js/ddb_patient_info.js');
 $clinic_id=$this->session->userdata('clinicid');
 $header['menu']=$this->admin_model->getmenudetails($clinic_id);
@@ -1648,7 +1658,7 @@ $this->load->view('doctor/getattachment',$data);
 }
 function dental_historydetails()
 {   
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $header['js_files'] = array();
 
 $data['den_his'] = $this->doctor_model->getdental_history($this->uri->segment(3));	
@@ -1659,7 +1669,7 @@ $this->load->view('doctor/dental_historydetails',$data);
 }
 function update_dentalhistory()
 {
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 
 $data['den_his'] = $this->doctor_model->getdental_history($this->uri->segment(3));	
 $data['recnum']=$this->uri->segment(4);
@@ -1670,7 +1680,8 @@ $this->load->view('doctor/edit_dental_history',$data);
 }
 function getapp_details()
 {
-$recnum =$this->uri->segment(3);date_default_timezone_set('America/Los_Angeles');
+$recnum =$this->uri->segment(3);
+date_default_timezone_set('Asia/Kolkata');
 $data['row'] = $this->doctor_model->getapptdata4update($recnum);
 $data['recnum']=$recnum;
 $this->load->view('doctor/update_dashboard',$data); 
@@ -1729,7 +1740,7 @@ $this->getpatient_info();
 function update_healthhistory()
 {
 $recnum =$this->uri->segment(3);
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Asia/Kolkata');
 $header['js_files'] = array();
 $clinic_id=$this->session->userdata('clinicid');
 $header['menu']=$this->admin_model->getmenudetails($clinic_id);
