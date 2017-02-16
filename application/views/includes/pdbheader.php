@@ -27,7 +27,7 @@ $this->session->set_userdata($session_arr3);
 $session_arr4=array('report_leftnav'=>$report);
 $this->session->set_userdata($session_arr4);
 ?>
-<title>paperlessdentists</title>
+<title>FluentPMR</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()."css/bootstrap.css"?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()."css/bootstrap-responsive.css"?>"/>
