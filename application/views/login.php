@@ -67,7 +67,7 @@ Not a Member?&nbsp;&nbsp;SIGNUP
 </div>
 <div align='center' style='margin-top:10px'>
 Sign up as Admin !! &nbsp;&nbsp;SIGNUP
-<!-- <a href="<?php echo base_url();?>registration_ctrl/index1">SIGNUP </a> -->
+<a href="<?php echo base_url();?>registration_ctrl/index1">SIGNUP </a> 
 </div>
 </form>				
 <?php 

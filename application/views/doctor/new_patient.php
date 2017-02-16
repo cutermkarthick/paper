@@ -225,7 +225,7 @@ elseif($str == 'postsurgery1')
 <ul style="margin-bottom:-1px;" class="nav nav-tabs" id="myTab">
 <li class="active" id='home1'><a   >Personal Info</a></li>
 <li class="" >  <img src="<?php echo base_url();?>img/arrow.png" alt="arrow" height="42" width="42"></li>
-<li class="" id='surgery1' ><a   >surgery</a></li>
+<li class="" id='surgery1' ><a   >Surgery</a></li>
 <li class="" >  <img src="<?php echo base_url();?>img/arrow.png" alt="arrow" height="42" width="42"></li>
 <li class="" id='postsurgery1' ><a   >Post surgery</a></li>
 <li class="" >  <img src="<?php echo base_url();?>img/arrow.png" alt="arrow" height="42" width="42"></li>

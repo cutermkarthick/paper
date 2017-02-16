@@ -43,7 +43,6 @@ class Login extends CI_Controller
 		}
 	function fetch_data()
 	{
-
 		
 		if($this->input->post('user_name') == '')
 		{
@@ -62,10 +61,7 @@ class Login extends CI_Controller
 		else
 		  $num_rows=$this->admin_model->checkuser_exist($userid,$password);
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d76de39612d4bb9457d44d833305f6491bb4187b
 		//for admin login
 		if($siteid =='' && count($num_rows) != '0')
 		{
@@ -76,14 +72,16 @@ class Login extends CI_Controller
 			  redirect('login');  
 			}
 		}	 
-		  
-		  
-		
+	  
+		  $type = $num_rows->type ;
+		  $typeval = $this->session->set_userdata('type',$type);
+	
 		  if(count($num_rows) == '0')
 		  {
 		  $this->session->set_flashdata('flashMessage', 'Login Failed...');			  
 	      redirect('login');
 		  }
+
 		    
 		  elseif($num_rows->type == 'patient'  && count($num_rows) >0)
 		  {
@@ -138,7 +136,7 @@ class Login extends CI_Controller
 			$this->load->view('patient/patient_dashboard_view',$data);
 			$this->load->view("includes/footer");
 		  }
-		  elseif($num_rows->type == 'doctor' && count($num_rows) >0)
+		  elseif(($num_rows->type == 'doctor' || $num_rows->type == 'operator' ) && count($num_rows) >0)
 		  {
 			   $session_arr=array('recnum'=>$num_rows->link2doctor);
 			   $this->session->set_userdata($session_arr);

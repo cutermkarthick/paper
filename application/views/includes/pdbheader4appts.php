@@ -16,6 +16,7 @@ foreach($menu as $m)
 	if($m->item_name == 'report')
 	   $report=$m->item_name;
 }
+
 $session_arr=array('home_leftnav'=>$home);
 $this->session->set_userdata($session_arr);
 $session_arr1=array('profile_leftnav'=>$profile);
