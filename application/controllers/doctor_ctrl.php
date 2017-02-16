@@ -345,79 +345,86 @@ echo "<br><br>";
 $data['patients'] = $this->doctor_model->patients_info();
 echo "<br><br>";
 }
+
 function patients_info() 
 {
-date_default_timezone_set('America/Los_Angeles');
-$header['js_files'] = array('js/ddb_patient_info.js');
-$clinic_id=$this->session->userdata('clinicid');
-$header['menu']=$this->admin_model->getmenudetails($clinic_id);
-$val= $this->input->post('val');
-if($val != '')
-{
+  date_default_timezone_set('America/Los_Angeles');
+  $header['js_files'] = array('js/ddb_patient_info.js');
+  $clinic_id=$this->session->userdata('clinicid');
+  $header['menu']=$this->admin_model->getmenudetails($clinic_id);
+  $val= $this->input->post('val');
+
+  if($val != '')
+  {
     $patient_id =$this->input->post("recnum$val");
     $senderarr=array('patient_id'=>$patient_id);  
     $this->session->set_userdata($senderarr);
-}
-else
-{
- $patient_id =$this->session->userdata('patient_id');
-}
-$header['count_read']=$this->doctor_model->totunread_patientcount();
-$this->load->view("includes/header4patients", $header);
+  }
+  else
+  {
+    $patient_id =$this->session->userdata('patient_id');
+  }
 
-if($this->session->userdata('profile_leftnav') == '')
-{
+  $header['count_read']=$this->doctor_model->totunread_patientcount();
+  $this->load->view("includes/header4patients", $header);
+
+  if($this->session->userdata('profile_leftnav') == '')
+  {
     $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
     redirect('login');
-}
-$data['query'] = $this->patient_model->patients_infoDetails($patient_id);
+  }
 
-foreach($data as $q)
-{	
-  $link2doctor = $q->link2doctor;
-  $clinicid=$q->link2clinic;
-}
-$data['insur'] = $this->patient_model->insur_infoDetails($patient_id);
-$data['emer'] = $this->patient_model->emer_infoDetails($patient_id);
-$data['help'] = $this->doctor_model->getdocname($link2doctor);
-$data['recnum']=$this->uri->segment(3);
-$data['health'] = $this->patient_model->health_infoDetails($patient_id);
-$this->load->view("doctor/ddb_patient_info_view",$data);
-$this->load->view("includes/footer");
+  $data['query'] = $this->patient_model->patients_infoDetails($patient_id);
+  foreach($data as $q)
+  {	
+    $link2doctor = $q->link2doctor;
+    $clinicid=$q->link2clinic;
+  }
+
+  $data['insur'] = $this->patient_model->insur_infoDetails($patient_id);
+  $data['emer'] = $this->patient_model->emer_infoDetails($patient_id);
+  $data['help'] = $this->doctor_model->getdocname($link2doctor);
+  $data['recnum']=$this->uri->segment(3);
+  $data['health'] = $this->patient_model->health_infoDetails($patient_id);
+
+  $data['app_lists'] = $this->patient_model->get_appointment_lists($patient_id);
+
+  $this->load->view("doctor/ddb_patient_info_view",$data);
+  $this->load->view("includes/footer");
 }
 
 function appointments() 
 {
-date_default_timezone_set('America/Los_Angeles');
-$this->load->helper(array('form'));
-$this->load->library('form_validation');
-$header['js_files'] = array('js/ddb_appointments_view.js');
-array_push($header['js_files'], 'fullcalendar/lib/moment.min.js');
-array_push($header['js_files'], 'fullcalendar/fullcalendar.min.js');
-array_push($header['js_files'], 'datepicker/js/bootstrap-datepicker.js');
-$clinic_id=$this->session->userdata('clinicid');
-$doctor_id=$this->session->userdata('doctor_id');
-$header['menu']=$this->admin_model->getmenudetails($clinic_id);
-$header['count_read']=$this->doctor_model->totunread_patientcount();
+  date_default_timezone_set('America/Los_Angeles');
+  $this->load->helper(array('form'));
+  $this->load->library('form_validation');
+  $header['js_files'] = array('js/ddb_appointments_view.js');
+  array_push($header['js_files'], 'fullcalendar/lib/moment.min.js');
+  array_push($header['js_files'], 'fullcalendar/fullcalendar.min.js');
+  array_push($header['js_files'], 'datepicker/js/bootstrap-datepicker.js');
+  $clinic_id=$this->session->userdata('clinicid');
+  $doctor_id=$this->session->userdata('doctor_id');
+  $header['menu']=$this->admin_model->getmenudetails($clinic_id);
+  $header['count_read']=$this->doctor_model->totunread_patientcount();
 
-$this->load->view("includes/header4appts", $header);
-if($this->session->userdata('appts_leftnav') == '')
-{
-    $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
-    redirect('login');
-}
-//$data['query'] = $this->doctor_model->new_patients_info();
-//new patients appt requests
-$data['query'] = $this->doctor_model->new_patients_appointment_info($doctor_id);
+  $this->load->view("includes/header4appts", $header);
+  if($this->session->userdata('appts_leftnav') == '')
+  {
+      $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
+      redirect('login');
+  }
+  //$data['query'] = $this->doctor_model->new_patients_info();
+  //new patients appt requests
+  $data['query'] = $this->doctor_model->new_patients_appointment_info($doctor_id);
 
-$data['status']='';
-$data['patientname']='';
-$data['reason']='';
-$data['apptdate']='';
+  $data['status']='';
+  $data['patientname']='';
+  $data['reason']='';
+  $data['apptdate']='';
 
-//search appointments
-$data['query_search'] = $this->doctor_model->getpatientDetails();
-$this->load->view("doctor/ddb_appointments_view",$data);
+  //search appointments
+  $data['query_search'] = $this->doctor_model->getpatientDetails();
+  $this->load->view("doctor/ddb_appointments_view",$data);
 }
 function messages()
 {
@@ -681,132 +688,135 @@ $events = $this->doctor_model->getcalender();
 header('Content-Type: application/json');
 echo json_encode($events);
 }
+
 function temp() 
 {
-$this->load->helper(array('form', 'url'));
-$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
-$chkdupret = 0;
+  
+  $this->load->helper(array('form', 'url'));
+  $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
+  $chkdupret = 0;
 
-$this->form_validation->set_rules('location', 'Location', 'required');
-$this->form_validation->set_rules('appt_time', 'Time', 'required');
-if ($this->form_validation->run() == FALSE) 
-{
-  $this->session->set_flashdata('flashMessage', 'Failed to update appointment.');			  
-  redirect('/doctor_ctrl/appointments/profile');
-} 
-else 
-{
-$data = array(
-'doctor' => $this->input->post('doc_name'),
-'link2patientinfo' => $this->input->post('patient_name'),
-'appt_date' => $this->input->post('appt_date'),
-'location' => $this->input->post('location_name'),
-'appt_time' => $this->input->post('appt_time'),
-'appt_duration' => $this->input->post('appt_duration'),
-'reason' => $this->input->post('purpose'),
-'remarks' => $this->input->post('remarks'),
-'status' => $this->input->post('status'),
-'sms_reminder' => $this->input->post('sms_email'),
-'email_reminder' => $this->input->post('email'),
-'link2operatory' => $this->input->post('operatory'),
-'link2clinic' => $this->input->post('location'),
-'created_by' => "Need to Implement",
-'modified_by' => "Need to Implement",
-'created_date' =>$this->input->post('appt_date'),
-'modified_date' => $this->input->post('appt_date'),
-'link2doctor' => $this->input->post('doc_id'),
+  $this->form_validation->set_rules('location', 'Location', 'required');
+  $this->form_validation->set_rules('appt_time', 'Time', 'required');
+  if ($this->form_validation->run() == FALSE) 
+  {
+    $this->session->set_flashdata('flashMessage', 'Failed to update appointment.');			  
+    redirect('/doctor_ctrl/appointments/profile');
+  } 
+  else 
+  {
+    $data = array(
+    'doctor' => $this->input->post('doc_name'),
+    'link2patientinfo' => $this->input->post('patient_name'),
+    'appt_date' => $this->input->post('appt_date'),
+    'location' => $this->input->post('location_name'),
+    'appt_time' => $this->input->post('appt_time'),
+    'appt_duration' => $this->input->post('appt_duration'),
+    'reason' => $this->input->post('purpose'),
+    'remarks' => $this->input->post('remarks'),
+    'status' => $this->input->post('status'),
+    'sms_reminder' => $this->input->post('sms_email'),
+    'email_reminder' => $this->input->post('email'),
+    'link2operatory' => $this->input->post('operatory'),
+    'link2clinic' => $this->input->post('location'),
+    'created_by' => "Need to Implement",
+    'modified_by' => "Need to Implement",
+    'created_date' =>$this->input->post('appt_date'),
+    'modified_date' => $this->input->post('appt_date'),
+    'link2doctor' => $this->input->post('doc_id'),
 
-);
+    );
 
-// Checking for duplicates
-$patientlinkarr = $this->input->post('patient_name');
-$location       = $this->input->post('location');
-$operatory      = $this->input->post('operatory');
-$patientlink    = $patientlinkarr[0];
-$record = $this->doctor_model->check4dup($this->input->post('patient_name'));
+    // Checking for duplicates
+    $patientlinkarr = $this->input->post('patient_name');
+    $location       = $this->input->post('location');
+    $operatory      = $this->input->post('operatory');
+    $patientlink    = $patientlinkarr[0];
+    $record = $this->doctor_model->check4dup($this->input->post('patient_name'));
 
-if (count($record) == '0')
-{
-		//IF waitlist get the waitlist number 
-	if($this->input->post('status')== 'Waitlist')
-	{
-	$record2 = $this->doctor_model->check4waitlistnumber(
-	$this->input->post('appt_date'),$location,$operatory);
-	
+    if (count($record) == '0')
+    {
+    		//IF waitlist get the waitlist number 
+    	if($this->input->post('status')== 'Waitlist')
+    	{
+      	$record2 = $this->doctor_model->check4waitlistnumber(
+      	$this->input->post('appt_date'),$location,$operatory);
+    		if(count($record2) == 0 )
+    		{
+    			$waitlist = 0 ;
+    			$data['waitlistnumber'] = $waitlist + 1  ;
+    		}
+    		else
+    		{
+    			$waitlist = $record2->waitlistnumber ;
+    			$data['waitlistnumber'] = $waitlist + 1  ;
+    		}	
+    	
+    	}	
 
-		if(count($record2) == 0 )
-		{
-			$waitlist = 0 ;
-			$data['waitlistnumber'] = $waitlist + 1  ;
-		}
-		else
-		{
-			$waitlist = $record2->waitlistnumber ;
-			$data['waitlistnumber'] = $waitlist + 1  ;
-		}	
-	
-	}	
-	$this->doctor_model->insert_appointment($data);
-	$record1 = $this->doctor_model->check4dup($this->input->post('patient_name'));
+    	$this->doctor_model->insert_appointment($data);
+    	$record1 = $this->doctor_model->check4dup($this->input->post('patient_name'));
 
-	
-	$clinic_id=$this->session->userdata('clinicid');
-	$clinic_name=$this->admin_model->getclinicdetails($clinic_id);
-	$sms_rem=$this->input->post('sms_email');//default value= 1;
-	$email=$this->input->post('email');
-	/*...............SMS stuff................................*/
-	if($sms_rem==1)
-	try{
-	//$sid = id for msg servie;// these two variables are set from external file.
-	//$token = "{{ auth_token }}";
-	$account_sid = $GLOBALS['sid'];
-	$auth_token = $GLOBALS['token'];
-	$client = new Services_Twilio($account_sid, $auth_token); 
-	$mobile_arr=explode('-',$record1->cell_phone);
-	//$mobile_num=$this->mob_prefix.$mobile_arr[0].$mobile_arr[1].$mobile_arr[2]; 
-	$mobile_num=$mobile_arr[0].$mobile_arr[1].$mobile_arr[2];  
-	$clinic_details=$clinic_name->name.' '.$clinic_name->site_id;
-	$appt_date=$this->input->post('appt_date');
-	$appttime=$this->input->post('appt_time');
-	
-	$client->account->messages->create(array( 
-	'To' => "$mobile_num", 
-	'From' => "+18317091518", 
-	 'Body' => "You have an appointment at $clinic_details on
-       $appt_date at $appttime.  Any questions, please contact bmandyam@fluentsoft.com.", 
-	));
-	}
-	catch(Exception $e)
-	{
-	echo "Sending SMS Failed: ".$e->getMessage();
-	//exit();
-	}
+    	$clinic_id=$this->session->userdata('clinicid');
+    	$clinic_name=$this->admin_model->getclinicdetails($clinic_id);
+    	$sms_rem=$this->input->post('sms_email');//default value= 1;
+    	$email=$this->input->post('email');
 
-	if($email == 1)
-	{
-	$this->load->view('smtpfns');
-		
-	$this->smtp_model->setemail($record1->email);	
-	$this->smtp_model->setclinicid($clinic_name->name);
-	$this->smtp_model->setsite_id($clinic_name->site_id);
-	$this->smtp_model->setdct_name($this->input->post('doc_name'));
+    	/*...............SMS stuff................................*/
+    	if($sms_rem==1)
+      	try
+        {
+        	//$sid = id for msg servie;// these two variables are set from external file.
+        	//$token = "{{ auth_token }}";
+        	$account_sid = $GLOBALS['sid'];
+        	$auth_token = $GLOBALS['token'];
+        	$client = new Services_Twilio($account_sid, $auth_token); 
+        	$mobile_arr=explode('-',$record1->cell_phone);
+        	//$mobile_num=$this->mob_prefix.$mobile_arr[0].$mobile_arr[1].$mobile_arr[2]; 
+        	$mobile_num=$mobile_arr[0].$mobile_arr[1].$mobile_arr[2];  
+        	$clinic_details=$clinic_name->name.' '.$clinic_name->site_id;
+        	$appt_date=$this->input->post('appt_date');
+        	$appttime=$this->input->post('appt_time');
+        	
+        	$client->account->messages->create(array( 
+        	'To' => "$mobile_num", 
+        	'From' => "+18317091518", 
+        	 'Body' => "You have an appointment at $clinic_details on
+               $appt_date at $appttime.  Any questions, please contact bmandyam@fluentsoft.com.", 
+        	));
+      	}
+      	catch(Exception $e)
+      	{
+      	 echo "Sending SMS Failed: ".$e->getMessage();
+      	//exit();
+      	}
 
-	$dd=$this->doctor_model->getpatient_name($this->input->post('patient_name'));
-	$this->smtp_model->setname($dd->fullname);
-	$this->smtp_model->setappt($this->input->post('appt_date'));
-	$this->smtp_model->getappt_details();
+    	if($email == 1)
+    	{
+      	$this->load->view('smtpfns');
+      		
+      	$this->smtp_model->setemail($record1->email);	
+      	$this->smtp_model->setclinicid($clinic_name->name);
+      	$this->smtp_model->setsite_id($clinic_name->site_id);
+      	$this->smtp_model->setdct_name($this->input->post('doc_name'));
 
-	}
-}
-else
-{
-	$this->session->set_flashdata('flashMessage', "Duplicate appointment for 
-	$record->fullname");
-	redirect('/doctor_ctrl/appointments/', 'refresh');
-}
-	$this->session->set_flashdata('flashMessage', 'Successfully Updated...!');
-	redirect('/doctor_ctrl/appointments/', 'refresh');
-}
+      	$dd=$this->doctor_model->getpatient_name($this->input->post('patient_name'));
+      	$this->smtp_model->setname($dd->fullname);
+      	$this->smtp_model->setappt($this->input->post('appt_date'));
+      	$this->smtp_model->getappt_details();
+    	}
+    }
+    else
+    {
+    	$this->session->set_flashdata('flashMessage', "Duplicate appointment for 
+    	$record->fullname");
+    	redirect('/doctor_ctrl/appointments/', 'refresh');
+    }
+
+  	$this->session->set_flashdata('flashMessage', 'Successfully Updated...!');
+  	redirect('/doctor_ctrl/appointments/', 'refresh');
+  }
+
 }
 
 function getlocdetails()
@@ -1514,6 +1524,7 @@ function replay_mail()
 
 function getpatient_info()
 {  
+  
   $patient_id=$this->session->userdata('patient_id');
   $val='';
   $res = $this->patient_model->health_infoDetails4check($patient_id);  
@@ -1526,96 +1537,86 @@ function getpatient_info()
 		break;
 	   }
   }
-$health_iss=$val;
-$header['js_files'] = array();
-$data['health_info'] = $this->admin_model->gethealth_info($patient_id);
-date_default_timezone_set('America/Los_Angeles');
-$header['js_files'] = array('js/ddb_patient_info.js');
+  $health_iss=$val;
+  $header['js_files'] = array();
+  $data['health_info'] = $this->admin_model->gethealth_info($patient_id);
+  date_default_timezone_set('America/Los_Angeles');
+  // $header['js_files'] = array('js/ddb_patient_info.js');
 
-array_push($header['js_files'], 'js/ddb_appointments_view.js');
-array_push($header['js_files'], 'js/helper.js');
+  // array_push($header['js_files'], 'js/ddb_appointments_view.js');
+  // array_push($header['js_files'], 'js/helper.js');
 
-array_push($header['js_files'], 'fullcalendar/lib/moment.min.js');
+  // array_push($header['js_files'], 'fullcalendar/lib/moment.min.js');
 
-array_push($header['js_files'], 'fullcalendar/fullcalendar.min.js');
-array_push($header['js_files'], 'datepicker/js/bootstrap-datepicker.js');
+  // array_push($header['js_files'], 'fullcalendar/fullcalendar.min.js');
+  // array_push($header['js_files'], 'datepicker/js/bootstrap-datepicker.js');
 
-$clinic_id=$this->session->userdata('clinicid');
-$header['menu']=$this->admin_model->getmenudetails($clinic_id);
-$header['count_read']=$this->doctor_model->totunread_patientcount();
-$this->load->view("includes/header4patients", $header);
-if($this->session->userdata('profile_leftnav') == '')
-{
-    $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
-    redirect('login');
-}
-$data['query'] = $this->patient_model->patients_infoDetails($patient_id);
-$data['insur'] = $this->patient_model->insur_infoDetails($patient_id);
-$data['emer'] = $this->patient_model->emer_infoDetails($patient_id);
-$data['query_health']=$this->patient_model->health_infoDetails($patient_id);
-
-
-$data['surgery']=$this->patient_model->getpatient_surgeryDetails($patient_id);
+  $clinic_id=$this->session->userdata('clinicid');
+  $header['menu']=$this->admin_model->getmenudetails($clinic_id);
+  $header['count_read']=$this->doctor_model->totunread_patientcount();
+  // $this->load->view("includes/header4patients", $header);
+  // if($this->session->userdata('profile_leftnav') == '')
+  // {
+  //     $this->session->set_flashdata('flashMessage', 'You are not Authorized to view this page ...');			  
+  //     redirect('login');
+  // }
+  $data['query'] = $this->patient_model->patients_infoDetails($patient_id);
+  $data['insur'] = $this->patient_model->insur_infoDetails($patient_id);
+  $data['emer'] = $this->patient_model->emer_infoDetails($patient_id);
+  $data['query_health']=$this->patient_model->health_infoDetails($patient_id);
 
 
-$data['surgery_notes']=$this->patient_model->getpatient_surgeryNotes($patient_id);
+  $data['surgery']=$this->patient_model->getpatient_surgeryDetails($patient_id);
 
 
-$data['post_surgery_notes']=$this->patient_model->postsurgeryNotes($patient_id);
+  $data['surgery_notes']=$this->patient_model->getpatient_surgeryNotes($patient_id);
 
 
-$data['postopnotes']=$this->patient_model->getpatient_postopNotes($patient_id);
-
-// echo "<pre>";
-// print_r($data['postopnotes']);exit;
-
-$data['postop_commnotes']=$this->patient_model->getpatient_postop_commNotes($patient_id);
+  $data['post_surgery_notes']=$this->patient_model->postsurgeryNotes($patient_id);
 
 
-$data['health']=$this->patient_model->health_infoDetails4patient($patient_id);
-$data['den_his'] = $this->doctor_model->getdental_historydetails($patient_id);
-$data['consent'] = $this->doctor_model->getconsentdetails($patient_id);
-$data['patient_sig'] = $this->doctor_model->getconsentdetails4patient($patient_id);
-$recnum=$patient_id;
+  $data['postopnotes']=$this->patient_model->getpatient_postopNotes($patient_id);
+
+  // echo "<pre>";
+  // print_r($data['postopnotes']);exit;
+
+  $data['postop_commnotes']=$this->patient_model->getpatient_postop_commNotes($patient_id);
+
+
+  $data['health']=$this->patient_model->health_infoDetails4patient($patient_id);
+  $data['den_his'] = $this->doctor_model->getdental_historydetails($patient_id);
+  $data['consent'] = $this->doctor_model->getconsentdetails($patient_id);
+  $data['patient_sig'] = $this->doctor_model->getconsentdetails4patient($patient_id);
+  $recnum=$patient_id;
 
 
 
-$treat_type = 'treatment_to_be_done';
-$drugs_type = 'drugs_and_medication';
-$changes_type = 'changes_to_treatment_plan';
-$extract_type= 'extraction';
-$crown_type = 'crowns';
-$denture_type = 'dentures';
-$endendodontic_type= 'endodontic_treatment';
-$perio_type = 'periodontal_loss';
-$filling_type= 'fillings';
-$pedodon_type = 'pedodontics';
-/*
-$data['treatment_to_be']=$this->patient_model->cansent_Details($recnum,$treat_type);
-$data['drugs_med']=$this->patient_model->cansent_Details($recnum,$drugs_type);
-$data['changes_treat']=$this->patient_model->cansent_Details
-($recnum,$changes_type);
+  $treat_type = 'treatment_to_be_done';
+  $drugs_type = 'drugs_and_medication';
+  $changes_type = 'changes_to_treatment_plan';
+  $extract_type= 'extraction';
+  $crown_type = 'crowns';
+  $denture_type = 'dentures';
+  $endendodontic_type= 'endodontic_treatment';
+  $perio_type = 'periodontal_loss';
+  $filling_type= 'fillings';
+  $pedodon_type = 'pedodontics';
 
-$data['extact']=$this->patient_model->cansent_Details($recnum,$extract_type);
-$data['crown']=$this->patient_model->cansent_Details($recnum,$crown_type);
-$data['denture']=$this->patient_model->cansent_Details($recnum,$denture_type);
-$data['endendontic']=$this->patient_model->cansent_Details($recnum,$endendodontic_type);
-$data['perio']=$this->patient_model->cansent_Details($recnum,$perio_type);
-$data['filling']=$this->patient_model->cansent_Details($recnum,$filling_type);
-$data['pedodontic']=$this->patient_model->cansent_Details($recnum,$pedodon_type);
-*/
-$data['denhisory']=$this->doctor_model->getdental_historydetails4patient($patient_id);
-$data['health_iss']=$health_iss;
-$data['recnum']=$recnum;
+  $data['denhisory']=$this->doctor_model->getdental_historydetails4patient($patient_id);
+  $data['health_iss']=$health_iss;
+  $data['recnum']=$recnum;
 
-$data['param']=$this->input->post('param');
-$data['med_his'] = $this->admin_model->getmed_his4patient($patient_id);
-$clinic=$this->admin_model->getclinic_details($clinic_id);
-$data['clinic_name']=$clinic->name.' '.$clinic->site_id;
-$doctor_id=$this->session->userdata('doctor_id');
-$doctor=$this->admin_model->emailDetails($doctor_id);
-$data['doctor_name']=$doctor->fname.' '.$doctor->lname;
-$this->load->view('doctor/patient_view',$data);
+  $data['param']=$this->input->post('param');
+  $data['med_his'] = $this->admin_model->getmed_his4patient($patient_id);
+  $clinic=$this->admin_model->getclinic_details($clinic_id);
+  $data['clinic_name']=$clinic->name.' '.$clinic->site_id;
+  $doctor_id=$this->session->userdata('doctor_id');
+  $doctor=$this->admin_model->emailDetails($doctor_id);
+  $data['doctor_name']=$doctor->fname.' '.$doctor->lname;
+
+  $data['param']=$this->input->post('app_recnum');
+
+  $this->load->view('doctor/patient_view',$data);
 }
 
 function update_patient()
@@ -2439,7 +2440,10 @@ $email=$this->input->post('email');
 	{
 
 		 date_default_timezone_set('America/Los_Angeles');
-	     $udata['email'] = $this->input->post('email');		 
+
+     
+
+	   $udata['email'] = $this->input->post('email');		 
 		 $udata['fname'] = $this->input->post('fname');
 		 $udata['middle_initial'] = $this->input->post('middle_initial');
 		 $udata['lname'] = $this->input->post('lname');
@@ -2483,15 +2487,16 @@ $email=$this->input->post('email');
 			$count=$this->admin_model->getpassworddetails($this->input->post('email'));
 			if(count($count) >0)
 			{
-				$this->session->set_flashdata('flashMessage', "Registration Failed, Duplicate Email found!!..");
-				redirect('login');
+				// $this->session->set_flashdata('flashMessage', "Registration Failed, Duplicate Email found!!..");
+				// redirect('login');
 			}
 			$clinicid=$this->session->userdata('clinicid');
 			$udata['link2clinic'] = $this->session->userdata('clinicid');
 			$udata['link2doctor'] = $this->session->userdata('doctor_id');
 
-			$patient_id=$this->patient_model->insert_patient_to_db($udata);
-
+      $patient_id=$this->patient_model->insert_patient_to_db($udata);
+			// $patient_id= 19 ;
+      
 			$udata1=array();
 			$udata1['userid'] = $this->input->post('email');
 			$new_password=$this->getRandomString(10);
@@ -2506,16 +2511,18 @@ $email=$this->input->post('email');
 
 			$this->patient_model->insert_newuser($udata1);
 
-			$this->session->set_flashdata('flashMessage', "Thanks for your registration !! Please check the email for login Credentials");	  
-			$this->load->view('smtpfns');
-			$clinic_name=$this->admin_model->getclinicdetails($this->session->userdata('clinicid'));
+      
 
-			$this->smtp_model->setclinicid($clinic_name->name);
-			$this->smtp_model->setsite_id($clinic_name->site_id);
-			$this->smtp_model->setemail($this->input->post('email'));
-			$this->smtp_model->setpassword($new_password);
-			$this->smtp_model->setname($name);
-			$this->smtp_model->getregisted_details();
+			// $this->session->set_flashdata('flashMessage', "Thanks for your registration !! Please check the email for login Credentials");	  
+			// $this->load->view('smtpfns');
+			// $clinic_name=$this->admin_model->getclinicdetails($this->session->userdata('clinicid'));
+
+			// $this->smtp_model->setclinicid($clinic_name->name);
+			// $this->smtp_model->setsite_id($clinic_name->site_id);
+			// $this->smtp_model->setemail($this->input->post('email'));
+			// $this->smtp_model->setpassword($new_password);
+			// $this->smtp_model->setname($name);
+			// $this->smtp_model->getregisted_details();
 
 			$recnum=$patient_id;
 			$udata=array();
@@ -2534,7 +2541,10 @@ $email=$this->input->post('email');
 		    $udata['link2patientinfo'] = $patient_id;
 
 			$this->patient_model->insert_emerg_to_db($udata);
-            $udata=array();
+
+
+
+      $udata=array();
 			 $udata['height_feet'] =0;	
 			 $udata['height_inches'] = $this->input->post('height_inches');	
 			 $udata['weight_lbs'] = $this->input->post('weight_lbs');	
@@ -2572,40 +2582,7 @@ $email=$this->input->post('email');
 
 			  $this->patient_model->insert_patientmeta($udata1);
 			} 
-/*
-$udata['high_bp'] = $this->input->post('high_bp') ? "yes" : "no";
 
-$udata['low_bp'] = $this->input->post('low_bp')  ? "yes" : "no";
-$udata['angina_chest_pain'] = $this->input->post('angina_chest_pain') ? "yes" : "no";
-$udata['fainiting'] =  $this->input->post('fainiting')  ? "yes" : "no";
-$udata['irregular_heartbeat'] = $this->input->post('irregular_heartbeat')  ? "yes" : "no";
-$udata['heart_attack'] = $this->input->post('heart_attack')  ? "yes" : "no";
- $udata['heart_bypass'] =  $this->input->post('heart_bypass')  ? "yes" : "no";
-$udata['pacemaker'] =  $this->input->post('pacemaker')  ? "yes" : "no";
-$udata['anemia'] =$this->input->post('anemia')  ? "yes" : "no";
-$udata['hepatitis_a'] = $this->input->post('hepatitis_a')  ? "yes" : "no";
-$udata['hepatitis_b'] = $this->input->post('hepatitis_b')  ? "yes" : "no";
-$udata['hepatitis_c'] =  $this->input->post('hepatitis_c')  ? "yes" : "no";
- $udata['hiv'] =   $this->input->post('hiv')  ? "yes" : "no";
-$udata['aids'] =  $this->input->post('aids')  ? "yes" : "no";
-$udata['std'] =  $this->input->post('std')  ? "yes" : "no";
- $udata['delay_in_healing'] =   $this->input->post('delay_in_healing')  ? "yes" : "no";
-$udata['pancreas_diabetes'] =   $this->input->post('pancreas_diabetes')  ? "yes" : "no";
-$udata['kidney_dialysis'] =  $this->input->post('kidney_dialysis')  ? "yes" : "no";
-$udata['eyes_glaucoma'] =  $this->input->post('eyes_glaucoma')  ? "yes" : "no";			  
-$udata['thyroid'] =  $this->input->post('thyroid')  ? "yes" : "no";
- $udata['neurology_epilepsy'] =   $this->input->post('neurology_epilepsy')  ? "yes" : "no";
- $udata['cancer_location'] =  $this->input->post('cancer_location')  ? "yes" : "no";
-$udata['surgery'] = $this->input->post('surgery')  ? "yes" : "no";
-$udata['radiation'] =  $this->input->post('radiation')  ? "yes" : "no";
- $udata['chemotherapy'] =   $this->input->post('chemotherapy')  ? "yes" : "no";
-$udata['jaw_joints_pain'] =  $this->input->post('jaw_joints_pain')  ? "yes" : "no";
- $udata['arthritis'] =   $this->input->post('arthritis')  ? "yes" : "no";
-$udata['arthritis_knee_replacement'] =  $this->input->post('arthritis_knee_replacement')  ? "yes" : "no";
- $udata['arthritis_hip_replacement'] =  $this->input->post('arthritis_hip_replacement')  ? "yes" : "no";
- $udata['swollen_ankles'] =  $this->input->post('swollen_ankles')  ? "yes" : "no";
-*/
-			 
 			  
 
              // $this->patient_model->insert_history_to_db($udata);
@@ -2691,6 +2668,43 @@ $udata['arthritis_knee_replacement'] =  $this->input->post('arthritis_knee_repla
 			$data['link2patient'] = $patient_id;
 
 			$this->patient_model->insert_dental_history($data);
+
+      /*--------------- insert surgery -------------------- */
+      $surgery = array();
+      $surgery['surgery_name'] = $this->input->post('surgery_name');
+      $surgery['surgery_date'] = $this->input->post('surgery_date');
+      $surgery['surgeon_name'] = $this->input->post('doctor_name');
+      $surgery['surgeon_contact_no'] = $this->input->post('surgeon_contact');
+      $surgery['surgery_location'] = $this->input->post('surgery_location');
+      $surgery['location_contact_no'] = $this->input->post('surloc_ctno');
+      $surgery['action_taken'] = $this->input->post('action_taken');
+      $surgery['link2patient'] = $patient_id;
+      $this->patient_model->insert_patient_surgery($surgery);
+
+      /*--------------- insert surgery notes-------------------- */
+      $surgery_notes = array();
+      $surgery_notes['surgery_notes'] = $this->input->post('surgery_notes');
+      $surgery_notes['link2patient'] = $patient_id;
+      $this->patient_model->insert_surgerynotes($surgery_notes);
+
+      /*--------------- insert post surgery -------------------- */
+      $po_surgery = array();
+      $po_surgery['notes'] = $this->input->post('post_notes');
+      $po_surgery['to_do'] = $this->input->post('to_do');
+      $po_surgery['link2patient'] = $patient_id;
+      $this->patient_model->insert_post_surgery($po_surgery);
+
+      /*--------------- insert postop notes -------------------- */
+      $po_notes = array();
+      $po_notes['postop_notes'] = $this->input->post('postop_day1');
+      $po_notes['link2patient'] = $patient_id;
+      $this->patient_model->insert_postsurgerynotes($po_notes);
+
+      /*--------------- insert postop comm notes -------------------- */
+      $po_commnotes = array();
+      $po_commnotes['postop_comm_notes'] = $this->input->post('postop_day2');
+      $po_commnotes['link2patient'] = $patient_id;
+      $this->patient_model->insert_postsurgery_commnotes($po_commnotes);
 
 			redirect('doctor_ctrl/patients');
 				

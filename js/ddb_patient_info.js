@@ -47,6 +47,7 @@ function getPaging(str)
 	$("#dropdown3").css({"display": "none"});
 	$("#surgery").css({"display": "none"});
 	$("#postsurgery").css({"display": "none"});
+	$("#gp").css({"display": "none"});
 
 	 
 	$("#home").removeClass("active in");
@@ -57,6 +58,7 @@ function getPaging(str)
 	$("#dropdown3").removeClass("active in");
 	$("#surgery").removeClass("active in");
 	$("#postsurgery").removeClass("active in");
+	$("#gp").removeClass("active in");
 	
 
 
@@ -73,31 +75,35 @@ function getPaging(str)
 
 	if(str == '#home')
 	{
-	$("#home").css({"display": "block"});
+		$("#home").css({"display": "block"});
 	}
 	else if(str == '#profile')
 	{
-	$("#profile").css({"display": "inline"});		
+		$("#profile").css({"display": "inline"});		
 	}
 	else if(str == '#dropdown1')
 	{
-	$("#dropdown1").css({"display": "inline"});
+		$("#dropdown1").css({"display": "inline"});
 	}
 	else if(str == '#dropdown2')
 	{
-	$("#dropdown2").css({"display": "inline"});
+		$("#dropdown2").css({"display": "inline"});
 	}
 	else if(str == '#dropdown3')
 	{
-	$("#dropdown3").css({"display": "inline"});
+		$("#dropdown3").css({"display": "inline"});
 	}
 	else if(str == '#surgery')
 	{
-	$("#surgery").css({"display": "block"});
+		$("#surgery").css({"display": "block"});
 	}
  	else if(str == '#postsurgery')
 	{
-	$("#postsurgery").css({"display": "inline"});
+		$("#postsurgery").css({"display": "inline"});
+	}
+	else if(str == '#gp')
+	{
+		$("#gp").css({"display": "inline"});
 	}
 
 }
@@ -105,64 +111,66 @@ $(document).ready(function()
 { 
 document.getElementById('patients_social').style.visibility='hidden';
 var health_iss = document.getElementById('health_iss').value;
-$('#myTab_send').on('click','li ',function() 
-{ 
-	if($('a',this).attr('href') == 'medical_alert')	 
-	{
-		  if($(".m-widget-body ul#myTab li.active a").attr("href") == '#home' || 
-		  $(".m-widget-body ul#myTab li.active a").attr("href") == '#profile' ||
-		  $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown2' ||
- $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown3' ||
-$(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown11' ||
- $(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown1' || 
-  $(".m-widget-body ul#myTab li.active a").attr("href") == '#surgery' ||
-  $(".m-widget-body ul#myTab li.active a").attr("href") == '#postsurgery')
-		  {
-			$('#myTab li').removeClass('active');
-			$("#home").css({"display": "none"});
-			$("#profile").css({"display":  "none"});
-			$("#dropdown2").css({"display": "none"});
-                        $("#dropdown3").css({"display": "none"});
-                        
-                        $("#surgery").css({"display": "none"});
-                        $("#postsurgery").css({"display": "none"});
-	 	    
-		$("[id=myTab_profile]").addClass("active");	
-$("#dropdown11").addClass("active");		
-			$("#dropdown1").css({"display": "block"});	
-			$("#dropdown1").css({"display": "block"});	
-			$("#dropdown1").css({"display": "block"});	
-			$("#dropdown1").css({"display": "block"});	
 
-			$("#dropdown1").addClass("active in");
-			$("#surgery1").addClass("active in");
-			$("#postsurgery1").addClass("active in");
+	$('#myTab_send').on('click','li ',function() 
+	{ 
+		if($('a',this).attr('href') == 'medical_alert')	 
+		{
+		  	if($(".m-widget-body ul#myTab li.active a").attr("href") == '#home' || 
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#profile' ||
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown2' ||
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown3' ||
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown11' ||
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#dropdown1' || 
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#surgery' ||
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#postsurgery' ||
+			$(".m-widget-body ul#myTab li.active a").attr("href") == '#gp')
+			{
+				$('#myTab li').removeClass('active');
+				$("#home").css({"display": "none"});
+				$("#profile").css({"display":  "none"});
+				$("#dropdown2").css({"display": "none"});
+		        $("#dropdown3").css({"display": "none"});
+		        $("#surgery").css({"display": "none"});
+		        $("#postsurgery").css({"display": "none"});
+		        $("#gp").css({"display": "none"});
+		 	    
+				$("[id=myTab_profile]").addClass("active");	
+				$("#dropdown11").addClass("active");		
+				$("#dropdown1").css({"display": "block"});	
+				$("#dropdown1").css({"display": "block"});	
+				$("#dropdown1").css({"display": "block"});	
+				$("#dropdown1").css({"display": "block"});	
+				$("#dropdown1").addClass("active in");
+				$("#surgery1").addClass("active in");
+				$("#postsurgery1").addClass("active in");
+				$("#gp1").addClass("active in");
 
-var new_val=health_iss.replace(/\s/g, '');
-var new_match=$('#'+new_val).attr("value");
-var index=document.getElementById('index').value;
+				var new_val=health_iss.replace(/\s/g, '');
+				var new_match=$('#'+new_val).attr("value");
+				var index=document.getElementById('index').value;
 
-for(var i=0;i<index;i++)
-{
-var doc_name="name_"+i;
-var chk=$("input[name="+doc_name+"]:checked").length;
+				for(var i=0;i<index;i++)
+				{
+				var doc_name="name_"+i;
+				var chk=$("input[name="+doc_name+"]:checked").length;
 
-  if(chk != 0)
-  {
-     $("input[name="+doc_name+"]").parent().css("color", "#FF0000");
-  }
-}
+				  if(chk != 0)
+				  {
+				     $("input[name="+doc_name+"]").parent().css("color", "#FF0000");
+				  }
+				}
 
-if(new_val == new_match.replace(/\s/g, ''))
-{
-var offset=($("#"+new_match.replace(/\s/g, '')).offset().top-150);
-$("#"+new_match.replace(/\s/g, '')).next().css("color", "#FF0000");
-$('html,body').animate({scrollTop: offset},'slow');
-}
-} 
+				if(new_val == new_match.replace(/\s/g, ''))
+				{
+					var offset=($("#"+new_match.replace(/\s/g, '')).offset().top-150);
+					$("#"+new_match.replace(/\s/g, '')).next().css("color", "#FF0000");
+					$('html,body').animate({scrollTop: offset},'slow');
+				}
+			} 
 
-}
-});
+		}
+	});
 })
 
  

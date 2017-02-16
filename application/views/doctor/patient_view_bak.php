@@ -116,8 +116,8 @@ $(document).ready(function ()
 
   $("#home").css({"display": "none"});
   $("#surgery").css({"display": "none"});
-  $("#postsurgery").css({"display": "none"});
-  $("#gp").css({"display": "none"});
+  $("#postsurgery").css({"display": "block"});
+  $("#gp").css({"display": "block"});
   $("#profile").css({"display": "none"});
   $("#dropdown1").css({"display":  "none"});
   $("#dropdown2").css({"display": "none"});
@@ -147,7 +147,8 @@ $(document).ready(function ()
 
   var url=(window.location.href);
   var parameter ="<? echo $param  ?>";
-    if(parameter == 'home1'  || parameter == 'profile' )
+
+    if(parameter == 'home1'  || parameter == 'profile' || parameter == '')
     {
       
       $("#myTab li#home1").addClass("active");
@@ -196,7 +197,7 @@ $(document).ready(function ()
       $("#postsurgery").css({"display" : "inline"});  
       $("#postsurgery").addClass("active in");
     }
-    else if(parameter == 'gp1' || parameter == '')
+    else if(parameter == 'gp1' )
     {
       $("#myTab li#gp1").addClass("active");
       $("#gp").css({"display" : "inline"});  
@@ -361,17 +362,151 @@ $formal_dentist_style=' margin-right:350px;"background-color:#DFDFDF;" readonly 
 ?>
 
 
-<div class="main-container" style="margin-left: 0px;">
+<div class="main-container">
 <div class="container-fluid">
+<section>
+<div style="margin-top:10px;" class="row-fluid">
+<div class="m-widget-header">
+<div class="span12 sub_title">
+<h1> Patients info   </h1>
+</div>
+</div>
+</div>	
+
+<div style="margin-top:9px;" class="row-fluid">
+<div class="span9 m-widget">
+<div class="row-fluid">
+<div class="span2">
+<div class="patients_pic">
+<?
+echo '<img id="img_switcher"  src="'.$query->img_location.'">';
+?>
+</div>
+</div>
+
+<div class="patients_info span5">
+<h1 style=" margin-bottom:10px;"><?=$query->fullname ?></h1>
+<p> Name: <?= $query->fullname ?></p>
+<p> Address: <?= $query->addr1 ?></p>
+<p> <?= $query->addr2 ?></p>
+<p> <?= $query->city .' '.$query->state." ,". $query->zip ?></p>
+</div>
+
+<input type='hidden' name='health_iss' id='health_iss' value=
+"<?echo $health_iss ?>">
+
+</div>
+<?
+$dddob=explode('-', $query->dob );
+$dob=$dddob[1].'-'.$dddob[2].'-'.$dddob[0];
+?>
+<div style="margin-top:30px;" class="row-fluid">
+<div class="span4 patients_info">
+<h1>PERSONAL INFO </h1>                                
+<UL>
+<LI>Cell Phone:<?= $query->cell_phone ?></LI>
+<LI>Home Phone: <?= $query->home_phone ?>
+<LI>Work Phone: <?= $query->work_phone ?></LI>
+<LI>Date of Birth: <?= $dob ?></LI>
+<LI>Email: <?= $query->email ?></LI>
+</UL>
+</div>
+
+<div class="span4 patients_info">
+<h1>PRIMARY INSURANCE INFO</h1>
+<UL>
+<?
+if(empty($insur))
+  echo "NO DATA";
+else
+{
+?>
+
+
+<LI>Employer: <?= $insur->name_of_insured ?></LI>
+<LI>Company :<?= $insur->insurance_company ?></LI>
+<LI>Group Id: <?= $insur->group_id ?></LI>
+<LI>Member Id: <?= $insur->member_id  ?></LI>
+</UL>
+<?php } ?>
+</div>                            
+
+<div class="span4 patients_info">
+<h1>EMERGENCY</h1>                                
+<UL>               
+<?
+
+if(empty($emer))
+  echo "NO DATA";
+
+else
+{
+	
+?>
+                 	 
+<LI>Emergency Contact: <?= $emer->home_phone ?> </LI>
+<LI> Emergency Cell phone:  <?= $emer->cell_phone ?></LI>
+<LI> Referred By: <?= $query->referred_by ?></LI>
+</UL>
+<?php
+}
+?>
+</div>  
+</div>                        
+</div>
+<div style="background:#eee;" class="span3 m-widget">
+<ul class="patients_rightnav"  id='myTab_send'>
+<?
+if($this->session->userdata('msg_leftnav') != '')
+{?>
+<li>
+<button class="btn btn-large btn-info" type="button" 
+onclick='location.href="<?php echo base_url();?>doctor_ctrl/messages"'>
+<i class="fa fa-envelope-o"></i>Send Message</button>
+</li>    
+<?}?>                           
+
+<li><a data-toggle="tab" href="medical_alert">
+<button class="btn btn-large btn-warning" type="button"> <i class="fa fa-exclamation-triangle"></i> Medical Alert</button>	
+</a></li>
+
+<li>
+<button class="btn btn-large btn-info" type="button"> <i class="fa fa-stethoscope"></i>  Refer Patient  </button>									
+</li>
+
+
+
+
+</ul>
+
+
+
+
+<div class="clearfix"> </div>
+<div class="patients_social" id='patients_social'>
+<a href="#"><i class="fa fa-tumblr"></i> </a> 
+
+<a href="#"> <i class="fa fa-facebook"></i> </a> 
+
+
+<a href="#"><i class="fa fa-twitter"></i></a> 
+
+<a href="#"><i class="fa fa-google-plus"></i> </a>  
+
+</div>
+</div> 
+</div>
+
+</section>
 <div style="margin-top:30px;" class="row-fluid">
 
 <div class="m-widget-body">                                   
 
 <ul style="margin-bottom:-1px;" class="nav nav-tabs" id="myTab">
-  <li id='gp1' class="active" onclick="getPaging('#gp')"><a data-toggle="tab" href="#gp">General Practice</a></li>
+  <li id='gp1' class="" onclick="getPaging('#gp')"><a data-toggle="tab" href="#gp">General Practice</a></li>
   <li id='surgery1' class="" onclick="getPaging('#surgery')"><a data-toggle="tab" href="#surgery">Surgery</a></li>
   <li id='postsurgery1' class="" onclick="getPaging('#postsurgery')"><a data-toggle="tab" href="#postsurgery">Post Surgery</a></li>
-  <li id='home1' class="" onclick="getPaging('#home')"><a data-toggle="tab" href="#home">Personal Info</a></li>
+  <li id='home1' class="active" onclick="getPaging('#home')"><a data-toggle="tab" href="#home">Personal Info</a></li>
   <li id='profile1' class="" onclick="getPaging('#profile')"><a data-toggle="tab" href="#profile">Emergency Info</a></li>
   <li id='dropdown11' class="" onclick="getPaging('#dropdown1')"><a data-toggle="tab" href="#dropdown1">Health History</a></li>
   <li id='dropdown21' class="" onclick="getPaging('#dropdown2')"><a data-toggle="tab" href="#dropdown2">Insurance Info</a></li>
@@ -386,7 +521,7 @@ $attr=array('class' => 'form-horizontal2','name' => 'form-horizontal2');
 echo form_open_multipart('doctor_ctrl/update_profile',$attr);
 ?>
 
-<div  id="home" class="tab-pane fade">
+<div  id="home" class="tab-pane fade active in">
 <div class="row-fluid patient_history">
 <h1 style="font-weight:bold">Personal Details </h1>
 <div class="clearfix"></div>
@@ -959,7 +1094,7 @@ style='float: left; width:350px;  padding-top: 5px;  text-align: left;'>Post Sur
 </div>
 
 
-<div id="gp" class="tab-pane fade active in">
+<div id="gp" class="tab-pane fade">
 <div class="row-fluid patient_history">
 <h1 style="font-weight:bold">General Practise </h1>
 <div class="clearfix"></div>

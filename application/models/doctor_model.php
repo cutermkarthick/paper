@@ -33,30 +33,32 @@ $this->reason = $reason;
 function setappt_date($appt_date) {
 $this->appt_date = $appt_date;
 }
+
 function insert_appointment($data) 
 {
 	$dbRet = $this->db->insert('appointments', $data);
 	if (!$dbRet) 
-        {
-	$ret['ErrorMessage'] = $this->db->_error_message();
-	$ret['ErrorNumber'] = $this->db->_error_number();
-	echo 'error', "DB Error: (" . $ret['ErrorNumber'] . ") " . $ret['ErrorMessage'];
-	log_message('error', "DB Error: (" . $ret['ErrorNumber'] . ") " . $ret['ErrorMessage']);
+    {
+		$ret['ErrorMessage'] = $this->db->_error_message();
+		$ret['ErrorNumber'] = $this->db->_error_number();
+		echo 'error', "DB Error: (" . $ret['ErrorNumber'] . ") " . $ret['ErrorMessage'];
+		log_message('error', "DB Error: (" . $ret['ErrorNumber'] . ") " . $ret['ErrorMessage']);
 	}
 }
+
 function check4dup($link2patient)
 {
-$this->load->database();
-$query = $this->db->query("SELECT 
-concat(p.fname,' ', p.lname) as fullname,p.email,
-pi.insurance_company,p.cell_phone
-FROM appointments a, 
-patient_info p,patient_insurance pi
-where a.link2patientinfo = p.recnum and
-a.link2patientinfo = '$link2patient' and
-(a.status = 'Pending' or 
-  a.status = 'Confirmed' ) limit 1");
-return $query->first_row();
+	$this->load->database();
+	$query = $this->db->query("SELECT 
+	concat(p.fname,' ', p.lname) as fullname,p.email,
+	pi.insurance_company,p.cell_phone
+	FROM appointments a, 
+	patient_info p,patient_insurance pi
+	where a.link2patientinfo = p.recnum and
+	a.link2patientinfo = '$link2patient' and
+	(a.status = 'Pending' or 
+	  a.status = 'Confirmed' ) limit 1");
+	return $query->first_row();
 }
 
 function check4duptime($app_date, $app_time)
@@ -376,97 +378,97 @@ return $result;
 
 function patients_t1() 
 {
-$query = $this->db->query('SELECT appt_date,reason,status, link2patientinfo
-FROM `appointments` a1
-WHERE  appt_date=(SELECT MAX(a2.appt_date)
-FROM `appointments` a2
-WHERE a1.link2patientinfo = a2.link2patientinfo
-AND a2.status="Completed"
-)');
-return $query->result();
+	$query = $this->db->query('SELECT appt_date,reason,status, link2patientinfo
+	FROM `appointments` a1
+	WHERE  appt_date=(SELECT MAX(a2.appt_date)
+	FROM `appointments` a2
+	WHERE a1.link2patientinfo = a2.link2patientinfo
+	AND a2.status="Completed"
+	)');
+	return $query->result();
 }
 function patients_t() 
 {
-$patient=$this->session->userdata('patient');
-$clinicid=$this->session->userdata('clinicid');
-$patient=($patient != '')?"'".$patient."%'":" '%' ";
-$patient_lastname=$this->session->userdata('patient_lastname');
-$insurance =$this->session->userdata('insurance');
-$cond='';
-$patient_lastname=($patient_lastname != '')?"'".$patient_lastname."%'":" '%' ";
+	$patient=$this->session->userdata('patient');
+	$clinicid=$this->session->userdata('clinicid');
+	$patient=($patient != '')?"'".$patient."%'":" '%' ";
+	$patient_lastname=$this->session->userdata('patient_lastname');
+	$insurance =$this->session->userdata('insurance');
+	$cond='';
+	$patient_lastname=($patient_lastname != '')?"'".$patient_lastname."%'":" '%' ";
+	$commonsearch=$this->session->userdata('commonsearch');
+	$keyword="'%$commonsearch%'";
 
-$commonsearch=$this->session->userdata('commonsearch');
-$keyword="'%$commonsearch%'";
-
-if($insurance == 'insurance' || $insurance == '' )
-$cond=" and pi.name_of_insured !='' and pi.insurance_company != '' ";
-else if($insurance == 'no_insurance')
-	//added null by udaya on July 9th
-$cond=" and (pi.name_of_insured ='' || pi.name_of_insured IS NULL) and (pi.insurance_company = '' || pi.insurance_company IS NULL) ";
-else if($insurance == 'all')
-$cond='';
-$recnum=$this->session->userdata('recnum');
-if($commonsearch=='')
-{
+	if($insurance == 'insurance' || $insurance == '' )
+	$cond=" and pi.name_of_insured !='' and pi.insurance_company != '' ";
+	else if($insurance == 'no_insurance')
+		//added null by udaya on July 9th
+	$cond=" and (pi.name_of_insured ='' || pi.name_of_insured IS NULL) and (pi.insurance_company = '' || pi.insurance_company IS NULL) ";
+	else if($insurance == 'all')
+	$cond='';
 	$recnum=$this->session->userdata('recnum');
-	$sql ="select p.recnum, p.fname, p.lname, p.gender, a.status, a.reason,
-	MIN( a.appt_date) AS min_date,MAX( a.appt_date ) AS max_date,
-	pi.insurance_company as insurance
-	from patient_info as p
-	left join appointments a on a.link2patientinfo = p.recnum
-	AND a.status in ('Pending', 'Confirmed')
-	left join patient_insurance pi on  pi.link2patientinfo = p.recnum
-	where p.fname like $patient and p.lname like $patient_lastname and
-	p.link2clinic=$clinicid and p.link2doctor=$recnum  $cond
-	group by p.recnum,a.status order by p.fname" ;
-	$query = $this->db->query($sql);
-}
-else
-{
-	$sql ="select p.recnum, p.fname, p.lname, p.gender, a.status, a.reason,
-	MIN( a.appt_date) AS min_date,MAX( a.appt_date ) AS max_date,
-	pi.insurance_company as insurance
-	from patient_info as p
-	left join appointments a on a.link2patientinfo = p.recnum
-	AND a.status in ('Pending', 'Confirmed')
-	left join patient_insurance pi on  pi.link2patientinfo = p.recnum
-	where p.fname like $keyword or p.lname like $keyword or pi.insurance_company like $keyword or
-	a.reason like $keyword and
-	p.link2clinic=$clinicid and p.link2doctor=$recnum $cond
-	group by p.recnum,a.status order by p.fname" ;
-	
-	$query = $this->db->query($sql);
-}
+
+	if($commonsearch=='')
+	{
+		$recnum=$this->session->userdata('recnum');
+		$sql ="select p.recnum, p.fname, p.lname, p.gender, a.status, a.reason,
+		MIN( a.appt_date) AS min_date,MAX( a.appt_date ) AS max_date,
+		pi.insurance_company as insurance
+		from patient_info as p
+		left join appointments a on a.link2patientinfo = p.recnum
+		AND a.status in ('Pending', 'Confirmed')
+		left join patient_insurance pi on  pi.link2patientinfo = p.recnum
+		where p.fname like $patient and p.lname like $patient_lastname and
+		p.link2clinic=$clinicid and p.link2doctor=$recnum  $cond
+		group by p.recnum,a.status order by p.fname" ;
+		$query = $this->db->query($sql);
+	}
+	else
+	{
+		$sql ="select p.recnum, p.fname, p.lname, p.gender, a.status, a.reason,
+		MIN( a.appt_date) AS min_date,MAX( a.appt_date ) AS max_date,
+		pi.insurance_company as insurance
+		from patient_info as p
+		left join appointments a on a.link2patientinfo = p.recnum
+		AND a.status in ('Pending', 'Confirmed')
+		left join patient_insurance pi on  pi.link2patientinfo = p.recnum
+		where p.fname like $keyword or p.lname like $keyword or pi.insurance_company like $keyword or
+		a.reason like $keyword and
+		p.link2clinic=$clinicid and p.link2doctor=$recnum $cond
+		group by p.recnum,a.status order by p.fname" ;
+		
+		$query = $this->db->query($sql);
+	}
 
 
-//$query = $this->db->get();
-$result = array();
-$patients_info = array();
-foreach ($query->result() as $item) 
-{
-	if (!array_key_exists($item->recnum, $patients_info))
-        {
-	$patients_info[$item->recnum] = array("first_name" => $item->fname,
-	"last_name" => $item->lname,"insurance" => $item->insurance,
-	"gender" => $item->gender,"patient_since"=>"","last_visit"=>"",
-	"reason_last_visit"=>"", "next_visit_due"=>"");
-	}
-	if ($item->status == 'Completed')
+	//$query = $this->db->get();
+	$result = array();
+	$patients_info = array();
+	foreach ($query->result() as $item) 
 	{
-	  $patients_info[$item->recnum]["patient_since"] = $item->min_date;
-	  $patients_info[$item->recnum]["last_visit"] = $item->max_date;
+		if (!array_key_exists($item->recnum, $patients_info))
+	        {
+		$patients_info[$item->recnum] = array("first_name" => $item->fname,
+		"last_name" => $item->lname,"insurance" => $item->insurance,
+		"gender" => $item->gender,"patient_since"=>"","last_visit"=>"",
+		"reason_last_visit"=>"", "next_visit_due"=>"");
+		}
+		if ($item->status == 'Completed')
+		{
+		  $patients_info[$item->recnum]["patient_since"] = $item->min_date;
+		  $patients_info[$item->recnum]["last_visit"] = $item->max_date;
+		}
+		elseif ($item->status == 'Pending') 
+		{
+		  $patients_info[$item->recnum]["next_visit_due"] = $item->min_date;
+		}
 	}
-	elseif ($item->status == 'Pending') 
+	$reason_result = $this->patients_t1();
+	foreach ($reason_result as $reason) 
 	{
-	  $patients_info[$item->recnum]["next_visit_due"] = $item->min_date;
+	$patients_info[$reason->link2patientinfo]["reason_last_visit"] = $reason->reason;
 	}
-}
-$reason_result = $this->patients_t1();
-foreach ($reason_result as $reason) 
-{
-$patients_info[$reason->link2patientinfo]["reason_last_visit"] = $reason->reason;
-}
-return $patients_info;
+	return $patients_info;
 }
 
 function new_patients_info()
