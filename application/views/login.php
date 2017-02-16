@@ -56,17 +56,18 @@ $style='';
 						
 						<div style="margin:0px;" class="span12">
 			            <button type="submit" style="margin-top: 15px" class="btn btn-primary" onclick="javascript: return check_req_fields()">Login</button>  
-			            <a style="margin-top:10px; position:relative; top:+10px;" href="<?php echo base_url();?>login/forgot_password">Forgot your password?</a>
+			            <!-- <a style="margin-top:10px; position:relative; top:+10px;" href="<?php echo base_url();?>login/forgot_password">Forgot your password?</a> -->
                         </div>
 <br>
 <br>
 <div align='center' style='margin-top:30px'>
-Not a Member?&nbsp;&nbsp;<a href="<?php echo base_url();?>registration_ctrl/">SIGNUP 
+Not a Member?&nbsp;&nbsp;SIGNUP
+<!-- <a href="<?php echo base_url();?>registration_ctrl/">SIGNUP  -->
 </a>
 </div>
 <div align='center' style='margin-top:10px'>
-Sign up as Admin !! &nbsp;&nbsp;<a href="<?php echo base_url();?>registration_ctrl/index1">SIGNUP 
-</a>
+Sign up as Admin !! &nbsp;&nbsp;SIGNUP
+<!-- <a href="<?php echo base_url();?>registration_ctrl/index1">SIGNUP </a> -->
 </div>
 </form>				
 <?php 
