@@ -5615,3 +5615,467 @@ ERROR - 2017-02-16 14:40:17 --> Severity: 8192  --> mysql_pconnect(): The mysql 
 ERROR - 2017-02-16 14:40:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
 ERROR - 2017-02-16 14:40:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
 ERROR - 2017-02-16 14:46:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\paperless\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: surgery_notes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2282
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2283
+ERROR - 2017-02-16 20:46:59 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 20:46:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:01 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:02 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:03 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:05 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:07 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:08 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$high_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$low_bp C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$angina_chest_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$fainiting C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$irregular_heartbeat C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$heart_attack C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$heart_bypass C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$pacemaker C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$anemia C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_a C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_b C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$hepatitis_c C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$hiv C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$aids C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$std C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$delay_in_healing C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$pancreas_diabetes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$kidney_dialysis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$eyes_glaucoma C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$thyroid C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$neurology_epilepsy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$cancer_location_name C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$surgery C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$radiation C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$chemotherapy C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$jaw_joints_pain C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$arthritis C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_knee_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$arthritis_hip_replacement C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:47:10 --> Severity: Notice  --> Undefined property: stdClass::$swollen_ankles C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: surgery_notes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2282
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2283
+ERROR - 2017-02-16 20:51:26 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 20:51:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 20:51:33 --> Severity: Notice  --> Undefined variable: query C:\xampp\htdocs\paperless\application\views\patient\pdb_appointments_view.php 189
+ERROR - 2017-02-16 20:51:33 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\pdb_appointments_view.php 189
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 701
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 716
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: recnum C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 745
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: surgery_notes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 848
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: postopnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 923
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: postop_commnotes C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 938
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1694
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1709
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1728
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1743
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1762
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1777
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1795
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1810
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1827
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1846
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1861
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1875
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1892
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1907
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1926
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1941
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1960
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1975
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 1992
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2007
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2026
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2044
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2059
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2066
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2081
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2100
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2120
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2134
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2154
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2168
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: query_health C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2185
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: med_his C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2201
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: search_patients C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2282
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: search_patients_lname C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2283
+ERROR - 2017-02-16 20:51:38 --> Severity: Notice  --> Undefined variable: family_mem C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 20:51:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\paperless\application\views\patient\patient_profile_view.php 2330
+ERROR - 2017-02-16 21:55:27 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\paperless\application\models\smtp_model.php 282

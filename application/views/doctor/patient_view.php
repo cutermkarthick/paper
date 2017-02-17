@@ -210,7 +210,7 @@ $(document).ready(function ()
   var parameter ="<? echo $param  ?>";
   function getpatient_info()
   {
-     window.location="<?php echo base_url();?>doctor_ctrl/getpatient_info";
+     // window.location="<?php echo base_url();?>doctor_ctrl/getpatient_info";
   }
 
   function getaccordian(divid)

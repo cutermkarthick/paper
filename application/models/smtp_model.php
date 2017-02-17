@@ -208,7 +208,7 @@ As a reminder, we are here for you and you can always send Secure Messages to us
 	function getpassword_details()
 	{
 	$clinicname=$this->clinicid;
-	$dentistname='Dentist name';
+	$dentistname='Doctor name';
 	$Hospitaldentist=$this->clinic_name;
 	$name=$this->name;
         $email=$this->email;
@@ -259,10 +259,9 @@ If you have not requested a password reset, please let us know at info@fluentpmr
 		$name ="Sir";
 
 		$msg="
-	
-	We welcome you to our Paperless office. <Br>
+	We welcome you to our FluentPMR office. <Br>
 	You are the admin.<Br>
-	Go ahead, check it out http://www.paperlessdentists.com/portal <br>
+	Go ahead, check it out http://www.fluentpmr.com/portal <br>
 	Your password : $this->password  and  <br>E-mail: $this->email. <br>Now you can login with this email and password";
 	
 	$dentist_URL="http://".$_SERVER['SERVER_NAME'];
@@ -274,10 +273,8 @@ If you have not requested a password reset, please let us know at info@fluentpmr
 	$tt= str_replace("{{dentist_URL}}",$dentist_URL,$tt);	
 	
 	$tt = str_replace("{{msg}}",$msg,$tt);
-	echo $tt ;
-	exit ;
 	$subject="Welcome To ".$this->site_id;
-	$headers = 'From: <admin@paperlessdentists.com>' . " \r\n";
+	$headers = 'From: <admin@fluentpmr.com>' . " \r\n";
 	$headers .= "MIME-Version: 1.0" . " \r\n";
 	$headers .= "Content-type:text/html" . " \r\n";
 	//if(smtp_mail($email, 'Your New Password...', $tt))
@@ -286,11 +283,10 @@ If you have not requested a password reset, please let us know at info@fluentpmr
 	{
 		    
 	}
-	
-        else
-        {
-           echo "Email Error....Call Sysadmin";
-        }
+    else
+    {
+       echo "Email Error....Call Sysadmin";
+    }
 		
 	}
 	
@@ -495,16 +491,16 @@ function getmessagedetails()
 	{
 	date_default_timezone_set('America/Los_Angeles');
 	$date=date_format(date_create($this->appt), 'M j, Y');
-	$clinicname="Paperless Dentist";
-	$dentistname='Dentist name';
-	$Hospitaldentist='Paperless Dentist';
+	$clinicname="FluentPMR";
+	$dentistname='Fluent';
+	$Hospitaldentist='FluentPMR';
 	$name=$this->name;
 	$durl="http://".$_SERVER['SERVER_NAME'];
 	$dentist_URL="<a href='$durl/portal'>$durl/portal</a>";
 
 
 	$msg="This is a notification that there is a new message for you.
-Please login to <a href='https://PaperlessDentists.com/portal'>https://PaperlessDentists.com/login</a> and click on Messages to view.";
+Please login to <a href='https://fluentpmr.com/portal'>https://fluentpmr.com/login</a> and click on Messages to view.";
 	//ob_start();  
 	$tt = file_get_contents('template.template',true);
 	//echo $contactStr = ob_get_clean();
@@ -517,7 +513,7 @@ Please login to <a href='https://PaperlessDentists.com/portal'>https://Paperless
 	$tt=str_replace("{{basePath}}",$durl,$tt);
 
         $subject="You have a new Message!";
-        $headers = 'From: <admin@paperlessdentists.com>' . " \r\n";
+        $headers = 'From: <admin@fluentpmr.com>' . " \r\n";
         $headers .= "MIME-Version: 1.0" . " \r\n";
         $headers .= "Content-type:text/html" . " \r\n";
 	//if(smtp_mail($this->email, 'Your New Password...', $tt))

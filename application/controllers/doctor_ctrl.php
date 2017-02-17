@@ -1380,18 +1380,29 @@ $data['message'] =$this->input->post('message');
 $data['date'] =date('Y-m-d H:i:s'); 
 $data['priority_flag'] =$this->input->post('priority'); 
 
+
+
 $config['upload_path'] = 'application/attachments/';
 $config['allowed_types'] = "doc|docx|pdf|zip|jpeg|jpg|txt|gif|png";		
+
 $this->load->library('upload', $config);	
-if (!$this->upload->do_upload('userfile'))
-{
-$udata = array('msg' => $this->upload->display_errors());
-}
-else 
-{
-$udata['upload_data'] = $this->upload->data();
-$data['attachment']= $udata['upload_data']['file_name'];
-}
+
+
+
+    if (!$this->upload->do_upload('userfile'))
+    {
+      
+      // $udata = array('msg' => $this->upload->display_errors());
+       $data['attachment']= "";
+    }
+    else 
+    {
+      $udata['upload_data'] = $this->upload->data();
+      $data['attachment']= $udata['upload_data']['file_name'];
+
+
+    }
+  
 
 $data['read_flag'] = 0;
 $data['sent_recd']='sent';
