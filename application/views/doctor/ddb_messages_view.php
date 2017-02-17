@@ -444,7 +444,7 @@ echo form_dropdown('patient_name', $patientnames,'',$attributes);
 
 <div class="control-group">
 <label class="control-label" for="inputPassword"> Attachment </label>
-<input type="file" name="userfile" onchange="this.style.width = '200px ';"><br/>
+<input type="file" name="userfile" id="userfile" onchange="this.style.width = '200px ';"><br/>
 
 </div>
 <div class="control-group">
