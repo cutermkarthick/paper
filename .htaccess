@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 #For reuests that are not actual files or directories,
 #Rewrite to index.php/URL
+
 RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]

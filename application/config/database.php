@@ -52,8 +52,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'paperless';
+$db['default']['password'] = 'bm1547';
+$db['default']['database'] = 'fluentpmr';
 
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
